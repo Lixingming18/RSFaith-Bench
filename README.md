@@ -48,6 +48,7 @@ extraction logs, and figure source data are not included.
   helpers, verifier, executable programs, metrics, and reporting.
 - `src/scripts/`: command-line scripts for inference, claim extraction,
   evaluation, summarization, and data validation.
+- `configs/`: public benchmark taxonomy and label ontology.
 - `RSFaith-Bench_subset/`: 600-example released subset with images, scene
   graphs, questions, support claims, and programs.
 - `docs/dataset_schema.md`: released dataset and program schema.

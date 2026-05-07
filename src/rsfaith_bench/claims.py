@@ -18,13 +18,14 @@ Task:
 Given a model rationale, process one focused sentence at a time. The input contains the previous sentence, the focused sentence, and the next sentence. Segment only the text inside <FOCUS>...</FOCUS> into short meaningful spans and label each span as visual_perception or analytical.
 
 Label definitions:
-- visual_perception: a statement about what is directly visible in the image, or directly comparable between earlier and later images. This includes object presence or absence, count, attribute, location, spatial relation, subtype classification, and temporal visual change.
+- visual_perception: a statement about what is directly visible in the image, or directly comparable between earlier and later images. This includes object presence or absence, count, attribute, location, spatial relation, subtype/category classification grounded in visible appearance, and temporal visual change.
 - analytical: interpretation, explanation, causal reasoning, answer selection, uncertainty, meta reasoning, or content that is not itself a direct visual statement.
 
 Instructions:
 - Only label and extract spans from text inside <FOCUS>...</FOCUS>. Use the surrounding context only to resolve pronouns, ellipsis, and time anchors.
 - If a pronoun or phrase such as "it", "they", "one", "the other", or "this area" has a clear referent, rewrite it in resolved_span. Otherwise keep the original text and label it as analytical.
 - Split mixed content whenever possible, but keep each span schema-complete. Preserve time anchors, negation, and scope-limiting clauses with the visual fact they modify.
+- If visual cues identify an object's visible subtype or category, extract the subtype/category statement as visual_perception even when introduced by words such as "indicates", "suggests", "appears to be", "characteristic of", or "therefore".
 - Do not include answer-selection phrases such as "therefore the answer is B" as visual evidence.
 
 Output format:
@@ -44,6 +45,21 @@ Output:
   {"span":"so option B is correct",
    "resolved_span":"so option B is correct",
    "label":"analytical"}
+]
+
+Example:
+Input:
+  Context before: The deck is covered with pipes and manifolds.
+  <FOCUS>This deck structure is characteristic of a liquid cargo ship, so the answer is A.</FOCUS>
+  Context after:
+Output:
+[
+  {"span":"This deck structure is characteristic of a liquid cargo ship",
+   "resolved_span":"The ship is a liquid cargo ship",
+   "label":"visual_perception"},
+  {"span":"so the answer is A",
+   "resolved_span":"so the answer is A",
+   "label":"analytical"}
 ]"""
 
 
@@ -56,6 +72,8 @@ Rules:
 - Each claim contains exactly one directly visually verifiable fact. Split multiple facts into separate claims.
 - Exclude reasoning, interpretation, uncertainty, and subjective language.
 - Use only labels from the provided label space. Subject and object must be singular canonical nouns.
+- Match each schema field to its own label-space list: subjects/objects from objects, relations from relations, locations from locations, attributes from attributes, and Attribute values from values.
+- For Attribute claims with attribute="subtype", copy the value exactly from values; if the named subtype/category is not in values, omit that Attribute claim.
 - Use t1 for the single or earlier image and t2 for the later image. Decompose paired-image statements into separate time-anchored claims.
 - Do not invent entities, times, relations, attributes, or locations. Return [] if a statement cannot be normalized.
 - Negative Existence applies only to image-global absence. Encode regional absence as a negative Location claim.

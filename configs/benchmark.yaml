@@ -1,0 +1,35 @@
+name: RSFaith-Bench
+release:
+  subset_name: RSFaith-Bench_subset
+  subset_size: 600
+  examples_per_subcategory: 50
+
+reasoning_levels:
+  perception:
+    display_name: Perception
+    subcategories:
+    - object_presence
+    - object_counting
+    - object_localization
+    - fine_grained_recognition
+  relational_reasoning:
+    display_name: Relational reasoning
+    subcategories:
+    - directional
+    - topological
+    - proximity
+    - projective_ordering
+    - aggregate_distribution
+  temporal_reasoning:
+    display_name: Temporal reasoning
+    subcategories:
+    - category_turnover
+    - semantic_transition
+    - net_change
+
+primary_metrics:
+- aa
+- cp
+- fa
+- C-CUR
+- M-CUR

@@ -1,0 +1,1765 @@
+name: RSFaith-Bench public ontology
+categories:
+- canonical_leaf: building
+  canonical_root: building
+  aliases:
+  - buildings
+  - house
+  - houses
+  - roof
+  - roofs
+  - rooftop
+  - rooftops
+- canonical_leaf: road
+  canonical_root: road
+  aliases:
+  - roads
+  - street
+- canonical_leaf: bridge
+  canonical_root: bridge
+  aliases:
+  - bridges
+- canonical_leaf: overpass
+  canonical_root: overpass
+  aliases:
+  - flyover
+  - over_pass
+- canonical_leaf: parking_lot
+  canonical_root: parking_lot
+  aliases:
+  - parking_lots
+  - parking
+  - parkinglot
+- canonical_leaf: aircraft
+  canonical_root: aircraft
+  aliases:
+  - airplane
+  - plane
+  - planes
+  - aircrafts
+- canonical_leaf: helicopter
+  canonical_root: helicopter
+  aliases:
+  - helicopters
+- canonical_leaf: ship
+  canonical_root: ship
+  aliases:
+  - boat
+  - boats
+  - vessel
+  - ships
+- canonical_leaf: harbor
+  canonical_root: harbor
+  aliases:
+  - port
+  - dock
+  - docks
+  - harbours
+  - marina
+  - marinas
+  - pier
+  - piers
+  - quay
+  - quays
+  - wharf
+  - wharves
+  - jetty
+  - jetties
+- canonical_leaf: vehicle
+  canonical_root: vehicle
+  aliases:
+  - vehicles
+  - car
+  - cars
+- canonical_leaf: small_vehicle
+  canonical_root: vehicle
+  aliases:
+  - small_vehicle
+  - small-vehicle
+  - small vehicles
+- canonical_leaf: large_vehicle
+  canonical_root: vehicle
+  aliases:
+  - large_vehicle
+  - large-vehicle
+  - large vehicles
+  - truck
+  - trucks
+- canonical_leaf: storage_tank
+  canonical_root: storage_tank
+  aliases:
+  - storagetank
+  - storage-tank
+  - storage tanks
+- canonical_leaf: airport
+  canonical_root: airport
+  aliases:
+  - airports
+  - airfield
+- canonical_leaf: train_station
+  canonical_root: train_station
+  aliases:
+  - trainstation
+  - railway_station
+  - rail_station
+- canonical_leaf: service_area
+  canonical_root: service_area
+  aliases:
+  - expressway_service_area
+  - highway_service_area
+  - servicearea
+- canonical_leaf: toll_station
+  canonical_root: toll_station
+  aliases:
+  - expressway_toll_station
+  - tollstation
+  - toll_booth
+- canonical_leaf: baseball_field
+  canonical_root: baseball_field
+  aliases:
+  - baseballfield
+  - baseball_diamond
+  - baseball-diamond
+- canonical_leaf: basketball_court
+  canonical_root: basketball_court
+  aliases:
+  - basketballcourt
+  - basketball-court
+  - basketball court
+- canonical_leaf: tennis_court
+  canonical_root: tennis_court
+  aliases:
+  - tenniscourt
+  - tennis-court
+  - tennis court
+- canonical_leaf: soccer_field
+  canonical_root: soccer_field
+  aliases:
+  - soccer_ball_field
+  - soccer-ball-field
+  - football_field
+  - soccer
+  - soccer field
+- canonical_leaf: ground_track_field
+  canonical_root: ground_track_field
+  aliases:
+  - groundtrackfield
+  - ground-track-field
+  - track_field
+  - ground track and field
+- canonical_leaf: golf_field
+  canonical_root: golf_field
+  aliases:
+  - golffield
+  - golf_course
+- canonical_leaf: stadium
+  canonical_root: stadium
+  aliases:
+  - stadiums
+  - arena
+- canonical_leaf: playground
+  canonical_root: playground
+  aliases:
+  - playgrounds
+- canonical_leaf: container_crane
+  canonical_root: container_crane
+  aliases:
+  - container-crane
+  - container crane
+  - container_cranes
+- canonical_leaf: helipad
+  canonical_root: helipad
+  aliases:
+  - heliport
+  - helipads
+- canonical_leaf: chimney
+  canonical_root: chimney
+  aliases:
+  - chimneys
+  - smokestack
+- canonical_leaf: dam
+  canonical_root: dam
+  aliases:
+  - dams
+- canonical_leaf: windmill
+  canonical_root: windmill
+  aliases:
+  - windmills
+  - wind_turbine
+- canonical_leaf: roundabout
+  canonical_root: roundabout
+  aliases:
+  - traffic_circle
+- canonical_leaf: swimming_pool
+  canonical_root: swimming_pool
+  aliases:
+  - swimmingpool
+  - pool
+- canonical_leaf: water
+  canonical_root: water
+  aliases:
+  - waters
+  - river
+  - lake
+- canonical_leaf: non_vegetated_surface
+  canonical_root: non_vegetated_surface
+  aliases:
+  - nvg_surface
+  - bare_land
+  - impervious_surface
+  - non vegetation surface
+- canonical_leaf: low_vegetation
+  canonical_root: low_vegetation
+  aliases:
+  - grass
+  - shrubs
+  - low vegetation
+- canonical_leaf: tree
+  canonical_root: tree
+  aliases:
+  - trees
+  - forest
+- canonical_leaf: change_region
+  canonical_root: change_region
+  aliases:
+  - change
+  - changed_area
+- canonical_leaf: airplane
+  canonical_root: aircraft
+  aliases:
+  - airplanes
+- canonical_leaf: a220
+  canonical_root: aircraft
+  aliases:
+  - A220
+  - Airbus A220
+  - a-220
+- canonical_leaf: a321
+  canonical_root: aircraft
+  aliases:
+  - A321
+  - Airbus A321
+  - a-321
+- canonical_leaf: a330
+  canonical_root: aircraft
+  aliases:
+  - A330
+  - Airbus A330
+  - a-330
+- canonical_leaf: a350
+  canonical_root: aircraft
+  aliases:
+  - A350
+  - Airbus A350
+  - a-350
+- canonical_leaf: arj21
+  canonical_root: aircraft
+  aliases:
+  - ARJ21
+  - arj-21
+- canonical_leaf: boeing737
+  canonical_root: aircraft
+  aliases:
+  - Boeing737
+  - Boeing 737
+  - boeing-737
+  - B737
+- canonical_leaf: boeing747
+  canonical_root: aircraft
+  aliases:
+  - Boeing747
+  - Boeing 747
+  - boeing-747
+  - B747
+- canonical_leaf: boeing777
+  canonical_root: aircraft
+  aliases:
+  - Boeing777
+  - Boeing 777
+  - boeing-777
+  - B777
+- canonical_leaf: boeing787
+  canonical_root: aircraft
+  aliases:
+  - Boeing787
+  - Boeing 787
+  - boeing-787
+  - B787
+- canonical_leaf: c919
+  canonical_root: aircraft
+  aliases:
+  - C919
+  - COMAC C919
+- canonical_leaf: other_airplane
+  canonical_root: aircraft
+  aliases:
+  - other-airplane
+  - other airplane
+  - other airplanes
+- canonical_leaf: block
+  canonical_root: block
+  aliases:
+  - blocks
+- canonical_leaf: boarding_bridge
+  canonical_root: bridge
+  aliases:
+  - boarding bridge
+  - boarding bridges
+  - boarding-bridge
+  - boarding-bridges
+  - boarding_bridges
+- canonical_leaf: bus
+  canonical_root: large_vehicle
+  aliases:
+  - bu
+- canonical_leaf: cargo
+  canonical_root: cargo
+  aliases:
+  - cargos
+- canonical_leaf: cargo_truck
+  canonical_root: large_vehicle
+  aliases:
+  - cargo truck
+  - cargo trucks
+  - cargo-truck
+  - cargo-trucks
+  - cargo_trucks
+- canonical_leaf: construction_site
+  canonical_root: construction_site
+  aliases:
+  - construction site
+  - construction sites
+  - construction-site
+  - construction-sites
+  - construction_sites
+- canonical_leaf: container
+  canonical_root: container
+  aliases:
+  - containers
+- canonical_leaf: control_tower
+  canonical_root: building
+  aliases:
+  - control tower
+  - control towers
+  - control-tower
+  - control-towers
+  - control_towers
+- canonical_leaf: crane
+  canonical_root: crane
+  aliases:
+  - cranes
+- canonical_leaf: dry_cargo_ship
+  canonical_root: ship
+  aliases:
+  - dry cargo ship
+  - dry cargo ships
+  - dry-cargo-ship
+  - dry-cargo-ships
+  - dry_cargo_ships
+  - freighter
+  - freighters
+  - bulk carrier
+  - bulk carriers
+- canonical_leaf: dump_truck
+  canonical_root: large_vehicle
+  aliases:
+  - dump truck
+  - dump trucks
+  - dump-truck
+  - dump-trucks
+  - dump_trucks
+- canonical_leaf: engineering_ship
+  canonical_root: ship
+  aliases:
+  - engineering ship
+  - engineering ships
+  - engineering-ship
+  - engineering-ships
+  - engineering_ships
+  - engineering vessel
+  - engineering vessels
+  - construction vessel
+  - construction vessels
+- canonical_leaf: excavator
+  canonical_root: large_vehicle
+  aliases:
+  - excavators
+- canonical_leaf: exhaust_fan
+  canonical_root: exhaust_fan
+  aliases:
+  - exhaust fan
+  - exhaust fans
+  - exhaust-fan
+  - exhaust-fans
+  - exhaust_fans
+- canonical_leaf: expressway_service_area
+  canonical_root: service_area
+  aliases:
+  - expressway service area
+  - expressway service areas
+  - expressway-service-area
+  - expressway-service-areas
+  - expressway_service_areas
+- canonical_leaf: factory
+  canonical_root: building
+  aliases:
+  - factories
+- canonical_leaf: fishing_boat
+  canonical_root: ship
+  aliases:
+  - fishing boat
+  - fishing boats
+  - fishing-boat
+  - fishing-boats
+  - fishing_boats
+- canonical_leaf: football_field
+  canonical_root: soccer_field
+  aliases:
+  - football field
+  - football fields
+  - football-field
+  - football-fields
+  - football_fields
+- canonical_leaf: gas_station
+  canonical_root: service_area
+  aliases:
+  - gas station
+  - gas stations
+  - gas-station
+  - gas-stations
+  - gas_stations
+- canonical_leaf: greenbelt
+  canonical_root: low_vegetation
+  aliases:
+  - greenbelts
+- canonical_leaf: helicopter_apron
+  canonical_root: helipad
+  aliases:
+  - helicopter apron
+  - helicopter aprons
+  - helicopter-apron
+  - helicopter-aprons
+  - helicopter_aprons
+- canonical_leaf: intersection
+  canonical_root: intersection
+  aliases:
+  - intersections
+- canonical_leaf: liquid_cargo_ship
+  canonical_root: ship
+  aliases:
+  - liquid cargo ship
+  - liquid cargo ships
+  - liquid-cargo-ship
+  - liquid-cargo-ships
+  - liquid_cargo_ships
+  - tanker
+  - tankers
+  - oil tanker
+  - oil tankers
+- canonical_leaf: locomotive
+  canonical_root: locomotive
+  aliases:
+  - locomotives
+- canonical_leaf: motorboat
+  canonical_root: ship
+  aliases:
+  - motorboats
+- canonical_leaf: other_ship
+  canonical_root: ship
+  aliases:
+  - other ship
+  - other ships
+  - other-ship
+  - other-ships
+  - other_ships
+- canonical_leaf: other_vehicle
+  canonical_root: vehicle
+  aliases:
+  - other vehicle
+  - other vehicles
+  - other-vehicle
+  - other-vehicles
+  - other_vehicles
+- canonical_leaf: passenger_ship
+  canonical_root: ship
+  aliases:
+  - passenger ship
+  - passenger ships
+  - passenger-ship
+  - passenger-ships
+  - passenger_ships
+  - ferry
+  - ferries
+  - cruise ship
+  - cruise ships
+- canonical_leaf: pool
+  canonical_root: swimming_pool
+  aliases:
+  - pools
+- canonical_leaf: railway
+  canonical_root: railway
+  aliases:
+  - railways
+- canonical_leaf: runway
+  canonical_root: airport
+  aliases:
+  - runways
+- canonical_leaf: small_car
+  canonical_root: small_vehicle
+  aliases:
+  - small car
+  - small cars
+  - small-car
+  - small-cars
+  - small_cars
+- canonical_leaf: smoke
+  canonical_root: smoke
+  aliases:
+  - smokes
+- canonical_leaf: solar_panel
+  canonical_root: solar_panel
+  aliases:
+  - solar panel
+  - solar panels
+  - solar-panel
+  - solar-panels
+  - solar_panels
+- canonical_leaf: storage_tank_group
+  canonical_root: storage_tank
+  aliases:
+  - storage tank group
+  - storage tank groups
+  - storage-tank-group
+  - storage-tank-groups
+  - storage_tank_groups
+- canonical_leaf: terminal
+  canonical_root: building
+  aliases:
+  - terminals
+- canonical_leaf: tractor
+  canonical_root: large_vehicle
+  aliases:
+  - tractors
+- canonical_leaf: trailer
+  canonical_root: large_vehicle
+  aliases:
+  - trailers
+- canonical_leaf: train_carriage
+  canonical_root: train_carriage
+  aliases:
+  - train carriage
+  - train carriages
+  - train-carriage
+  - train-carriages
+  - train_carriages
+- canonical_leaf: truck_tractor
+  canonical_root: large_vehicle
+  aliases:
+  - truck tractor
+  - truck tractors
+  - truck-tractor
+  - truck-tractors
+  - truck_tractors
+- canonical_leaf: tugboat
+  canonical_root: ship
+  aliases:
+  - tugboats
+- canonical_leaf: van
+  canonical_root: small_vehicle
+  aliases:
+  - vans
+- canonical_leaf: warship
+  canonical_root: ship
+  aliases:
+  - warships
+  - naval vessel
+  - naval vessels
+  - military ship
+  - military ships
+label_space:
+  object_labels:
+  - aircraft
+  - airplane
+  - a220
+  - a321
+  - a330
+  - a350
+  - airport
+  - arj21
+  - baseball_field
+  - basketball_court
+  - block
+  - boeing737
+  - boeing747
+  - boeing777
+  - boeing787
+  - boarding_bridge
+  - bridge
+  - building
+  - bus
+  - c919
+  - cargo
+  - cargo_truck
+  - change_region
+  - chimney
+  - construction_site
+  - container
+  - container_crane
+  - control_tower
+  - crane
+  - dam
+  - dry_cargo_ship
+  - dump_truck
+  - engineering_ship
+  - excavator
+  - exhaust_fan
+  - expressway_service_area
+  - factory
+  - fishing_boat
+  - football_field
+  - gas_station
+  - golf_field
+  - greenbelt
+  - ground_track_field
+  - harbor
+  - helicopter
+  - helicopter_apron
+  - helipad
+  - intersection
+  - large_vehicle
+  - liquid_cargo_ship
+  - locomotive
+  - low_vegetation
+  - motorboat
+  - non_vegetated_surface
+  - other_airplane
+  - other_ship
+  - other_vehicle
+  - overpass
+  - parking_lot
+  - passenger_ship
+  - playground
+  - pool
+  - railway
+  - road
+  - roundabout
+  - runway
+  - service_area
+  - ship
+  - small_car
+  - small_vehicle
+  - smoke
+  - soccer_field
+  - solar_panel
+  - stadium
+  - storage_tank
+  - storage_tank_group
+  - swimming_pool
+  - tennis_court
+  - terminal
+  - toll_station
+  - tractor
+  - trailer
+  - train_carriage
+  - train_station
+  - tree
+  - truck_tractor
+  - tugboat
+  - van
+  - vehicle
+  - warship
+  - water
+  - windmill
+  object_aliases:
+    aircraft:
+    - aircraft
+    - aircrafts
+    - airplane
+    - plane
+    - planes
+    airplane:
+    - airplane
+    - airplanes
+    - plane
+    a220:
+    - a220
+    - A220
+    - Airbus A220
+    - a-220
+    a321:
+    - a321
+    - A321
+    - Airbus A321
+    - a-321
+    a330:
+    - a330
+    - A330
+    - Airbus A330
+    - a-330
+    a350:
+    - a350
+    - A350
+    - Airbus A350
+    - a-350
+    airport:
+    - airport
+    - airfield
+    - airports
+    arj21:
+    - arj21
+    - ARJ21
+    - arj-21
+    baseball_field:
+    - baseball_field
+    - baseball diamond
+    - baseball diamonds
+    - baseball field
+    - baseball fields
+    - baseball softball field
+    - baseball-diamond
+    - baseball-diamonds
+    - baseball-field
+    - baseball-fields
+    - baseball-softball-field
+    - baseball_diamond
+    - baseball_diamonds
+    - baseball_fields
+    - baseball_softball_field
+    - baseballfield
+    - softball field
+    - softball-field
+    - softball_field
+    basketball_court:
+    - basketball_court
+    - basketball court
+    - basketball courts
+    - basketball-court
+    - basketball-courts
+    - basketball_courts
+    - basketballcourt
+    block:
+    - block
+    - blocks
+    boeing737:
+    - boeing737
+    - Boeing737
+    - Boeing 737
+    - boeing-737
+    - B737
+    boeing747:
+    - boeing747
+    - Boeing747
+    - Boeing 747
+    - boeing-747
+    - B747
+    boeing777:
+    - boeing777
+    - Boeing777
+    - Boeing 777
+    - boeing-777
+    - B777
+    boeing787:
+    - boeing787
+    - Boeing787
+    - Boeing 787
+    - boeing-787
+    - B787
+    boarding_bridge:
+    - boarding_bridge
+    - boarding bridge
+    - boarding bridges
+    - boarding-bridge
+    - boarding-bridges
+    - boarding_bridges
+    bridge:
+    - bridge
+    - bridges
+    building:
+    - building
+    - buildings
+    - house
+    - houses
+    - roof
+    - roofs
+    - rooftop
+    - rooftops
+    bus:
+    - bus
+    - bu
+    c919:
+    - c919
+    - C919
+    - COMAC C919
+    cargo:
+    - cargo
+    - cargos
+    cargo_truck:
+    - cargo_truck
+    - cargo truck
+    - cargo trucks
+    - cargo-truck
+    - cargo-trucks
+    - cargo_trucks
+    change_region:
+    - change_region
+    - change
+    - change region
+    - change regions
+    - change-region
+    - change-regions
+    - change_regions
+    - changed area
+    - changed-area
+    - changed_area
+    chimney:
+    - chimney
+    - chimneys
+    - smokestack
+    construction_site:
+    - construction_site
+    - construction site
+    - construction sites
+    - construction-site
+    - construction-sites
+    - construction_sites
+    container:
+    - container
+    - containers
+    container_crane:
+    - container_crane
+    - container crane
+    - container cranes
+    - container-crane
+    - container-cranes
+    - container_cranes
+    control_tower:
+    - control_tower
+    - control tower
+    - control towers
+    - control-tower
+    - control-towers
+    - control_towers
+    crane:
+    - crane
+    - cranes
+    dam:
+    - dam
+    - dams
+    dry_cargo_ship:
+    - dry_cargo_ship
+    - dry cargo ship
+    - dry cargo ships
+    - dry-cargo-ship
+    - dry-cargo-ships
+    - dry_cargo_ships
+    - freighter
+    - freighters
+    - bulk carrier
+    - bulk carriers
+    dump_truck:
+    - dump_truck
+    - dump truck
+    - dump trucks
+    - dump-truck
+    - dump-trucks
+    - dump_trucks
+    engineering_ship:
+    - engineering_ship
+    - engineering ship
+    - engineering ships
+    - engineering-ship
+    - engineering-ships
+    - engineering_ships
+    - engineering vessel
+    - engineering vessels
+    - construction vessel
+    - construction vessels
+    excavator:
+    - excavator
+    - excavators
+    exhaust_fan:
+    - exhaust_fan
+    - exhaust fan
+    - exhaust fans
+    - exhaust-fan
+    - exhaust-fans
+    - exhaust_fans
+    expressway_service_area:
+    - expressway_service_area
+    - expressway service area
+    - expressway service areas
+    - expressway-service-area
+    - expressway-service-areas
+    - expressway_service_areas
+    factory:
+    - factory
+    - factories
+    fishing_boat:
+    - fishing_boat
+    - fishing boat
+    - fishing boats
+    - fishing-boat
+    - fishing-boats
+    - fishing_boats
+    football_field:
+    - football_field
+    - football field
+    - football fields
+    - football-field
+    - football-fields
+    - football_fields
+    gas_station:
+    - gas_station
+    - gas station
+    - gas stations
+    - gas-station
+    - gas-stations
+    - gas_stations
+    golf_field:
+    - golf_field
+    - golf course
+    - golf field
+    - golf fields
+    - golf-course
+    - golf-field
+    - golf-fields
+    - golf_course
+    - golf_fields
+    - golffield
+    - golffields
+    greenbelt:
+    - greenbelt
+    - greenbelts
+    ground_track_field:
+    - ground_track_field
+    - ground track and field
+    - ground track field
+    - ground track fields
+    - ground-track-and-field
+    - ground-track-field
+    - ground-track-fields
+    - ground_track_and_field
+    - ground_track_fields
+    - groundtrackfield
+    - running track
+    - running-track
+    - running_track
+    - track field
+    - track-field
+    - track_field
+    harbor:
+    - harbor
+    - harbors
+    - harbours
+    - port
+    - dock
+    - docks
+    - marina
+    - marinas
+    - pier
+    - piers
+    - quay
+    - quays
+    - wharf
+    - wharves
+    - jetty
+    - jetties
+    helicopter:
+    - helicopter
+    - helicopters
+    helicopter_apron:
+    - helicopter_apron
+    - helicopter apron
+    - helicopter aprons
+    - helicopter-apron
+    - helicopter-aprons
+    - helicopter_aprons
+    helipad:
+    - helipad
+    - helipads
+    - heliport
+    intersection:
+    - intersection
+    - intersections
+    large_vehicle:
+    - large_vehicle
+    - large vehicle
+    - large vehicles
+    - large-vehicle
+    - large-vehicles
+    - large_vehicles
+    - truck
+    - trucks
+    liquid_cargo_ship:
+    - liquid_cargo_ship
+    - liquid cargo ship
+    - liquid cargo ships
+    - liquid-cargo-ship
+    - liquid-cargo-ships
+    - liquid_cargo_ships
+    - tanker
+    - tankers
+    - oil tanker
+    - oil tankers
+    locomotive:
+    - locomotive
+    - locomotives
+    low_vegetation:
+    - low_vegetation
+    - grass
+    - grass cover
+    - grass-cover
+    - grass_cover
+    - green cover
+    - green-cover
+    - green_cover
+    - low vegetation
+    - low vegetations
+    - low-vegetation
+    - low-vegetations
+    - low_vegetations
+    - shrubs
+    motorboat:
+    - motorboat
+    - motorboats
+    non_vegetated_surface:
+    - non_vegetated_surface
+    - bare ground
+    - bare land
+    - bare soil
+    - bare-ground
+    - bare-land
+    - bare-soil
+    - bare_ground
+    - bare_land
+    - bare_soil
+    - impervious surface
+    - impervious-surface
+    - impervious_surface
+    - non vegetated surface
+    - non vegetated surfaces
+    - non vegetation surface
+    - non-vegetated-surface
+    - non-vegetated-surfaces
+    - non-vegetation-surface
+    - non_vegetated_surfaces
+    - non_vegetation_surface
+    - nvg surface
+    - nvg surfaces
+    - nvg-surface
+    - nvg-surfaces
+    - nvg_surface
+    - nvg_surfaces
+    other_ship:
+    - other_ship
+    - other ship
+    - other ships
+    - other-ship
+    - other-ships
+    - other_ships
+    other_airplane:
+    - other_airplane
+    - other airplane
+    - other airplanes
+    - other-airplane
+    - other-airplanes
+    other_vehicle:
+    - other_vehicle
+    - other vehicle
+    - other vehicles
+    - other-vehicle
+    - other-vehicles
+    - other_vehicles
+    overpass:
+    - overpass
+    - flyover
+    - over pass
+    - over-pass
+    - over_pass
+    parking_lot:
+    - parking_lot
+    - parking
+    - parking lot
+    - parking lots
+    - parking-lot
+    - parking-lots
+    - parking_lots
+    - parkinglot
+    passenger_ship:
+    - passenger_ship
+    - passenger ship
+    - passenger ships
+    - passenger-ship
+    - passenger-ships
+    - passenger_ships
+    - ferry
+    - ferries
+    - cruise ship
+    - cruise ships
+    playground:
+    - playground
+    - playgrounds
+    pool:
+    - pool
+    - pools
+    railway:
+    - railway
+    - railways
+    road:
+    - road
+    - highway
+    - highways
+    - roads
+    - street
+    roundabout:
+    - roundabout
+    - roundabouts
+    - traffic circle
+    - traffic-circle
+    - traffic_circle
+    runway:
+    - runway
+    - runways
+    service_area:
+    - service_area
+    - expressway service area
+    - expressway-service-area
+    - expressway_service_area
+    - highway service area
+    - highway-service-area
+    - highway_service_area
+    - service area
+    - service areas
+    - service-area
+    - service-areas
+    - service_areas
+    - servicearea
+    ship:
+    - ship
+    - boat
+    - boats
+    - ships
+    - vessel
+    small_car:
+    - small_car
+    - car
+    - cars
+    - small car
+    - small cars
+    - small-car
+    - small-cars
+    - small_cars
+    small_vehicle:
+    - small_vehicle
+    - small vehicle
+    - small vehicles
+    - small-vehicle
+    - small-vehicles
+    - small_vehicles
+    smoke:
+    - smoke
+    - smokes
+    soccer_field:
+    - soccer_field
+    - football field
+    - football-field
+    - football_field
+    - soccer
+    - soccer ball field
+    - soccer ball fields
+    - soccer field
+    - soccer fields
+    - soccer-ball-field
+    - soccer-ball-fields
+    - soccer-field
+    - soccer-fields
+    - soccer_ball_field
+    - soccer_ball_fields
+    - soccer_fields
+    solar_panel:
+    - solar_panel
+    - solar panel
+    - solar panels
+    - solar-panel
+    - solar-panels
+    - solar_panels
+    stadium:
+    - stadium
+    - arena
+    - stadiums
+    storage_tank:
+    - storage_tank
+    - storage tank
+    - storage tanks
+    - storage-tank
+    - storage-tanks
+    - storage_tanks
+    - storagetank
+    - tank
+    storage_tank_group:
+    - storage_tank_group
+    - storage tank group
+    - storage tank groups
+    - storage-tank-group
+    - storage-tank-groups
+    - storage_tank_groups
+    swimming_pool:
+    - swimming_pool
+    - pool
+    - swimming pool
+    - swimming pools
+    - swimming-pool
+    - swimming-pools
+    - swimming_pools
+    - swimmingpool
+    tennis_court:
+    - tennis_court
+    - tennis court
+    - tennis courts
+    - tennis-court
+    - tennis-courts
+    - tennis_courts
+    - tenniscourt
+    terminal:
+    - terminal
+    - terminals
+    toll_station:
+    - toll_station
+    - expressway toll station
+    - expressway toll stations
+    - expressway-toll-station
+    - expressway-toll-stations
+    - expressway_toll_station
+    - expressway_toll_stations
+    - toll booth
+    - toll station
+    - toll stations
+    - toll-booth
+    - toll-station
+    - toll-stations
+    - toll_booth
+    - toll_stations
+    - tollstation
+    tractor:
+    - tractor
+    - tractors
+    trailer:
+    - trailer
+    - trailers
+    train_carriage:
+    - train_carriage
+    - train carriage
+    - train carriages
+    - train-carriage
+    - train-carriages
+    - train_carriages
+    train_station:
+    - train_station
+    - rail station
+    - rail-station
+    - rail_station
+    - railway station
+    - railway-station
+    - railway_station
+    - train station
+    - train stations
+    - train-station
+    - train-stations
+    - train_stations
+    - trainstation
+    - trainstations
+    tree:
+    - tree
+    - forest
+    - trees
+    truck_tractor:
+    - truck_tractor
+    - truck tractor
+    - truck tractors
+    - truck-tractor
+    - truck-tractors
+    - truck_tractors
+    tugboat:
+    - tugboat
+    - tugboats
+    van:
+    - van
+    - vans
+    vehicle:
+    - vehicle
+    - car
+    - cars
+    - vehicles
+    warship:
+    - warship
+    - warships
+    - naval vessel
+    - naval vessels
+    - military ship
+    - military ships
+    water:
+    - water
+    - lake
+    - river
+    - waters
+    windmill:
+    - windmill
+    - wind turbine
+    - wind-turbine
+    - wind_turbine
+    - windmills
+  relation_labels:
+  - above
+  - adjacent_to
+  - around
+  - below
+  - border
+  - close_to
+  - contains
+  - cross
+  - dock_at
+  - drive_on
+  - emit
+  - inside
+  - left_of
+  - lie_under
+  - moor_at
+  - near
+  - overlap
+  - parallel_to
+  - park_next_to
+  - parked_at
+  - pass_under
+  - placed_on
+  - right_of
+  - sail_on
+  - taxi_on
+  - transferred_to
+  relation_aliases:
+    above:
+    - above
+    adjacent_to:
+    - adjacent_to
+    - adjacent to
+    - adjacent-to
+    - next to
+    - next-to
+    - next_to
+    around:
+    - around
+    below:
+    - below
+    border:
+    - border
+    - bordering
+    - borders
+    close_to:
+    - close_to
+    - close to
+    - close-to
+    contains:
+    - contains
+    - containing
+    cross:
+    - cross
+    - crosses
+    - crossing
+    dock_at:
+    - dock_at
+    - dock at
+    - dock-at
+    - docked at
+    - docked-at
+    - docked_at
+    drive_on:
+    - drive_on
+    - drive on
+    - drive-on
+    - driving on
+    - driving-on
+    - driving_on
+    emit:
+    - emit
+    - emits
+    - emitting
+    inside:
+    - inside
+    - in
+    - within
+    left_of:
+    - left_of
+    - left of
+    - left-of
+    - on the left of
+    - on-the-left-of
+    - on_the_left_of
+    - to the left of
+    - to-the-left-of
+    - to_the_left_of
+    lie_under:
+    - lie_under
+    - lie under
+    - lie-under
+    - lying under
+    - lying-under
+    - lying_under
+    moor_at:
+    - moor_at
+    - moor at
+    - moor-at
+    - moored at
+    - moored-at
+    - moored_at
+    near:
+    - near
+    overlap:
+    - overlap
+    - overlapping
+    parallel_to:
+    - parallel_to
+    - parallel to
+    - parallel-to
+    park_next_to:
+    - parked next to
+    - parked-next-to
+    - parked_next_to
+    parked_at:
+    - parked_at
+    - parked at
+    - parked-at
+    pass_under:
+    - pass_under
+    - pass under
+    - pass-under
+    - passing under
+    - passing-under
+    - passing_under
+    placed_on:
+    - placed_on
+    - placed on
+    - placed-on
+    right_of:
+    - right_of
+    - on the right of
+    - on-the-right-of
+    - on_the_right_of
+    - right of
+    - right-of
+    - to the right of
+    - to-the-right-of
+    - to_the_right_of
+    sail_on:
+    - sail_on
+    - sail on
+    - sail-on
+    - sailing on
+    - sailing-on
+    - sailing_on
+    taxi_on:
+    - taxi_on
+    - taxi on
+    - taxi-on
+    - taxiing on
+    - taxiing-on
+    - taxiing_on
+    transferred_to:
+    - transferred_to
+    - change into
+    - change-into
+    - change_into
+    - changed into
+    - changed-into
+    - changed_into
+    - changes into
+    - changes-into
+    - changes_into
+    - transfer to
+    - transfer-to
+    - transfer_to
+    - transferred to
+    - transferred-to
+    - transfers to
+    - transfers-to
+    - transfers_to
+    - turn into
+    - turn-into
+    - turn_into
+    - turned into
+    - turned-into
+    - turned_into
+    - turns into
+    - turns-into
+    - turns_into
+  location_labels:
+  - background
+  - bottom
+  - bottom-center
+  - bottom-left
+  - bottom-right
+  - center
+  - center-left
+  - center-right
+  - foreground
+  - left_side
+  - right_side
+  - top
+  - top-center
+  - top-left
+  - top-right
+  location_aliases:
+    background:
+    - background
+    - in the background
+    - in-the-background
+    - in_the_background
+    bottom:
+    - bottom
+    - bottom of the image
+    - bottom-of-the-image
+    - bottom_of_the_image
+    - lower
+    - lower part of the image
+    - lower-part-of-the-image
+    - lower_part_of_the_image
+    bottom-center:
+    - bottom-center
+    - bottom center
+    - bottom middle
+    - bottom-middle
+    - bottom_center
+    - bottom_middle
+    - lower center
+    - lower middle
+    - lower-center
+    - lower-middle
+    - lower_center
+    - lower_middle
+    bottom-left:
+    - bottom-left
+    - bottom left
+    - bottom_left
+    - lower left
+    - lower-left
+    - lower_left
+    bottom-right:
+    - bottom-right
+    - bottom right
+    - bottom_right
+    - lower right
+    - lower-right
+    - lower_right
+    center:
+    - center
+    - center of the image
+    - center-of-the-image
+    - center_of_the_image
+    - centre
+    - middle
+    - middle of the image
+    - middle-of-the-image
+    - middle_of_the_image
+    center-left:
+    - center-left
+    - center left
+    - center_left
+    - middle left
+    - middle-left
+    - middle_left
+    center-right:
+    - center-right
+    - center right
+    - center_right
+    - middle right
+    - middle-right
+    - middle_right
+    foreground:
+    - foreground
+    - in the foreground
+    - in-the-foreground
+    - in_the_foreground
+    left_side:
+    - left_side
+    - left
+    - left side
+    - left side of the image
+    - left-side
+    - left-side-of-the-image
+    - left_side_of_the_image
+    - on the left side
+    - on-the-left-side
+    - on_the_left_side
+    right_side:
+    - right_side
+    - on the right side
+    - on-the-right-side
+    - on_the_right_side
+    - right
+    - right side
+    - right side of the image
+    - right-side
+    - right-side-of-the-image
+    - right_side_of_the_image
+    top:
+    - top
+    - top of the image
+    - top-of-the-image
+    - top_of_the_image
+    - upper
+    - upper part of the image
+    - upper-part-of-the-image
+    - upper_part_of_the_image
+    top-center:
+    - top-center
+    - top center
+    - top middle
+    - top-middle
+    - top_center
+    - top_middle
+    - upper center
+    - upper middle
+    - upper-center
+    - upper-middle
+    - upper_center
+    - upper_middle
+    top-left:
+    - top-left
+    - top left
+    - top_left
+    - upper left
+    - upper-left
+    - upper_left
+    top-right:
+    - top-right
+    - top right
+    - top_right
+    - upper right
+    - upper-right
+    - upper_right
+  attribute_schema:
+    keys:
+    - color
+    - size
+    - subtype
+    - material
+    - shape
+    - text
+    - aggregate_area
+    - change_state
+    - damage_level
+    key_aliases:
+      color:
+      - color
+      - colour
+      size:
+      - size
+      - obj size
+      - obj-size
+      - obj_size
+      - object size
+      - object-size
+      - object_size
+      material:
+      - material
+      shape:
+      - shape
+      text:
+      - text
+      - ocr text
+      - ocr-text
+      - ocr_text
+      aggregate_area:
+      - aggregate_area
+      - aggregate area
+      - aggregate-area
+      - area
+      - area covered
+      - area-covered
+      - area_covered
+      - covered area
+      - covered-area
+      - covered_area
+      change_state:
+      - change_state
+      - change state
+      - change-state
+      - state
+      subtype:
+      - subtype
+      - fine grained type
+      - fine grained label
+      - specific type
+      - specific label
+      damage_level:
+      - damage level
+      - damage state
+      - damage status
+    values_by_key:
+      color: []
+      size:
+      - small
+      - medium
+      - large
+      subtype: []
+      material: []
+      shape: []
+      text: []
+      aggregate_area: []
+      change_state:
+      - changed
+      - unchanged
+      - appeared
+      - disappeared
+      damage_level:
+      - no_damage
+      - minor_damage
+      - major_damage
+      - destroyed
+      - un_classified
+    value_aliases_by_key:
+      color: {}
+      size:
+        small:
+        - small
+        medium:
+        - medium
+        large:
+        - large
+      subtype: {}
+      material: {}
+      shape: {}
+      text: {}
+      aggregate_area: {}
+      change_state:
+        changed:
+        - changed
+        unchanged:
+        - unchanged
+        appeared:
+        - appeared
+        - new
+        - newly appeared
+        disappeared:
+        - disappeared
+        - vanished
+      damage_level:
+        no_damage:
+        - no damage
+        - undamaged
+        - no visible damage
+        - unaffected
+        minor_damage:
+        - minor damage
+        - slight damage
+        - light damage
+        major_damage:
+        - major damage
+        - severe damage
+        - heavy damage
+        destroyed:
+        - destroyed
+        - collapsed
+        - completely destroyed
+        un_classified:
+        - un-classified
+        - unclassified
+        - unknown damage

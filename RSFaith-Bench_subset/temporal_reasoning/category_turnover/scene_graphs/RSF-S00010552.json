@@ -1,0 +1,220 @@
+{
+  "scene_id": "RSF-S00010552",
+  "graph_meta": {
+    "temporal_mode": "pair",
+    "image_size": [
+      512,
+      512
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_t2_NVG_surface",
+      "node_type": "region",
+      "time": "t2",
+      "canonical_leaf": "non_vegetated_surface",
+      "canonical_root": "non_vegetated_surface",
+      "geometry": {
+        "bbox": [
+          0.0,
+          207.0,
+          441.0,
+          512.0
+        ],
+        "center": [
+          220.5,
+          359.5
+        ],
+        "area": 134505.0,
+        "region_bin_3x3": "bottom-center",
+        "components": [
+          {
+            "component_id": "c001",
+            "bbox": [
+              0.0,
+              207.0,
+              126.0,
+              346.0
+            ],
+            "center": [
+              63.0,
+              276.5
+            ],
+            "area": 14510,
+            "region_bin_3x3": "center-left"
+          },
+          {
+            "component_id": "c002",
+            "bbox": [
+              420.0,
+              480.0,
+              441.0,
+              512.0
+            ],
+            "center": [
+              430.5,
+              496.0
+            ],
+            "area": 543,
+            "region_bin_3x3": "bottom-right"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 15053
+      }
+    },
+    {
+      "node_id": "n_t1_trees",
+      "node_type": "region",
+      "time": "t1",
+      "canonical_leaf": "tree",
+      "canonical_root": "tree",
+      "geometry": {
+        "bbox": [
+          420.0,
+          480.0,
+          441.0,
+          512.0
+        ],
+        "center": [
+          430.5,
+          496.0
+        ],
+        "area": 672.0,
+        "region_bin_3x3": "bottom-right",
+        "components": [
+          {
+            "component_id": "c001",
+            "bbox": [
+              420.0,
+              480.0,
+              441.0,
+              512.0
+            ],
+            "center": [
+              430.5,
+              496.0
+            ],
+            "area": 543,
+            "region_bin_3x3": "bottom-right"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 543
+      }
+    },
+    {
+      "node_id": "n_t1_buildings",
+      "node_type": "region",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          0.0,
+          207.0,
+          126.0,
+          346.0
+        ],
+        "center": [
+          63.0,
+          276.5
+        ],
+        "area": 17514.0,
+        "region_bin_3x3": "center-left",
+        "components": [
+          {
+            "component_id": "c001",
+            "bbox": [
+              0.0,
+              207.0,
+              126.0,
+              346.0
+            ],
+            "center": [
+              63.0,
+              276.5
+            ],
+            "area": 14510,
+            "region_bin_3x3": "center-left"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 14510
+      }
+    },
+    {
+      "node_id": "n_change_00001",
+      "node_type": "change_unit",
+      "time": "pair",
+      "canonical_leaf": "change_region",
+      "canonical_root": "change_region",
+      "geometry": {
+        "bbox": [
+          0.0,
+          207.0,
+          441.0,
+          512.0
+        ],
+        "center": [
+          220.5,
+          359.5
+        ],
+        "area": 134505.0,
+        "region_bin_3x3": "bottom-center"
+      },
+      "attributes": {
+        "aggregate_area": 15053,
+        "change_state": "changed"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "e_sp_00001",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_t1_trees",
+      "target": "n_t1_buildings"
+    },
+    {
+      "edge_id": "e_sp_00002",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_t1_buildings",
+      "target": "n_t1_trees"
+    }
+  ],
+  "global_inventory": {
+    "inventory_type": "temporal_semantic",
+    "semantic_inventory": {
+      "semantic_areas": {
+        "t1": {
+          "tree": {
+            "aggregate_area": 543
+          },
+          "building": {
+            "aggregate_area": 14510
+          }
+        },
+        "t2": {
+          "non_vegetated_surface": {
+            "aggregate_area": 15053
+          }
+        }
+      },
+      "transfers": {
+        "tree": {
+          "non_vegetated_surface": 543
+        },
+        "building": {
+          "non_vegetated_surface": 14510
+        }
+      },
+      "change_pixels": 15053
+    }
+  }
+}

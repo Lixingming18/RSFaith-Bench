@@ -1,0 +1,80 @@
+{
+  "scene_id": "RSF-S00000869",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      800,
+      800
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "overpass",
+      "canonical_root": "overpass",
+      "geometry": {
+        "bbox": [
+          156.0,
+          480.0,
+          646.0,
+          668.0
+        ],
+        "center": [
+          401.0,
+          574.0
+        ],
+        "area": 92120.0,
+        "region_bin_3x3": "bottom-center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00002",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "overpass",
+      "canonical_root": "overpass",
+      "geometry": {
+        "bbox": [
+          268.0,
+          251.0,
+          549.0,
+          383.0
+        ],
+        "center": [
+          408.5,
+          317.0
+        ],
+        "area": 37092.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00003",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "overpass",
+      "canonical_root": "overpass",
+      "geometry": {
+        "bbox": [
+          276.0,
+          155.0,
+          556.0,
+          290.0
+        ],
+        "center": [
+          416.0,
+          222.5
+        ],
+        "area": 37800.0,
+        "region_bin_3x3": "top-center"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [],
+  "global_inventory": {}
+}

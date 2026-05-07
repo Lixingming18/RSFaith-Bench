@@ -1,0 +1,4952 @@
+[
+  {
+    "question_id": "RSF-Q00002476",
+    "scene_id": "RSF-S00002476",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the terminal located in the top-center region?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "No",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002476_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002476.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "terminal",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_9"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "terminal",
+        "value": "top-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_9"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "terminal",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_9"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "terminal"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_9"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "top-center"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000960",
+    "scene_id": "RSF-S00000960",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Which region of the image contains the aircraft?",
+    "answer": "top-left",
+    "answer_type": "text",
+    "choices": [
+      "top-center",
+      "center",
+      "center-left",
+      "top-left"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000960_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000960.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00009"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": "top-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_00009"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00009"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00009"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001173",
+    "scene_id": "RSF-S00001173",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "In which part of the image is the roundabout?",
+    "answer": "bottom-right",
+    "answer_type": "text",
+    "choices": [
+      "center",
+      "bottom-center",
+      "bottom-right",
+      "center-right"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001173_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001173.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "roundabout",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "roundabout",
+        "value": "bottom-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "roundabout",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "roundabout"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001288",
+    "scene_id": "RSF-S00001288",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "What part of the image contains the helipad?",
+    "answer": "bottom-left",
+    "answer_type": "text",
+    "choices": [
+      "center",
+      "center-left",
+      "bottom-center",
+      "bottom-left"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001288_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001288.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "helipad",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00035"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "helipad",
+        "value": "bottom-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_00035"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "helipad",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00035"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "helipad"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00035"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00004155",
+    "scene_id": "RSF-S00004155",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the cargo located in the center-right region?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "No",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00004155_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00004155.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "cargo",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_22"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "cargo",
+        "value": "center-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_22"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "cargo",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_22"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "cargo"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_22"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "center-right"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001801",
+    "scene_id": "RSF-S00001801",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Which region of the image contains the bus?",
+    "answer": "center-right",
+    "answer_type": "text",
+    "choices": [
+      "top-right",
+      "top-center",
+      "center-right",
+      "center"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001801_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001801.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "bus",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00032"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "bus",
+        "value": "center-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_00032"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "bus",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00032"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "bus"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00032"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000761",
+    "scene_id": "RSF-S00000761",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the stadium located in the center-left region?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "No",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000761_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000761.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "stadium",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "stadium",
+        "value": "center",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "stadium",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "stadium"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "center-left"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000982",
+    "scene_id": "RSF-S00000982",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Which section of the image does the roundabout occupy?",
+    "answer": "top-right",
+    "answer_type": "text",
+    "choices": [
+      "top-center",
+      "top-right",
+      "center-right",
+      "center"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000982_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000982.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "roundabout",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00078"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "roundabout",
+        "value": "top-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_00078"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "roundabout",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00078"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "roundabout"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00078"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001485",
+    "scene_id": "RSF-S00001485",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "What part of the image contains the excavator?",
+    "answer": "bottom-center",
+    "answer_type": "text",
+    "choices": [
+      "center",
+      "center-right",
+      "center-left",
+      "bottom-center"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001485_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001485.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "excavator",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00007"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "excavator",
+        "value": "bottom-center",
+        "refs": {
+          "node_ids": [
+            "n_obj_00007"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "excavator",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00007"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "excavator"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00007"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002447",
+    "scene_id": "RSF-S00002447",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the tugboat located in the bottom-left region?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "Yes",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002447_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002447.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "tugboat",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "tugboat",
+        "value": "bottom-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "tugboat",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "tugboat"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "bottom-left"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001195",
+    "scene_id": "RSF-S00001195",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the harbor located in the top-center region?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "Yes",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001195_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001195.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "harbor",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00003"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "harbor",
+        "value": "center",
+        "refs": {
+          "node_ids": [
+            "n_obj_00003"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "harbor",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00003"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "harbor"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00003"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "top-center"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002948",
+    "scene_id": "RSF-S00002948",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "What part of the image contains the intersection?",
+    "answer": "top-center",
+    "answer_type": "text",
+    "choices": [
+      "center-left",
+      "top-left",
+      "top-center",
+      "top-right"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002948_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002948.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "intersection",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_1"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "intersection",
+        "value": "top-center",
+        "refs": {
+          "node_ids": [
+            "n_obj_1"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "intersection",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_1"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "intersection"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_1"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000853",
+    "scene_id": "RSF-S00000853",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Which region of the image contains the vehicle?",
+    "answer": "center-left",
+    "answer_type": "text",
+    "choices": [
+      "center",
+      "top-center",
+      "center-left",
+      "top-left"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000853_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000853.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "vehicle",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00002"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "vehicle",
+        "value": "center-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_00002"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "vehicle",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "vehicle"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001274",
+    "scene_id": "RSF-S00001274",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "In which part of the image is the airport?",
+    "answer": "center",
+    "answer_type": "text",
+    "choices": [
+      "top-right",
+      "center",
+      "top-left",
+      "top-center"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001274_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001274.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "airport",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "airport",
+        "value": "center",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "airport",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "airport"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002937",
+    "scene_id": "RSF-S00002937",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the bus located in the center-left region?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "No",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002937_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002937.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "bus",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_12"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "bus",
+        "value": "bottom-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_12"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "bus",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_12"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "bus"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_12"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "center-left"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00003781",
+    "scene_id": "RSF-S00003781",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Which region of the image contains the excavator?",
+    "answer": "bottom-left",
+    "answer_type": "text",
+    "choices": [
+      "center",
+      "bottom-left",
+      "center-left",
+      "bottom-center"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00003781_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00003781.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "excavator",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_18"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "excavator",
+        "value": "bottom-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_18"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "excavator",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_18"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "excavator"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_18"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001877",
+    "scene_id": "RSF-S00001877",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the a350 located in the bottom-right region?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Yes",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001877_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001877.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "a350",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00006"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "a350",
+        "value": "bottom-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_00006"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "a350",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00006"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "a350"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00006"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "bottom-right"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001870",
+    "scene_id": "RSF-S00001870",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "What part of the image contains the trailer?",
+    "answer": "top-left",
+    "answer_type": "text",
+    "choices": [
+      "center-left",
+      "top-center",
+      "center",
+      "top-left"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001870_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001870.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "trailer",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00186"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "trailer",
+        "value": "top-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_00186"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "trailer",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00186"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "trailer"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00186"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001193",
+    "scene_id": "RSF-S00001193",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Which section of the image does the harbor occupy?",
+    "answer": "bottom-right",
+    "answer_type": "text",
+    "choices": [
+      "bottom-right",
+      "center",
+      "bottom-center",
+      "center-right"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001193_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001193.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "harbor",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00003"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "harbor",
+        "value": "bottom-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_00003"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "harbor",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00003"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "harbor"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00003"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00003631",
+    "scene_id": "RSF-S00003631",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the van located in the center-left region?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "No",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00003631_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00003631.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "van",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_4"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "van",
+        "value": "center",
+        "refs": {
+          "node_ids": [
+            "n_obj_4"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "van",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_4"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "van"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_4"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "center-left"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001068",
+    "scene_id": "RSF-S00001068",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "In which part of the image is the ship?",
+    "answer": "top-right",
+    "answer_type": "text",
+    "choices": [
+      "center-right",
+      "top-right",
+      "top-center",
+      "center"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001068_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001068.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00111"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "ship",
+        "value": "top-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_00111"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00111"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00111"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00003384",
+    "scene_id": "RSF-S00003384",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Which region of the image contains the greenbelt?",
+    "answer": "center-right",
+    "answer_type": "text",
+    "choices": [
+      "top-right",
+      "center",
+      "center-right",
+      "top-center"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00003384_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00003384.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "greenbelt",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_36"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "greenbelt",
+        "value": "center-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_36"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "greenbelt",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_36"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "greenbelt"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_36"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00003792",
+    "scene_id": "RSF-S00003792",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the pool located in the bottom-right region?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "No",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00003792_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00003792.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "pool",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_34"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "pool",
+        "value": "bottom-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_34"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "pool",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_34"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "pool"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_34"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "bottom-right"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00003982",
+    "scene_id": "RSF-S00003982",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "What part of the image contains the airplane?",
+    "answer": "bottom-center",
+    "answer_type": "text",
+    "choices": [
+      "center-right",
+      "center",
+      "bottom-center",
+      "center-left"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00003982_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00003982.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "airplane",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "airplane",
+        "value": "bottom-center",
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "airplane",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "airplane"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000040",
+    "scene_id": "RSF-S00000040",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the vehicle located in the top-center region?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "No",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000040_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000040.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "vehicle",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00002"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "vehicle",
+        "value": "center",
+        "refs": {
+          "node_ids": [
+            "n_obj_00002"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "vehicle",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "vehicle"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "top-center"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000935",
+    "scene_id": "RSF-S00000935",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Which region of the image contains the airport?",
+    "answer": "center",
+    "answer_type": "text",
+    "choices": [
+      "top-center",
+      "top-left",
+      "top-right",
+      "center"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000935_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000935.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "airport",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "airport",
+        "value": "center",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "airport",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "airport"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000986",
+    "scene_id": "RSF-S00000986",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "What part of the image contains the roundabout?",
+    "answer": "bottom-right",
+    "answer_type": "text",
+    "choices": [
+      "bottom-center",
+      "center",
+      "center-right",
+      "bottom-right"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000986_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000986.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "roundabout",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00048"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "roundabout",
+        "value": "bottom-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_00048"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "roundabout",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00048"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "roundabout"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00048"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002668",
+    "scene_id": "RSF-S00002668",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the airplane located in the center region?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Can't judge",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002668_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002668.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "airplane",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "airplane",
+        "value": "bottom-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "airplane",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "airplane"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "center"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001215",
+    "scene_id": "RSF-S00001215",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Which section of the image does the bridge occupy?",
+    "answer": "bottom-left",
+    "answer_type": "text",
+    "choices": [
+      "center-left",
+      "center",
+      "bottom-left",
+      "bottom-center"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001215_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001215.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "bridge",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00002"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "bridge",
+        "value": "bottom-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_00002"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "bridge",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "bridge"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000149",
+    "scene_id": "RSF-S00000149",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the ship located in the bottom-left region?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "Can't judge",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000149_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000149.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00005"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "ship",
+        "value": "bottom-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_00005"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00005"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00005"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "bottom-left"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001261",
+    "scene_id": "RSF-S00001261",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "In which part of the image is the harbor?",
+    "answer": "center-left",
+    "answer_type": "text",
+    "choices": [
+      "center-left",
+      "top-center",
+      "center",
+      "top-left"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001261_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001261.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "harbor",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "harbor",
+        "value": "center-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "harbor",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "harbor"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00003200",
+    "scene_id": "RSF-S00003200",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "What part of the image contains the greenbelt?",
+    "answer": "top-center",
+    "answer_type": "text",
+    "choices": [
+      "top-left",
+      "center-left",
+      "top-center",
+      "top-right"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00003200_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00003200.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "greenbelt",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_37"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "greenbelt",
+        "value": "top-center",
+        "refs": {
+          "node_ids": [
+            "n_obj_37"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "greenbelt",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_37"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "greenbelt"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_37"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00004110",
+    "scene_id": "RSF-S00004110",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the intersection located in the center-right region?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Can't judge",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00004110_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00004110.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "intersection",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "intersection",
+        "value": "center",
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "intersection",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "intersection"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "center-right"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000637",
+    "scene_id": "RSF-S00000637",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Which region of the image contains the stadium?",
+    "answer": "top-left",
+    "answer_type": "text",
+    "choices": [
+      "top-left",
+      "center-left",
+      "center",
+      "top-center"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000637_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000637.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "stadium",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "stadium",
+        "value": "top-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "stadium",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "stadium"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00003790",
+    "scene_id": "RSF-S00003790",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Which region of the image contains the intersection?",
+    "answer": "bottom-right",
+    "answer_type": "text",
+    "choices": [
+      "center-right",
+      "bottom-center",
+      "center",
+      "bottom-right"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00003790_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00003790.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "intersection",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_19"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "intersection",
+        "value": "bottom-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_19"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "intersection",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_19"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "intersection"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_19"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00003596",
+    "scene_id": "RSF-S00003596",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "What part of the image contains the tractor?",
+    "answer": "center",
+    "answer_type": "text",
+    "choices": [
+      "top-right",
+      "top-left",
+      "center",
+      "top-center"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00003596_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00003596.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "tractor",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "tractor",
+        "value": "center",
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "tractor",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "tractor"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001630",
+    "scene_id": "RSF-S00001630",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the motorboat located in the bottom-right region?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "Can't judge",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001630_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001630.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "motorboat",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00126"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "motorboat",
+        "value": "bottom-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_00126"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "motorboat",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00126"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "motorboat"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00126"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "bottom-right"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00004517",
+    "scene_id": "RSF-S00004517",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the bridge located in the center region?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Yes",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00004517_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00004517.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "bridge",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_2"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "bridge",
+        "value": "bottom-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_2"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "bridge",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_2"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "bridge"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_2"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "center"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002557",
+    "scene_id": "RSF-S00002557",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the building located in the bottom-center region?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Yes",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002557_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002557.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "building",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_19"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "building",
+        "value": "center",
+        "refs": {
+          "node_ids": [
+            "n_obj_19"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "building",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_19"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "building"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_19"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "bottom-center"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002863",
+    "scene_id": "RSF-S00002863",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the bus located in the top-left region?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "Yes",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002863_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002863.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "bus",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_1"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "bus",
+        "value": "top-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_1"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "bus",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_1"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "bus"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_1"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "top-left"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001139",
+    "scene_id": "RSF-S00001139",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the roundabout located in the center-right region?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "Can't judge",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001139_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001139.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "roundabout",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "roundabout",
+        "value": "center",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "roundabout",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "roundabout"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "center-right"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001675",
+    "scene_id": "RSF-S00001675",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the boeing737 located in the center-left region?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "Can't judge",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001675_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001675.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "boeing737",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "boeing737",
+        "value": "bottom-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "boeing737",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "boeing737"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "center-left"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001942",
+    "scene_id": "RSF-S00001942",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the boeing777 located in the bottom-right region?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "No",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001942_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001942.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "boeing777",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00002"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "boeing777",
+        "value": "bottom-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_00002"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "boeing777",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "boeing777"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "bottom-right"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000865",
+    "scene_id": "RSF-S00000865",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the stadium located in the bottom-center region?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "No",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000865_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000865.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "stadium",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "stadium",
+        "value": "center",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "stadium",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "stadium"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "bottom-center"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00004066",
+    "scene_id": "RSF-S00004066",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the airplane located in the center-right region?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Can't judge",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00004066_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00004066.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "airplane",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "airplane",
+        "value": "center",
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "airplane",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "airplane"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "center-right"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001612",
+    "scene_id": "RSF-S00001612",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the a220 located in the bottom-center region?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Yes",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001612_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001612.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "a220",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "a220",
+        "value": "bottom-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "a220",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "a220"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "bottom-center"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000150",
+    "scene_id": "RSF-S00000150",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the windmill located in the bottom-center region?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Can't judge",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000150_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000150.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "windmill",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "windmill",
+        "value": "center",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "windmill",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "windmill"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "bottom-center"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00003958",
+    "scene_id": "RSF-S00003958",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the van located in the center-right region?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "Yes",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00003958_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00003958.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "van",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_1"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "van",
+        "value": "bottom-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_1"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "van",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_1"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "van"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_1"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "center-right"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000228",
+    "scene_id": "RSF-S00000228",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the bridge located in the center-right region?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Yes",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000228_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000228.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "bridge",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00007"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "bridge",
+        "value": "center",
+        "refs": {
+          "node_ids": [
+            "n_obj_00007"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "bridge",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00007"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "bridge"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00007"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "center-right"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000743",
+    "scene_id": "RSF-S00000743",
+    "level": "Perception",
+    "subcategory": "object_localization",
+    "question": "Is the vehicle located in the bottom-center region?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "Yes",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000743_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000743.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "vehicle",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "vehicle",
+        "value": "center",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_location",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "vehicle",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "vehicle"
+          },
+          "outputs": {
+            "answer_value": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "equals_label",
+        "claim_type": "Location",
+        "field": "value",
+        "var": "answer_value",
+        "target": "bottom-center"
+      }
+    }
+  }
+]

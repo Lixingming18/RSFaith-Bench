@@ -1,0 +1,449 @@
+{
+  "scene_id": "RSF-S00005377",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      1000,
+      1000
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "passenger_ship",
+      "canonical_root": "ship",
+      "geometry": {
+        "bbox": [
+          648.0,
+          302.0,
+          708.0,
+          705.0
+        ],
+        "polygon": [
+          [
+            707.0,
+            705.0
+          ],
+          [
+            708.0,
+            302.0
+          ],
+          [
+            648.0,
+            302.0
+          ],
+          [
+            648.0,
+            705.0
+          ]
+        ],
+        "center": [
+          678.0,
+          503.5
+        ],
+        "area": 24180.0,
+        "region_bin_3x3": "center-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00002",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "other_ship",
+      "canonical_root": "ship",
+      "geometry": {
+        "bbox": [
+          723.0,
+          403.0,
+          730.0,
+          428.0
+        ],
+        "polygon": [
+          [
+            730.0,
+            404.0
+          ],
+          [
+            725.0,
+            403.0
+          ],
+          [
+            723.0,
+            428.0
+          ],
+          [
+            728.0,
+            428.0
+          ]
+        ],
+        "center": [
+          726.5,
+          415.5
+        ],
+        "area": 175.0,
+        "region_bin_3x3": "center-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00003",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "warship",
+      "canonical_root": "ship",
+      "geometry": {
+        "bbox": [
+          150.0,
+          170.0,
+          525.0,
+          376.0
+        ],
+        "polygon": [
+          [
+            150.0,
+            217.0
+          ],
+          [
+            502.0,
+            376.0
+          ],
+          [
+            525.0,
+            329.0
+          ],
+          [
+            172.0,
+            170.0
+          ]
+        ],
+        "center": [
+          337.5,
+          273.0
+        ],
+        "area": 77250.0,
+        "region_bin_3x3": "top-center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00004",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "other_ship",
+      "canonical_root": "ship",
+      "geometry": {
+        "bbox": [
+          41.0,
+          133.0,
+          65.0,
+          177.0
+        ],
+        "polygon": [
+          [
+            50.0,
+            177.0
+          ],
+          [
+            65.0,
+            137.0
+          ],
+          [
+            56.0,
+            133.0
+          ],
+          [
+            41.0,
+            173.0
+          ]
+        ],
+        "center": [
+          53.0,
+          155.0
+        ],
+        "area": 1056.0,
+        "region_bin_3x3": "top-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00005",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "other_ship",
+      "canonical_root": "ship",
+      "geometry": {
+        "bbox": [
+          6.0,
+          120.0,
+          38.0,
+          170.0
+        ],
+        "polygon": [
+          [
+            17.0,
+            170.0
+          ],
+          [
+            38.0,
+            126.0
+          ],
+          [
+            27.0,
+            120.0
+          ],
+          [
+            6.0,
+            164.0
+          ]
+        ],
+        "center": [
+          22.0,
+          145.0
+        ],
+        "area": 1600.0,
+        "region_bin_3x3": "top-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00006",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "motorboat",
+      "canonical_root": "ship",
+      "geometry": {
+        "bbox": [
+          74.0,
+          133.0,
+          81.0,
+          152.0
+        ],
+        "polygon": [
+          [
+            76.0,
+            133.0
+          ],
+          [
+            74.0,
+            149.0
+          ],
+          [
+            79.0,
+            152.0
+          ],
+          [
+            81.0,
+            136.0
+          ]
+        ],
+        "center": [
+          77.5,
+          142.5
+        ],
+        "area": 133.0,
+        "region_bin_3x3": "top-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00007",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "other_ship",
+      "canonical_root": "ship",
+      "geometry": {
+        "bbox": [
+          54.0,
+          161.0,
+          76.0,
+          187.0
+        ],
+        "polygon": [
+          [
+            63.0,
+            187.0
+          ],
+          [
+            76.0,
+            165.0
+          ],
+          [
+            67.0,
+            161.0
+          ],
+          [
+            54.0,
+            183.0
+          ]
+        ],
+        "center": [
+          65.0,
+          174.0
+        ],
+        "area": 572.0,
+        "region_bin_3x3": "top-left"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "e_sp_00001",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00001",
+      "target": "n_obj_00002"
+    },
+    {
+      "edge_id": "e_sp_00002",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00001",
+      "target": "n_obj_00006"
+    },
+    {
+      "edge_id": "e_sp_00003",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00001",
+      "target": "n_obj_00007"
+    },
+    {
+      "edge_id": "e_sp_00004",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00001",
+      "target": "n_obj_00004"
+    },
+    {
+      "edge_id": "e_sp_00005",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00001",
+      "target": "n_obj_00005"
+    },
+    {
+      "edge_id": "e_sp_00006",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00001",
+      "target": "n_obj_00003"
+    },
+    {
+      "edge_id": "e_sp_00007",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00002",
+      "target": "n_obj_00006"
+    },
+    {
+      "edge_id": "e_sp_00008",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00002",
+      "target": "n_obj_00001"
+    },
+    {
+      "edge_id": "e_sp_00009",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00003",
+      "target": "n_obj_00001"
+    },
+    {
+      "edge_id": "e_sp_00010",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00003",
+      "target": "n_obj_00007"
+    },
+    {
+      "edge_id": "e_sp_00011",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00004",
+      "target": "n_obj_00006"
+    },
+    {
+      "edge_id": "e_sp_00012",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00004",
+      "target": "n_obj_00001"
+    },
+    {
+      "edge_id": "e_sp_00013",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00005",
+      "target": "n_obj_00006"
+    },
+    {
+      "edge_id": "e_sp_00014",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00005",
+      "target": "n_obj_00001"
+    },
+    {
+      "edge_id": "e_sp_00015",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00006",
+      "target": "n_obj_00007"
+    },
+    {
+      "edge_id": "e_sp_00016",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00006",
+      "target": "n_obj_00002"
+    },
+    {
+      "edge_id": "e_sp_00017",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00006",
+      "target": "n_obj_00001"
+    },
+    {
+      "edge_id": "e_sp_00018",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00006",
+      "target": "n_obj_00004"
+    },
+    {
+      "edge_id": "e_sp_00019",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00006",
+      "target": "n_obj_00005"
+    },
+    {
+      "edge_id": "e_sp_00020",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00007",
+      "target": "n_obj_00006"
+    },
+    {
+      "edge_id": "e_sp_00021",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00007",
+      "target": "n_obj_00001"
+    },
+    {
+      "edge_id": "e_sp_00022",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00007",
+      "target": "n_obj_00003"
+    }
+  ],
+  "global_inventory": {}
+}

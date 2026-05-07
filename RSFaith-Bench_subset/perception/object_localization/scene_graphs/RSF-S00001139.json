@@ -1,0 +1,109 @@
+{
+  "scene_id": "RSF-S00001139",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      451,
+      839
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "roundabout",
+      "canonical_root": "roundabout",
+      "geometry": {
+        "bbox": [
+          197.0,
+          347.0,
+          272.0,
+          422.0
+        ],
+        "polygon": [
+          [
+            197.0,
+            347.0
+          ],
+          [
+            272.0,
+            347.0
+          ],
+          [
+            272.0,
+            422.0
+          ],
+          [
+            197.0,
+            422.0
+          ]
+        ],
+        "center": [
+          234.5,
+          384.5
+        ],
+        "area": 5625.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00002",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "swimming_pool",
+      "canonical_root": "swimming_pool",
+      "geometry": {
+        "bbox": [
+          218.0,
+          101.0,
+          260.0,
+          150.0
+        ],
+        "polygon": [
+          [
+            218.0,
+            108.0
+          ],
+          [
+            249.0,
+            101.0
+          ],
+          [
+            260.0,
+            146.0
+          ],
+          [
+            224.0,
+            150.0
+          ]
+        ],
+        "center": [
+          239.0,
+          125.5
+        ],
+        "area": 2058.0,
+        "region_bin_3x3": "top-center"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "e_sp_00001",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00001",
+      "target": "n_obj_00002"
+    },
+    {
+      "edge_id": "e_sp_00002",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00002",
+      "target": "n_obj_00001"
+    }
+  ],
+  "global_inventory": {}
+}

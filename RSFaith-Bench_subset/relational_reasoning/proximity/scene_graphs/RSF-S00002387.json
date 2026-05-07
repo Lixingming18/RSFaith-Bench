@@ -1,0 +1,531 @@
+{
+  "scene_id": "RSF-S00002387",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      1000,
+      1000
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "a220",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          100.0,
+          460.0,
+          146.0,
+          506.0
+        ],
+        "polygon": [
+          [
+            100.0,
+            461.0
+          ],
+          [
+            102.0,
+            506.0
+          ],
+          [
+            146.0,
+            504.0
+          ],
+          [
+            144.0,
+            460.0
+          ]
+        ],
+        "center": [
+          123.0,
+          483.0
+        ],
+        "area": 2116.0,
+        "region_bin_3x3": "center-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00002",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "boeing777",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          201.0,
+          330.0,
+          277.0,
+          399.0
+        ],
+        "polygon": [
+          [
+            208.0,
+            399.0
+          ],
+          [
+            277.0,
+            390.0
+          ],
+          [
+            270.0,
+            330.0
+          ],
+          [
+            201.0,
+            338.0
+          ]
+        ],
+        "center": [
+          239.0,
+          364.5
+        ],
+        "area": 5244.0,
+        "region_bin_3x3": "center-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00003",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "boeing737",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          181.0,
+          276.0,
+          247.0,
+          343.0
+        ],
+        "polygon": [
+          [
+            213.0,
+            343.0
+          ],
+          [
+            247.0,
+            307.0
+          ],
+          [
+            215.0,
+            276.0
+          ],
+          [
+            181.0,
+            313.0
+          ]
+        ],
+        "center": [
+          214.0,
+          309.5
+        ],
+        "area": 4422.0,
+        "region_bin_3x3": "top-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00004",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "a220",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          138.0,
+          247.0,
+          201.0,
+          310.0
+        ],
+        "polygon": [
+          [
+            172.0,
+            310.0
+          ],
+          [
+            201.0,
+            275.0
+          ],
+          [
+            167.0,
+            247.0
+          ],
+          [
+            138.0,
+            282.0
+          ]
+        ],
+        "center": [
+          169.5,
+          278.5
+        ],
+        "area": 3969.0,
+        "region_bin_3x3": "top-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00005",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "a321",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          192.0,
+          95.0,
+          245.0,
+          157.0
+        ],
+        "polygon": [
+          [
+            202.0,
+            95.0
+          ],
+          [
+            192.0,
+            149.0
+          ],
+          [
+            235.0,
+            157.0
+          ],
+          [
+            245.0,
+            103.0
+          ]
+        ],
+        "center": [
+          218.5,
+          126.0
+        ],
+        "area": 3286.0,
+        "region_bin_3x3": "top-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00006",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "a321",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          265.0,
+          115.0,
+          311.0,
+          170.0
+        ],
+        "polygon": [
+          [
+            265.0,
+            116.0
+          ],
+          [
+            266.0,
+            170.0
+          ],
+          [
+            311.0,
+            169.0
+          ],
+          [
+            310.0,
+            115.0
+          ]
+        ],
+        "center": [
+          288.0,
+          142.5
+        ],
+        "area": 2530.0,
+        "region_bin_3x3": "top-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00007",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "a220",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          355.0,
+          17.0,
+          415.0,
+          76.0
+        ],
+        "polygon": [
+          [
+            355.0,
+            56.0
+          ],
+          [
+            395.0,
+            76.0
+          ],
+          [
+            415.0,
+            37.0
+          ],
+          [
+            374.0,
+            17.0
+          ]
+        ],
+        "center": [
+          385.0,
+          46.5
+        ],
+        "area": 3540.0,
+        "region_bin_3x3": "top-center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00008",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "boeing737",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          406.0,
+          93.0,
+          475.0,
+          162.0
+        ],
+        "polygon": [
+          [
+            440.0,
+            162.0
+          ],
+          [
+            475.0,
+            125.0
+          ],
+          [
+            441.0,
+            93.0
+          ],
+          [
+            406.0,
+            131.0
+          ]
+        ],
+        "center": [
+          440.5,
+          127.5
+        ],
+        "area": 4761.0,
+        "region_bin_3x3": "top-center"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "e_sp_00001",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00001",
+      "target": "n_obj_00005"
+    },
+    {
+      "edge_id": "e_sp_00002",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00001",
+      "target": "n_obj_00006"
+    },
+    {
+      "edge_id": "e_sp_00003",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00001",
+      "target": "n_obj_00003"
+    },
+    {
+      "edge_id": "e_sp_00004",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00002",
+      "target": "n_obj_00007"
+    },
+    {
+      "edge_id": "e_sp_00005",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00002",
+      "target": "n_obj_00006"
+    },
+    {
+      "edge_id": "e_sp_00006",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00002",
+      "target": "n_obj_00005"
+    },
+    {
+      "edge_id": "e_sp_00007",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00003",
+      "target": "n_obj_00001"
+    },
+    {
+      "edge_id": "e_sp_00008",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00003",
+      "target": "n_obj_00007"
+    },
+    {
+      "edge_id": "e_sp_00009",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00003",
+      "target": "n_obj_00006"
+    },
+    {
+      "edge_id": "e_sp_00010",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00003",
+      "target": "n_obj_00005"
+    },
+    {
+      "edge_id": "e_sp_00011",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00004",
+      "target": "n_obj_00005"
+    },
+    {
+      "edge_id": "e_sp_00012",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00004",
+      "target": "n_obj_00008"
+    },
+    {
+      "edge_id": "e_sp_00013",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00005",
+      "target": "n_obj_00001"
+    },
+    {
+      "edge_id": "e_sp_00014",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00005",
+      "target": "n_obj_00004"
+    },
+    {
+      "edge_id": "e_sp_00015",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00005",
+      "target": "n_obj_00003"
+    },
+    {
+      "edge_id": "e_sp_00016",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00005",
+      "target": "n_obj_00002"
+    },
+    {
+      "edge_id": "e_sp_00017",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00005",
+      "target": "n_obj_00007"
+    },
+    {
+      "edge_id": "e_sp_00018",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00005",
+      "target": "n_obj_00008"
+    },
+    {
+      "edge_id": "e_sp_00019",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00006",
+      "target": "n_obj_00001"
+    },
+    {
+      "edge_id": "e_sp_00020",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00006",
+      "target": "n_obj_00003"
+    },
+    {
+      "edge_id": "e_sp_00021",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00006",
+      "target": "n_obj_00002"
+    },
+    {
+      "edge_id": "e_sp_00022",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00006",
+      "target": "n_obj_00008"
+    },
+    {
+      "edge_id": "e_sp_00023",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00007",
+      "target": "n_obj_00003"
+    },
+    {
+      "edge_id": "e_sp_00024",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00007",
+      "target": "n_obj_00002"
+    },
+    {
+      "edge_id": "e_sp_00025",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00007",
+      "target": "n_obj_00005"
+    },
+    {
+      "edge_id": "e_sp_00026",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00008",
+      "target": "n_obj_00004"
+    },
+    {
+      "edge_id": "e_sp_00027",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00008",
+      "target": "n_obj_00006"
+    },
+    {
+      "edge_id": "e_sp_00028",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00008",
+      "target": "n_obj_00005"
+    }
+  ],
+  "global_inventory": {}
+}

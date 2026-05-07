@@ -1,0 +1,189 @@
+{
+  "scene_id": "RSF-S00002096",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      600,
+      800
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "a321",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          362.0,
+          247.0,
+          435.0,
+          331.0
+        ],
+        "polygon": [
+          [
+            435.0,
+            314.0
+          ],
+          [
+            383.0,
+            331.0
+          ],
+          [
+            362.0,
+            264.0
+          ],
+          [
+            413.0,
+            247.0
+          ]
+        ],
+        "center": [
+          398.5,
+          289.0
+        ],
+        "area": 6132.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00002",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "a330",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          228.0,
+          407.0,
+          339.0,
+          518.0
+        ],
+        "polygon": [
+          [
+            339.0,
+            452.0
+          ],
+          [
+            293.0,
+            518.0
+          ],
+          [
+            228.0,
+            473.0
+          ],
+          [
+            273.0,
+            407.0
+          ]
+        ],
+        "center": [
+          283.5,
+          462.5
+        ],
+        "area": 12321.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00003",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "a330",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          176.0,
+          478.0,
+          289.0,
+          591.0
+        ],
+        "polygon": [
+          [
+            289.0,
+            524.0
+          ],
+          [
+            243.0,
+            591.0
+          ],
+          [
+            176.0,
+            544.0
+          ],
+          [
+            222.0,
+            478.0
+          ]
+        ],
+        "center": [
+          232.5,
+          534.5
+        ],
+        "area": 12769.0,
+        "region_bin_3x3": "bottom-center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00004",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "a330",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          122.0,
+          549.0,
+          235.0,
+          663.0
+        ],
+        "polygon": [
+          [
+            235.0,
+            597.0
+          ],
+          [
+            187.0,
+            663.0
+          ],
+          [
+            122.0,
+            615.0
+          ],
+          [
+            171.0,
+            549.0
+          ]
+        ],
+        "center": [
+          178.5,
+          606.0
+        ],
+        "area": 12882.0,
+        "region_bin_3x3": "bottom-left"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "e_sp_00001",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00001",
+      "target": "n_obj_00002"
+    },
+    {
+      "edge_id": "e_sp_00002",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00002",
+      "target": "n_obj_00001"
+    }
+  ],
+  "global_inventory": {}
+}

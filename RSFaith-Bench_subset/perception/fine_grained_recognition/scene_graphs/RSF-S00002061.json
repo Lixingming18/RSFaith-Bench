@@ -1,0 +1,54 @@
+{
+  "scene_id": "RSF-S00002061",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      900,
+      900
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "boeing787",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          122.0,
+          215.0,
+          206.0,
+          303.0
+        ],
+        "polygon": [
+          [
+            206.0,
+            294.0
+          ],
+          [
+            132.0,
+            303.0
+          ],
+          [
+            122.0,
+            224.0
+          ],
+          [
+            196.0,
+            215.0
+          ]
+        ],
+        "center": [
+          164.0,
+          259.0
+        ],
+        "area": 7392.0,
+        "region_bin_3x3": "top-left"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [],
+  "global_inventory": {}
+}

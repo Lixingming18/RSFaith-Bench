@@ -1,0 +1,109 @@
+{
+  "scene_id": "RSF-S00002237",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      800,
+      800
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "other_airplane",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          124.0,
+          558.0,
+          205.0,
+          627.0
+        ],
+        "polygon": [
+          [
+            205.0,
+            621.0
+          ],
+          [
+            128.0,
+            627.0
+          ],
+          [
+            124.0,
+            563.0
+          ],
+          [
+            200.0,
+            558.0
+          ]
+        ],
+        "center": [
+          164.5,
+          592.5
+        ],
+        "area": 5589.0,
+        "region_bin_3x3": "bottom-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00002",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "arj21",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          725.0,
+          610.0,
+          777.0,
+          652.0
+        ],
+        "polygon": [
+          [
+            777.0,
+            648.0
+          ],
+          [
+            728.0,
+            652.0
+          ],
+          [
+            725.0,
+            615.0
+          ],
+          [
+            774.0,
+            610.0
+          ]
+        ],
+        "center": [
+          751.0,
+          631.0
+        ],
+        "area": 2184.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "e_sp_00001",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00001",
+      "target": "n_obj_00002"
+    },
+    {
+      "edge_id": "e_sp_00002",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00002",
+      "target": "n_obj_00001"
+    }
+  ],
+  "global_inventory": {}
+}

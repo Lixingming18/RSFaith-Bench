@@ -1,0 +1,54 @@
+{
+  "scene_id": "RSF-S00001951",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      1000,
+      1000
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "engineering_ship",
+      "canonical_root": "ship",
+      "geometry": {
+        "bbox": [
+          545.0,
+          505.0,
+          658.0,
+          693.0
+        ],
+        "polygon": [
+          [
+            620.0,
+            505.0
+          ],
+          [
+            545.0,
+            676.0
+          ],
+          [
+            583.0,
+            693.0
+          ],
+          [
+            658.0,
+            522.0
+          ]
+        ],
+        "center": [
+          601.5,
+          599.0
+        ],
+        "area": 21244.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [],
+  "global_inventory": {}
+}

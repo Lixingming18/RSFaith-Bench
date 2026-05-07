@@ -1,0 +1,149 @@
+{
+  "scene_id": "RSF-S00001938",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      1000,
+      1000
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "a220",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          860.0,
+          598.0,
+          925.0,
+          662.0
+        ],
+        "polygon": [
+          [
+            903.0,
+            598.0
+          ],
+          [
+            860.0,
+            622.0
+          ],
+          [
+            883.0,
+            662.0
+          ],
+          [
+            925.0,
+            637.0
+          ]
+        ],
+        "center": [
+          892.5,
+          630.0
+        ],
+        "area": 4160.0,
+        "region_bin_3x3": "center-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00002",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "a220",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          638.0,
+          204.0,
+          704.0,
+          267.0
+        ],
+        "polygon": [
+          [
+            682.0,
+            204.0
+          ],
+          [
+            638.0,
+            229.0
+          ],
+          [
+            660.0,
+            267.0
+          ],
+          [
+            704.0,
+            243.0
+          ]
+        ],
+        "center": [
+          671.0,
+          235.5
+        ],
+        "area": 4158.0,
+        "region_bin_3x3": "top-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00003",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "boeing747",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          396.0,
+          274.0,
+          507.0,
+          387.0
+        ],
+        "polygon": [
+          [
+            507.0,
+            348.0
+          ],
+          [
+            465.0,
+            274.0
+          ],
+          [
+            396.0,
+            313.0
+          ],
+          [
+            438.0,
+            387.0
+          ]
+        ],
+        "center": [
+          451.5,
+          330.5
+        ],
+        "area": 12543.0,
+        "region_bin_3x3": "top-center"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "e_sp_00001",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00002",
+      "target": "n_obj_00003"
+    },
+    {
+      "edge_id": "e_sp_00002",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00003",
+      "target": "n_obj_00002"
+    }
+  ],
+  "global_inventory": {}
+}

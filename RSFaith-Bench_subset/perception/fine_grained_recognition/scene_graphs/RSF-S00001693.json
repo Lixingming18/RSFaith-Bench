@@ -1,0 +1,54 @@
+{
+  "scene_id": "RSF-S00001693",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      1500,
+      1500
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "other_ship",
+      "canonical_root": "ship",
+      "geometry": {
+        "bbox": [
+          617.0,
+          346.0,
+          639.0,
+          392.0
+        ],
+        "polygon": [
+          [
+            628.0,
+            346.0
+          ],
+          [
+            617.0,
+            389.0
+          ],
+          [
+            627.0,
+            392.0
+          ],
+          [
+            639.0,
+            348.0
+          ]
+        ],
+        "center": [
+          628.0,
+          369.0
+        ],
+        "area": 1012.0,
+        "region_bin_3x3": "top-center"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [],
+  "global_inventory": {}
+}

@@ -1,0 +1,73 @@
+{
+  "scene_id": "RSF-S00000853",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      800,
+      800
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "toll_station",
+      "canonical_root": "toll_station",
+      "geometry": {
+        "bbox": [
+          234.0,
+          565.0,
+          327.0,
+          683.0
+        ],
+        "center": [
+          280.5,
+          624.0
+        ],
+        "area": 10974.0,
+        "region_bin_3x3": "bottom-center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00002",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "vehicle",
+      "canonical_root": "vehicle",
+      "geometry": {
+        "bbox": [
+          234.0,
+          496.0,
+          267.0,
+          513.0
+        ],
+        "center": [
+          250.5,
+          504.5
+        ],
+        "area": 561.0,
+        "region_bin_3x3": "center-left"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "e_sp_00001",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00001",
+      "target": "n_obj_00002"
+    },
+    {
+      "edge_id": "e_sp_00002",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00002",
+      "target": "n_obj_00001"
+    }
+  ],
+  "global_inventory": {}
+}

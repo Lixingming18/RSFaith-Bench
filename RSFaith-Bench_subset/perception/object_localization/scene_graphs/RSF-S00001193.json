@@ -1,0 +1,1359 @@
+{
+  "scene_id": "RSF-S00001193",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      4000,
+      4000
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "bridge",
+      "canonical_root": "bridge",
+      "geometry": {
+        "bbox": [
+          3835.0,
+          149.0,
+          3861.0,
+          185.0
+        ],
+        "polygon": [
+          [
+            3835.0,
+            154.0
+          ],
+          [
+            3848.0,
+            149.0
+          ],
+          [
+            3861.0,
+            183.0
+          ],
+          [
+            3849.0,
+            185.0
+          ]
+        ],
+        "center": [
+          3848.0,
+          167.0
+        ],
+        "area": 936.0,
+        "region_bin_3x3": "top-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00002",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "bridge",
+      "canonical_root": "bridge",
+      "geometry": {
+        "bbox": [
+          214.0,
+          2613.0,
+          269.0,
+          2674.0
+        ],
+        "polygon": [
+          [
+            214.0,
+            2646.0
+          ],
+          [
+            248.0,
+            2613.0
+          ],
+          [
+            269.0,
+            2639.0
+          ],
+          [
+            233.0,
+            2674.0
+          ]
+        ],
+        "center": [
+          241.5,
+          2643.5
+        ],
+        "area": 3355.0,
+        "region_bin_3x3": "center-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00003",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "harbor",
+      "canonical_root": "harbor",
+      "geometry": {
+        "bbox": [
+          3511.0,
+          2706.0,
+          3537.0,
+          2773.0
+        ],
+        "polygon": [
+          [
+            3530.0,
+            2773.0
+          ],
+          [
+            3511.0,
+            2771.0
+          ],
+          [
+            3519.0,
+            2706.0
+          ],
+          [
+            3537.0,
+            2711.0
+          ]
+        ],
+        "center": [
+          3524.0,
+          2739.5
+        ],
+        "area": 1742.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00004",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "basketball_court",
+      "canonical_root": "basketball_court",
+      "geometry": {
+        "bbox": [
+          2619.0,
+          1933.0,
+          2662.0,
+          1980.0
+        ],
+        "polygon": [
+          [
+            2642.0,
+            1933.0
+          ],
+          [
+            2662.0,
+            1946.0
+          ],
+          [
+            2639.0,
+            1980.0
+          ],
+          [
+            2619.0,
+            1968.0
+          ]
+        ],
+        "center": [
+          2640.5,
+          1956.5
+        ],
+        "area": 2021.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00005",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "basketball_court",
+      "canonical_root": "basketball_court",
+      "geometry": {
+        "bbox": [
+          2599.0,
+          1921.0,
+          2641.0,
+          1967.0
+        ],
+        "polygon": [
+          [
+            2622.0,
+            1921.0
+          ],
+          [
+            2641.0,
+            1932.0
+          ],
+          [
+            2618.0,
+            1967.0
+          ],
+          [
+            2599.0,
+            1953.0
+          ]
+        ],
+        "center": [
+          2620.0,
+          1944.0
+        ],
+        "area": 1932.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00006",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "ship",
+      "canonical_root": "ship",
+      "geometry": {
+        "bbox": [
+          2631.0,
+          2468.0,
+          2736.0,
+          2561.0
+        ],
+        "polygon": [
+          [
+            2736.0,
+            2547.0
+          ],
+          [
+            2714.0,
+            2561.0
+          ],
+          [
+            2631.0,
+            2483.0
+          ],
+          [
+            2650.0,
+            2468.0
+          ]
+        ],
+        "center": [
+          2683.5,
+          2514.5
+        ],
+        "area": 9765.0,
+        "region_bin_3x3": "center-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00007",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "ship",
+      "canonical_root": "ship",
+      "geometry": {
+        "bbox": [
+          2784.0,
+          2508.0,
+          2850.0,
+          2559.0
+        ],
+        "polygon": [
+          [
+            2850.0,
+            2545.0
+          ],
+          [
+            2841.0,
+            2559.0
+          ],
+          [
+            2784.0,
+            2521.0
+          ],
+          [
+            2792.0,
+            2508.0
+          ]
+        ],
+        "center": [
+          2817.0,
+          2533.5
+        ],
+        "area": 3366.0,
+        "region_bin_3x3": "center-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00008",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "bridge",
+      "canonical_root": "bridge",
+      "geometry": {
+        "bbox": [
+          3767.0,
+          2368.0,
+          3944.0,
+          2421.0
+        ],
+        "polygon": [
+          [
+            3769.0,
+            2421.0
+          ],
+          [
+            3767.0,
+            2372.0
+          ],
+          [
+            3942.0,
+            2368.0
+          ],
+          [
+            3944.0,
+            2416.0
+          ]
+        ],
+        "center": [
+          3855.5,
+          2394.5
+        ],
+        "area": 9381.0,
+        "region_bin_3x3": "center-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00009",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "bridge",
+      "canonical_root": "bridge",
+      "geometry": {
+        "bbox": [
+          3464.0,
+          1787.0,
+          3517.0,
+          1832.0
+        ],
+        "polygon": [
+          [
+            3508.0,
+            1787.0
+          ],
+          [
+            3517.0,
+            1798.0
+          ],
+          [
+            3473.0,
+            1832.0
+          ],
+          [
+            3464.0,
+            1822.0
+          ]
+        ],
+        "center": [
+          3490.5,
+          1809.5
+        ],
+        "area": 2385.0,
+        "region_bin_3x3": "center-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00010",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "bridge",
+      "canonical_root": "bridge",
+      "geometry": {
+        "bbox": [
+          1993.0,
+          872.0,
+          2018.0,
+          900.0
+        ],
+        "polygon": [
+          [
+            2009.0,
+            872.0
+          ],
+          [
+            2018.0,
+            881.0
+          ],
+          [
+            2003.0,
+            900.0
+          ],
+          [
+            1993.0,
+            893.0
+          ]
+        ],
+        "center": [
+          2005.5,
+          886.0
+        ],
+        "area": 700.0,
+        "region_bin_3x3": "top-center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00011",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "ship",
+      "canonical_root": "ship",
+      "geometry": {
+        "bbox": [
+          134.0,
+          1310.0,
+          176.0,
+          1335.0
+        ],
+        "polygon": [
+          [
+            134.0,
+            1322.0
+          ],
+          [
+            138.0,
+            1310.0
+          ],
+          [
+            176.0,
+            1324.0
+          ],
+          [
+            171.0,
+            1335.0
+          ]
+        ],
+        "center": [
+          155.0,
+          1322.5
+        ],
+        "area": 1050.0,
+        "region_bin_3x3": "top-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00012",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "ship",
+      "canonical_root": "ship",
+      "geometry": {
+        "bbox": [
+          3765.0,
+          1930.0,
+          3829.0,
+          2027.0
+        ],
+        "polygon": [
+          [
+            3794.0,
+            2027.0
+          ],
+          [
+            3765.0,
+            2014.0
+          ],
+          [
+            3801.0,
+            1930.0
+          ],
+          [
+            3829.0,
+            1943.0
+          ]
+        ],
+        "center": [
+          3797.0,
+          1978.5
+        ],
+        "area": 6208.0,
+        "region_bin_3x3": "center-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00013",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "ship",
+      "canonical_root": "ship",
+      "geometry": {
+        "bbox": [
+          2342.0,
+          3219.0,
+          2431.0,
+          3257.0
+        ],
+        "polygon": [
+          [
+            2342.0,
+            3244.0
+          ],
+          [
+            2346.0,
+            3219.0
+          ],
+          [
+            2431.0,
+            3230.0
+          ],
+          [
+            2427.0,
+            3257.0
+          ]
+        ],
+        "center": [
+          2386.5,
+          3238.0
+        ],
+        "area": 3382.0,
+        "region_bin_3x3": "bottom-center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00014",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "ship",
+      "canonical_root": "ship",
+      "geometry": {
+        "bbox": [
+          2462.0,
+          3525.0,
+          2532.0,
+          3609.0
+        ],
+        "polygon": [
+          [
+            2462.0,
+            3538.0
+          ],
+          [
+            2485.0,
+            3525.0
+          ],
+          [
+            2532.0,
+            3597.0
+          ],
+          [
+            2512.0,
+            3609.0
+          ]
+        ],
+        "center": [
+          2497.0,
+          3567.0
+        ],
+        "area": 5880.0,
+        "region_bin_3x3": "bottom-center"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "e_sp_00001",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00001",
+      "target": "n_obj_00003"
+    },
+    {
+      "edge_id": "e_sp_00002",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00001",
+      "target": "n_obj_00014"
+    },
+    {
+      "edge_id": "e_sp_00003",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00001",
+      "target": "n_obj_00013"
+    },
+    {
+      "edge_id": "e_sp_00004",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00001",
+      "target": "n_obj_00012"
+    },
+    {
+      "edge_id": "e_sp_00005",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00001",
+      "target": "n_obj_00006"
+    },
+    {
+      "edge_id": "e_sp_00006",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00001",
+      "target": "n_obj_00007"
+    },
+    {
+      "edge_id": "e_sp_00007",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00001",
+      "target": "n_obj_00011"
+    },
+    {
+      "edge_id": "e_sp_00008",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00002",
+      "target": "n_obj_00011"
+    },
+    {
+      "edge_id": "e_sp_00009",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00002",
+      "target": "n_obj_00005"
+    },
+    {
+      "edge_id": "e_sp_00010",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00002",
+      "target": "n_obj_00004"
+    },
+    {
+      "edge_id": "e_sp_00011",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00002",
+      "target": "n_obj_00003"
+    },
+    {
+      "edge_id": "e_sp_00012",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00002",
+      "target": "n_obj_00013"
+    },
+    {
+      "edge_id": "e_sp_00013",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00002",
+      "target": "n_obj_00014"
+    },
+    {
+      "edge_id": "e_sp_00014",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00002",
+      "target": "n_obj_00006"
+    },
+    {
+      "edge_id": "e_sp_00015",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00002",
+      "target": "n_obj_00007"
+    },
+    {
+      "edge_id": "e_sp_00016",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00002",
+      "target": "n_obj_00012"
+    },
+    {
+      "edge_id": "e_sp_00017",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00003",
+      "target": "n_obj_00008"
+    },
+    {
+      "edge_id": "e_sp_00018",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00003",
+      "target": "n_obj_00009"
+    },
+    {
+      "edge_id": "e_sp_00019",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00003",
+      "target": "n_obj_00001"
+    },
+    {
+      "edge_id": "e_sp_00020",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00003",
+      "target": "n_obj_00012"
+    },
+    {
+      "edge_id": "e_sp_00021",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00003",
+      "target": "n_obj_00004"
+    },
+    {
+      "edge_id": "e_sp_00022",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00003",
+      "target": "n_obj_00005"
+    },
+    {
+      "edge_id": "e_sp_00023",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00003",
+      "target": "n_obj_00002"
+    },
+    {
+      "edge_id": "e_sp_00024",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00003",
+      "target": "n_obj_00010"
+    },
+    {
+      "edge_id": "e_sp_00025",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00003",
+      "target": "n_obj_00013"
+    },
+    {
+      "edge_id": "e_sp_00026",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00003",
+      "target": "n_obj_00006"
+    },
+    {
+      "edge_id": "e_sp_00027",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00003",
+      "target": "n_obj_00007"
+    },
+    {
+      "edge_id": "e_sp_00028",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00003",
+      "target": "n_obj_00011"
+    },
+    {
+      "edge_id": "e_sp_00029",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00004",
+      "target": "n_obj_00014"
+    },
+    {
+      "edge_id": "e_sp_00030",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00004",
+      "target": "n_obj_00013"
+    },
+    {
+      "edge_id": "e_sp_00031",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00004",
+      "target": "n_obj_00006"
+    },
+    {
+      "edge_id": "e_sp_00032",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00004",
+      "target": "n_obj_00007"
+    },
+    {
+      "edge_id": "e_sp_00033",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00004",
+      "target": "n_obj_00010"
+    },
+    {
+      "edge_id": "e_sp_00034",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00004",
+      "target": "n_obj_00009"
+    },
+    {
+      "edge_id": "e_sp_00035",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00004",
+      "target": "n_obj_00003"
+    },
+    {
+      "edge_id": "e_sp_00036",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00004",
+      "target": "n_obj_00012"
+    },
+    {
+      "edge_id": "e_sp_00037",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00004",
+      "target": "n_obj_00002"
+    },
+    {
+      "edge_id": "e_sp_00038",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00004",
+      "target": "n_obj_00011"
+    },
+    {
+      "edge_id": "e_sp_00039",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00005",
+      "target": "n_obj_00014"
+    },
+    {
+      "edge_id": "e_sp_00040",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00005",
+      "target": "n_obj_00013"
+    },
+    {
+      "edge_id": "e_sp_00041",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00005",
+      "target": "n_obj_00006"
+    },
+    {
+      "edge_id": "e_sp_00042",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00005",
+      "target": "n_obj_00007"
+    },
+    {
+      "edge_id": "e_sp_00043",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00005",
+      "target": "n_obj_00010"
+    },
+    {
+      "edge_id": "e_sp_00044",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00005",
+      "target": "n_obj_00009"
+    },
+    {
+      "edge_id": "e_sp_00045",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00005",
+      "target": "n_obj_00003"
+    },
+    {
+      "edge_id": "e_sp_00046",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00005",
+      "target": "n_obj_00012"
+    },
+    {
+      "edge_id": "e_sp_00047",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00005",
+      "target": "n_obj_00002"
+    },
+    {
+      "edge_id": "e_sp_00048",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00005",
+      "target": "n_obj_00011"
+    },
+    {
+      "edge_id": "e_sp_00049",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00006",
+      "target": "n_obj_00004"
+    },
+    {
+      "edge_id": "e_sp_00050",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00006",
+      "target": "n_obj_00005"
+    },
+    {
+      "edge_id": "e_sp_00051",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00006",
+      "target": "n_obj_00010"
+    },
+    {
+      "edge_id": "e_sp_00052",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00006",
+      "target": "n_obj_00001"
+    },
+    {
+      "edge_id": "e_sp_00053",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00006",
+      "target": "n_obj_00008"
+    },
+    {
+      "edge_id": "e_sp_00054",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00006",
+      "target": "n_obj_00003"
+    },
+    {
+      "edge_id": "e_sp_00055",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00006",
+      "target": "n_obj_00002"
+    },
+    {
+      "edge_id": "e_sp_00056",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00007",
+      "target": "n_obj_00004"
+    },
+    {
+      "edge_id": "e_sp_00057",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00007",
+      "target": "n_obj_00005"
+    },
+    {
+      "edge_id": "e_sp_00058",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00007",
+      "target": "n_obj_00010"
+    },
+    {
+      "edge_id": "e_sp_00059",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00007",
+      "target": "n_obj_00001"
+    },
+    {
+      "edge_id": "e_sp_00060",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00007",
+      "target": "n_obj_00008"
+    },
+    {
+      "edge_id": "e_sp_00061",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00007",
+      "target": "n_obj_00003"
+    },
+    {
+      "edge_id": "e_sp_00062",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00007",
+      "target": "n_obj_00002"
+    },
+    {
+      "edge_id": "e_sp_00063",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00008",
+      "target": "n_obj_00003"
+    },
+    {
+      "edge_id": "e_sp_00064",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00008",
+      "target": "n_obj_00014"
+    },
+    {
+      "edge_id": "e_sp_00065",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00008",
+      "target": "n_obj_00013"
+    },
+    {
+      "edge_id": "e_sp_00066",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00008",
+      "target": "n_obj_00012"
+    },
+    {
+      "edge_id": "e_sp_00067",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00008",
+      "target": "n_obj_00007"
+    },
+    {
+      "edge_id": "e_sp_00068",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00008",
+      "target": "n_obj_00006"
+    },
+    {
+      "edge_id": "e_sp_00069",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00009",
+      "target": "n_obj_00003"
+    },
+    {
+      "edge_id": "e_sp_00070",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00009",
+      "target": "n_obj_00013"
+    },
+    {
+      "edge_id": "e_sp_00071",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00009",
+      "target": "n_obj_00012"
+    },
+    {
+      "edge_id": "e_sp_00072",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00009",
+      "target": "n_obj_00004"
+    },
+    {
+      "edge_id": "e_sp_00073",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00009",
+      "target": "n_obj_00005"
+    },
+    {
+      "edge_id": "e_sp_00074",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00009",
+      "target": "n_obj_00011"
+    },
+    {
+      "edge_id": "e_sp_00075",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00010",
+      "target": "n_obj_00004"
+    },
+    {
+      "edge_id": "e_sp_00076",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00010",
+      "target": "n_obj_00005"
+    },
+    {
+      "edge_id": "e_sp_00077",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00010",
+      "target": "n_obj_00014"
+    },
+    {
+      "edge_id": "e_sp_00078",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00010",
+      "target": "n_obj_00013"
+    },
+    {
+      "edge_id": "e_sp_00079",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00010",
+      "target": "n_obj_00006"
+    },
+    {
+      "edge_id": "e_sp_00080",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00010",
+      "target": "n_obj_00007"
+    },
+    {
+      "edge_id": "e_sp_00081",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00010",
+      "target": "n_obj_00003"
+    },
+    {
+      "edge_id": "e_sp_00082",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00010",
+      "target": "n_obj_00012"
+    },
+    {
+      "edge_id": "e_sp_00083",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00010",
+      "target": "n_obj_00011"
+    },
+    {
+      "edge_id": "e_sp_00084",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00011",
+      "target": "n_obj_00002"
+    },
+    {
+      "edge_id": "e_sp_00085",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00011",
+      "target": "n_obj_00004"
+    },
+    {
+      "edge_id": "e_sp_00086",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00011",
+      "target": "n_obj_00005"
+    },
+    {
+      "edge_id": "e_sp_00087",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00011",
+      "target": "n_obj_00009"
+    },
+    {
+      "edge_id": "e_sp_00088",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00011",
+      "target": "n_obj_00010"
+    },
+    {
+      "edge_id": "e_sp_00089",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00011",
+      "target": "n_obj_00001"
+    },
+    {
+      "edge_id": "e_sp_00090",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00011",
+      "target": "n_obj_00003"
+    },
+    {
+      "edge_id": "e_sp_00091",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00012",
+      "target": "n_obj_00008"
+    },
+    {
+      "edge_id": "e_sp_00092",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_00012",
+      "target": "n_obj_00003"
+    },
+    {
+      "edge_id": "e_sp_00093",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00012",
+      "target": "n_obj_00001"
+    },
+    {
+      "edge_id": "e_sp_00094",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00012",
+      "target": "n_obj_00004"
+    },
+    {
+      "edge_id": "e_sp_00095",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00012",
+      "target": "n_obj_00005"
+    },
+    {
+      "edge_id": "e_sp_00096",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00012",
+      "target": "n_obj_00002"
+    },
+    {
+      "edge_id": "e_sp_00097",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00012",
+      "target": "n_obj_00009"
+    },
+    {
+      "edge_id": "e_sp_00098",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00012",
+      "target": "n_obj_00010"
+    },
+    {
+      "edge_id": "e_sp_00099",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00013",
+      "target": "n_obj_00004"
+    },
+    {
+      "edge_id": "e_sp_00100",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00013",
+      "target": "n_obj_00005"
+    },
+    {
+      "edge_id": "e_sp_00101",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00013",
+      "target": "n_obj_00008"
+    },
+    {
+      "edge_id": "e_sp_00102",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00013",
+      "target": "n_obj_00009"
+    },
+    {
+      "edge_id": "e_sp_00103",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00013",
+      "target": "n_obj_00010"
+    },
+    {
+      "edge_id": "e_sp_00104",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00013",
+      "target": "n_obj_00001"
+    },
+    {
+      "edge_id": "e_sp_00105",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00013",
+      "target": "n_obj_00003"
+    },
+    {
+      "edge_id": "e_sp_00106",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00013",
+      "target": "n_obj_00002"
+    },
+    {
+      "edge_id": "e_sp_00107",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00014",
+      "target": "n_obj_00004"
+    },
+    {
+      "edge_id": "e_sp_00108",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00014",
+      "target": "n_obj_00005"
+    },
+    {
+      "edge_id": "e_sp_00109",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00014",
+      "target": "n_obj_00008"
+    },
+    {
+      "edge_id": "e_sp_00110",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00014",
+      "target": "n_obj_00010"
+    },
+    {
+      "edge_id": "e_sp_00111",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_00014",
+      "target": "n_obj_00001"
+    },
+    {
+      "edge_id": "e_sp_00112",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00014",
+      "target": "n_obj_00002"
+    }
+  ],
+  "global_inventory": {}
+}

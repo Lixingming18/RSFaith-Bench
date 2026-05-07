@@ -1,0 +1,36 @@
+{
+  "scene_id": "RSF-S00000858",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      800,
+      800
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "overpass",
+      "canonical_root": "overpass",
+      "geometry": {
+        "bbox": [
+          241.0,
+          231.0,
+          574.0,
+          432.0
+        ],
+        "center": [
+          407.5,
+          331.5
+        ],
+        "area": 66933.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [],
+  "global_inventory": {}
+}

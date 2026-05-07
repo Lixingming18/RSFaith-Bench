@@ -1,0 +1,54 @@
+{
+  "scene_id": "RSF-S00001274",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      1024,
+      1024
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "airport",
+      "canonical_root": "airport",
+      "geometry": {
+        "bbox": [
+          348.0,
+          378.0,
+          681.0,
+          646.0
+        ],
+        "polygon": [
+          [
+            348.0,
+            378.0
+          ],
+          [
+            681.0,
+            378.0
+          ],
+          [
+            681.0,
+            646.0
+          ],
+          [
+            348.0,
+            646.0
+          ]
+        ],
+        "center": [
+          514.5,
+          512.0
+        ],
+        "area": 89244.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [],
+  "global_inventory": {}
+}

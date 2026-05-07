@@ -1,0 +1,6256 @@
+[
+  {
+    "question_id": "RSF-Q00000841",
+    "scene_id": "RSF-S00000841",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "How many vehicles are visible in the image?",
+    "answer": "12",
+    "answer_type": "text",
+    "choices": [
+      "14",
+      "11",
+      "12",
+      "13"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000841_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000841.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "vehicle",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006",
+            "n_obj_00007",
+            "n_obj_00008",
+            "n_obj_00009",
+            "n_obj_00010",
+            "n_obj_00011",
+            "n_obj_00012"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "vehicle",
+        "value": 12,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006",
+            "n_obj_00007",
+            "n_obj_00008",
+            "n_obj_00009",
+            "n_obj_00010",
+            "n_obj_00011",
+            "n_obj_00012"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "vehicle",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006",
+              "n_obj_00007",
+              "n_obj_00008",
+              "n_obj_00009",
+              "n_obj_00010",
+              "n_obj_00011",
+              "n_obj_00012"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "vehicle"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006",
+              "n_obj_00007",
+              "n_obj_00008",
+              "n_obj_00009",
+              "n_obj_00010",
+              "n_obj_00011",
+              "n_obj_00012"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001317",
+    "scene_id": "RSF-S00001317",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the trailers shown in the image.",
+    "answer": "5",
+    "answer_type": "text",
+    "choices": [
+      "5",
+      "4",
+      "7",
+      "6"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001317_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001317.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "trailer",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00009",
+            "n_obj_00010",
+            "n_obj_00013",
+            "n_obj_00014"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "trailer",
+        "value": 5,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00009",
+            "n_obj_00010",
+            "n_obj_00013",
+            "n_obj_00014"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "trailer",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00009",
+              "n_obj_00010",
+              "n_obj_00013",
+              "n_obj_00014"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "trailer"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00009",
+              "n_obj_00010",
+              "n_obj_00013",
+              "n_obj_00014"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000614",
+    "scene_id": "RSF-S00000614",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the chimneys shown in the image.",
+    "answer": "4",
+    "answer_type": "text",
+    "choices": [
+      "6",
+      "5",
+      "4",
+      "3"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000614_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000614.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "chimney",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00004"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "chimney",
+        "value": 4,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00004"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "chimney",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00004"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "chimney"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00004"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000961",
+    "scene_id": "RSF-S00000961",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "How many aircraft are visible in the image?",
+    "answer": "10",
+    "answer_type": "text",
+    "choices": [
+      "9",
+      "10",
+      "12",
+      "11"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000961_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000961.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006",
+            "n_obj_00007",
+            "n_obj_00008",
+            "n_obj_00009",
+            "n_obj_00010"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": 10,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006",
+            "n_obj_00007",
+            "n_obj_00008",
+            "n_obj_00009",
+            "n_obj_00010"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006",
+              "n_obj_00007",
+              "n_obj_00008",
+              "n_obj_00009",
+              "n_obj_00010"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006",
+              "n_obj_00007",
+              "n_obj_00008",
+              "n_obj_00009",
+              "n_obj_00010"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000794",
+    "scene_id": "RSF-S00000794",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the storage tanks shown in the image.",
+    "answer": "11",
+    "answer_type": "text",
+    "choices": [
+      "11",
+      "13",
+      "12",
+      "10"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000794_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000794.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "storage_tank",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006",
+            "n_obj_00007",
+            "n_obj_00008",
+            "n_obj_00009",
+            "n_obj_00010",
+            "n_obj_00012"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "storage_tank",
+        "value": 11,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006",
+            "n_obj_00007",
+            "n_obj_00008",
+            "n_obj_00009",
+            "n_obj_00010",
+            "n_obj_00012"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "storage_tank",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006",
+              "n_obj_00007",
+              "n_obj_00008",
+              "n_obj_00009",
+              "n_obj_00010",
+              "n_obj_00012"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "storage_tank"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006",
+              "n_obj_00007",
+              "n_obj_00008",
+              "n_obj_00009",
+              "n_obj_00010",
+              "n_obj_00012"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001821",
+    "scene_id": "RSF-S00001821",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the excavators shown in the image.",
+    "answer": "9",
+    "answer_type": "text",
+    "choices": [
+      "11",
+      "10",
+      "9",
+      "8"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001821_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001821.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "excavator",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00009",
+            "n_obj_00010",
+            "n_obj_00011",
+            "n_obj_00012",
+            "n_obj_00014"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "excavator",
+        "value": 9,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00009",
+            "n_obj_00010",
+            "n_obj_00011",
+            "n_obj_00012",
+            "n_obj_00014"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "excavator",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00009",
+              "n_obj_00010",
+              "n_obj_00011",
+              "n_obj_00012",
+              "n_obj_00014"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "excavator"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00009",
+              "n_obj_00010",
+              "n_obj_00011",
+              "n_obj_00012",
+              "n_obj_00014"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000863",
+    "scene_id": "RSF-S00000863",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the aircraft shown in the image.",
+    "answer": "3",
+    "answer_type": "text",
+    "choices": [
+      "2",
+      "5",
+      "4",
+      "3"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000863_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000863.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": 3,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000829",
+    "scene_id": "RSF-S00000829",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the vehicles shown in the image.",
+    "answer": "8",
+    "answer_type": "text",
+    "choices": [
+      "9",
+      "7",
+      "8",
+      "10"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000829_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000829.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "vehicle",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006",
+            "n_obj_00007",
+            "n_obj_00008"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "vehicle",
+        "value": 8,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006",
+            "n_obj_00007",
+            "n_obj_00008"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "vehicle",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006",
+              "n_obj_00007",
+              "n_obj_00008"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "vehicle"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006",
+              "n_obj_00007",
+              "n_obj_00008"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001245",
+    "scene_id": "RSF-S00001245",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the small vehicles shown in the image.",
+    "answer": "7",
+    "answer_type": "text",
+    "choices": [
+      "9",
+      "6",
+      "8",
+      "7"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001245_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001245.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "small_vehicle",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00010",
+            "n_obj_00012",
+            "n_obj_00013",
+            "n_obj_00014",
+            "n_obj_00015",
+            "n_obj_00016"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "small_vehicle",
+        "value": 7,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00010",
+            "n_obj_00012",
+            "n_obj_00013",
+            "n_obj_00014",
+            "n_obj_00015",
+            "n_obj_00016"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "small_vehicle",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00010",
+              "n_obj_00012",
+              "n_obj_00013",
+              "n_obj_00014",
+              "n_obj_00015",
+              "n_obj_00016"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "small_vehicle"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00010",
+              "n_obj_00012",
+              "n_obj_00013",
+              "n_obj_00014",
+              "n_obj_00015",
+              "n_obj_00016"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002927",
+    "scene_id": "RSF-S00002927",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the buildings shown in the image.",
+    "answer": "9",
+    "answer_type": "text",
+    "choices": [
+      "9",
+      "8",
+      "11",
+      "10"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002927_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002927.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "building",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_29",
+            "n_obj_30",
+            "n_obj_31",
+            "n_obj_32",
+            "n_obj_33",
+            "n_obj_34",
+            "n_obj_35",
+            "n_obj_36",
+            "n_obj_37"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "building",
+        "value": 9,
+        "refs": {
+          "node_ids": [
+            "n_obj_29",
+            "n_obj_30",
+            "n_obj_31",
+            "n_obj_32",
+            "n_obj_33",
+            "n_obj_34",
+            "n_obj_35",
+            "n_obj_36",
+            "n_obj_37"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "building",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_29",
+              "n_obj_30",
+              "n_obj_31",
+              "n_obj_32",
+              "n_obj_33",
+              "n_obj_34",
+              "n_obj_35",
+              "n_obj_36",
+              "n_obj_37"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "building"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_29",
+              "n_obj_30",
+              "n_obj_31",
+              "n_obj_32",
+              "n_obj_33",
+              "n_obj_34",
+              "n_obj_35",
+              "n_obj_36",
+              "n_obj_37"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001836",
+    "scene_id": "RSF-S00001836",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the dump trucks shown in the image.",
+    "answer": "12",
+    "answer_type": "text",
+    "choices": [
+      "13",
+      "11",
+      "14",
+      "12"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001836_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001836.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "dump_truck",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00004",
+            "n_obj_00017",
+            "n_obj_00021",
+            "n_obj_00022",
+            "n_obj_00023",
+            "n_obj_00024",
+            "n_obj_00026",
+            "n_obj_00028",
+            "n_obj_00044",
+            "n_obj_00045",
+            "n_obj_00052"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "dump_truck",
+        "value": 12,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00004",
+            "n_obj_00017",
+            "n_obj_00021",
+            "n_obj_00022",
+            "n_obj_00023",
+            "n_obj_00024",
+            "n_obj_00026",
+            "n_obj_00028",
+            "n_obj_00044",
+            "n_obj_00045",
+            "n_obj_00052"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "dump_truck",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00004",
+              "n_obj_00017",
+              "n_obj_00021",
+              "n_obj_00022",
+              "n_obj_00023",
+              "n_obj_00024",
+              "n_obj_00026",
+              "n_obj_00028",
+              "n_obj_00044",
+              "n_obj_00045",
+              "n_obj_00052"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "dump_truck"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00004",
+              "n_obj_00017",
+              "n_obj_00021",
+              "n_obj_00022",
+              "n_obj_00023",
+              "n_obj_00024",
+              "n_obj_00026",
+              "n_obj_00028",
+              "n_obj_00044",
+              "n_obj_00045",
+              "n_obj_00052"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00004249",
+    "scene_id": "RSF-S00004249",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the containers shown in the image.",
+    "answer": "11",
+    "answer_type": "text",
+    "choices": [
+      "10",
+      "13",
+      "12",
+      "11"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00004249_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00004249.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "container",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_12",
+            "n_obj_13",
+            "n_obj_14",
+            "n_obj_15",
+            "n_obj_16",
+            "n_obj_17",
+            "n_obj_18",
+            "n_obj_19",
+            "n_obj_20",
+            "n_obj_35",
+            "n_obj_36"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "container",
+        "value": 11,
+        "refs": {
+          "node_ids": [
+            "n_obj_12",
+            "n_obj_13",
+            "n_obj_14",
+            "n_obj_15",
+            "n_obj_16",
+            "n_obj_17",
+            "n_obj_18",
+            "n_obj_19",
+            "n_obj_20",
+            "n_obj_35",
+            "n_obj_36"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "container",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_12",
+              "n_obj_13",
+              "n_obj_14",
+              "n_obj_15",
+              "n_obj_16",
+              "n_obj_17",
+              "n_obj_18",
+              "n_obj_19",
+              "n_obj_20",
+              "n_obj_35",
+              "n_obj_36"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "container"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_12",
+              "n_obj_13",
+              "n_obj_14",
+              "n_obj_15",
+              "n_obj_16",
+              "n_obj_17",
+              "n_obj_18",
+              "n_obj_19",
+              "n_obj_20",
+              "n_obj_35",
+              "n_obj_36"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001887",
+    "scene_id": "RSF-S00001887",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the vans shown in the image.",
+    "answer": "10",
+    "answer_type": "text",
+    "choices": [
+      "10",
+      "9",
+      "11",
+      "12"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001887_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001887.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "van",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00004",
+            "n_obj_00006",
+            "n_obj_00007",
+            "n_obj_00016",
+            "n_obj_00019",
+            "n_obj_00020",
+            "n_obj_00021",
+            "n_obj_00023",
+            "n_obj_00028",
+            "n_obj_00030"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "van",
+        "value": 10,
+        "refs": {
+          "node_ids": [
+            "n_obj_00004",
+            "n_obj_00006",
+            "n_obj_00007",
+            "n_obj_00016",
+            "n_obj_00019",
+            "n_obj_00020",
+            "n_obj_00021",
+            "n_obj_00023",
+            "n_obj_00028",
+            "n_obj_00030"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "van",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00004",
+              "n_obj_00006",
+              "n_obj_00007",
+              "n_obj_00016",
+              "n_obj_00019",
+              "n_obj_00020",
+              "n_obj_00021",
+              "n_obj_00023",
+              "n_obj_00028",
+              "n_obj_00030"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "van"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00004",
+              "n_obj_00006",
+              "n_obj_00007",
+              "n_obj_00016",
+              "n_obj_00019",
+              "n_obj_00020",
+              "n_obj_00021",
+              "n_obj_00023",
+              "n_obj_00028",
+              "n_obj_00030"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001888",
+    "scene_id": "RSF-S00001888",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the boeing737s shown in the image.",
+    "answer": "3",
+    "answer_type": "text",
+    "choices": [
+      "3",
+      "2",
+      "5",
+      "4"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001888_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001888.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "boeing737",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00003",
+            "n_obj_00004"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "boeing737",
+        "value": 3,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00003",
+            "n_obj_00004"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "boeing737",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00003",
+              "n_obj_00004"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "boeing737"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00003",
+              "n_obj_00004"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00004128",
+    "scene_id": "RSF-S00004128",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the airports shown in the image.",
+    "answer": "6",
+    "answer_type": "text",
+    "choices": [
+      "8",
+      "7",
+      "6",
+      "5"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00004128_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00004128.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "airport",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_1",
+            "n_obj_2",
+            "n_obj_3",
+            "n_obj_4",
+            "n_obj_5",
+            "n_obj_6"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "airport",
+        "value": 6,
+        "refs": {
+          "node_ids": [
+            "n_obj_1",
+            "n_obj_2",
+            "n_obj_3",
+            "n_obj_4",
+            "n_obj_5",
+            "n_obj_6"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "airport",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_1",
+              "n_obj_2",
+              "n_obj_3",
+              "n_obj_4",
+              "n_obj_5",
+              "n_obj_6"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "airport"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_1",
+              "n_obj_2",
+              "n_obj_3",
+              "n_obj_4",
+              "n_obj_5",
+              "n_obj_6"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000940",
+    "scene_id": "RSF-S00000940",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "How many bridges are visible in the image?",
+    "answer": "7",
+    "answer_type": "text",
+    "choices": [
+      "8",
+      "9",
+      "7",
+      "6"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000940_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000940.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "bridge",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006",
+            "n_obj_00007"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "bridge",
+        "value": 7,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006",
+            "n_obj_00007"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "bridge",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006",
+              "n_obj_00007"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "bridge"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006",
+              "n_obj_00007"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00003948",
+    "scene_id": "RSF-S00003948",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the blocks shown in the image.",
+    "answer": "8",
+    "answer_type": "text",
+    "choices": [
+      "10",
+      "7",
+      "9",
+      "8"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00003948_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00003948.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "block",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_9",
+            "n_obj_10",
+            "n_obj_11",
+            "n_obj_12",
+            "n_obj_13",
+            "n_obj_14",
+            "n_obj_15",
+            "n_obj_16"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "block",
+        "value": 8,
+        "refs": {
+          "node_ids": [
+            "n_obj_9",
+            "n_obj_10",
+            "n_obj_11",
+            "n_obj_12",
+            "n_obj_13",
+            "n_obj_14",
+            "n_obj_15",
+            "n_obj_16"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "block",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_9",
+              "n_obj_10",
+              "n_obj_11",
+              "n_obj_12",
+              "n_obj_13",
+              "n_obj_14",
+              "n_obj_15",
+              "n_obj_16"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "block"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_9",
+              "n_obj_10",
+              "n_obj_11",
+              "n_obj_12",
+              "n_obj_13",
+              "n_obj_14",
+              "n_obj_15",
+              "n_obj_16"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001857",
+    "scene_id": "RSF-S00001857",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the intersections shown in the image.",
+    "answer": "5",
+    "answer_type": "text",
+    "choices": [
+      "6",
+      "4",
+      "5",
+      "7"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001857_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001857.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "intersection",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00005"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "intersection",
+        "value": 5,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00005"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "intersection",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00005"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "intersection"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00005"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000207",
+    "scene_id": "RSF-S00000207",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "How many ships are visible in the image?",
+    "answer": "12",
+    "answer_type": "text",
+    "choices": [
+      "14",
+      "12",
+      "13",
+      "11"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000207_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000207.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006",
+            "n_obj_00007",
+            "n_obj_00008",
+            "n_obj_00009",
+            "n_obj_00010",
+            "n_obj_00011",
+            "n_obj_00012",
+            "n_obj_00013"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "ship",
+        "value": 12,
+        "refs": {
+          "node_ids": [
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006",
+            "n_obj_00007",
+            "n_obj_00008",
+            "n_obj_00009",
+            "n_obj_00010",
+            "n_obj_00011",
+            "n_obj_00012",
+            "n_obj_00013"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006",
+              "n_obj_00007",
+              "n_obj_00008",
+              "n_obj_00009",
+              "n_obj_00010",
+              "n_obj_00011",
+              "n_obj_00012",
+              "n_obj_00013"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006",
+              "n_obj_00007",
+              "n_obj_00008",
+              "n_obj_00009",
+              "n_obj_00010",
+              "n_obj_00011",
+              "n_obj_00012",
+              "n_obj_00013"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001262",
+    "scene_id": "RSF-S00001262",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the baseball fields shown in the image.",
+    "answer": "4",
+    "answer_type": "text",
+    "choices": [
+      "4",
+      "6",
+      "3",
+      "5"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001262_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001262.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "baseball_field",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00018",
+            "n_obj_00019",
+            "n_obj_00020",
+            "n_obj_00021"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "baseball_field",
+        "value": 4,
+        "refs": {
+          "node_ids": [
+            "n_obj_00018",
+            "n_obj_00019",
+            "n_obj_00020",
+            "n_obj_00021"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "baseball_field",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00018",
+              "n_obj_00019",
+              "n_obj_00020",
+              "n_obj_00021"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "baseball_field"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00018",
+              "n_obj_00019",
+              "n_obj_00020",
+              "n_obj_00021"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002983",
+    "scene_id": "RSF-S00002983",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the airplanes shown in the image.",
+    "answer": "9",
+    "answer_type": "text",
+    "choices": [
+      "11",
+      "8",
+      "9",
+      "10"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002983_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002983.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "airplane",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_0",
+            "n_obj_1",
+            "n_obj_2",
+            "n_obj_3",
+            "n_obj_4",
+            "n_obj_5",
+            "n_obj_6",
+            "n_obj_7",
+            "n_obj_8"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "airplane",
+        "value": 9,
+        "refs": {
+          "node_ids": [
+            "n_obj_0",
+            "n_obj_1",
+            "n_obj_2",
+            "n_obj_3",
+            "n_obj_4",
+            "n_obj_5",
+            "n_obj_6",
+            "n_obj_7",
+            "n_obj_8"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "airplane",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0",
+              "n_obj_1",
+              "n_obj_2",
+              "n_obj_3",
+              "n_obj_4",
+              "n_obj_5",
+              "n_obj_6",
+              "n_obj_7",
+              "n_obj_8"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "airplane"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0",
+              "n_obj_1",
+              "n_obj_2",
+              "n_obj_3",
+              "n_obj_4",
+              "n_obj_5",
+              "n_obj_6",
+              "n_obj_7",
+              "n_obj_8"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001203",
+    "scene_id": "RSF-S00001203",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the large vehicles shown in the image.",
+    "answer": "3",
+    "answer_type": "text",
+    "choices": [
+      "2",
+      "5",
+      "3",
+      "4"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001203_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001203.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00047",
+            "n_obj_00048",
+            "n_obj_00049"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "value": 3,
+        "refs": {
+          "node_ids": [
+            "n_obj_00047",
+            "n_obj_00048",
+            "n_obj_00049"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00047",
+              "n_obj_00048",
+              "n_obj_00049"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00047",
+              "n_obj_00048",
+              "n_obj_00049"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001587",
+    "scene_id": "RSF-S00001587",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the a350s shown in the image.",
+    "answer": "6",
+    "answer_type": "text",
+    "choices": [
+      "5",
+      "7",
+      "6",
+      "8"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001587_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001587.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "a350",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00005",
+            "n_obj_00006",
+            "n_obj_00010",
+            "n_obj_00012"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "a350",
+        "value": 6,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00005",
+            "n_obj_00006",
+            "n_obj_00010",
+            "n_obj_00012"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "a350",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00005",
+              "n_obj_00006",
+              "n_obj_00010",
+              "n_obj_00012"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "a350"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00005",
+              "n_obj_00006",
+              "n_obj_00010",
+              "n_obj_00012"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002115",
+    "scene_id": "RSF-S00002115",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the buses shown in the image.",
+    "answer": "7",
+    "answer_type": "text",
+    "choices": [
+      "9",
+      "7",
+      "6",
+      "8"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002115_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002115.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "bus",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00071",
+            "n_obj_00072",
+            "n_obj_00073",
+            "n_obj_00074",
+            "n_obj_00075",
+            "n_obj_00076",
+            "n_obj_00077"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "bus",
+        "value": 7,
+        "refs": {
+          "node_ids": [
+            "n_obj_00071",
+            "n_obj_00072",
+            "n_obj_00073",
+            "n_obj_00074",
+            "n_obj_00075",
+            "n_obj_00076",
+            "n_obj_00077"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "bus",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00071",
+              "n_obj_00072",
+              "n_obj_00073",
+              "n_obj_00074",
+              "n_obj_00075",
+              "n_obj_00076",
+              "n_obj_00077"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "bus"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00071",
+              "n_obj_00072",
+              "n_obj_00073",
+              "n_obj_00074",
+              "n_obj_00075",
+              "n_obj_00076",
+              "n_obj_00077"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001629",
+    "scene_id": "RSF-S00001629",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the tractors shown in the image.",
+    "answer": "5",
+    "answer_type": "text",
+    "choices": [
+      "4",
+      "7",
+      "5",
+      "6"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001629_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001629.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "tractor",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00016",
+            "n_obj_00018",
+            "n_obj_00026",
+            "n_obj_00030",
+            "n_obj_00042"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "tractor",
+        "value": 5,
+        "refs": {
+          "node_ids": [
+            "n_obj_00016",
+            "n_obj_00018",
+            "n_obj_00026",
+            "n_obj_00030",
+            "n_obj_00042"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "tractor",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00016",
+              "n_obj_00018",
+              "n_obj_00026",
+              "n_obj_00030",
+              "n_obj_00042"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "tractor"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00016",
+              "n_obj_00018",
+              "n_obj_00026",
+              "n_obj_00030",
+              "n_obj_00042"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001301",
+    "scene_id": "RSF-S00001301",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the cargo trucks shown in the image.",
+    "answer": "10",
+    "answer_type": "text",
+    "choices": [
+      "10",
+      "12",
+      "9",
+      "11"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001301_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001301.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "cargo_truck",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00009",
+            "n_obj_00012",
+            "n_obj_00013",
+            "n_obj_00014",
+            "n_obj_00017",
+            "n_obj_00035",
+            "n_obj_00036",
+            "n_obj_00054",
+            "n_obj_00106",
+            "n_obj_00107"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "cargo_truck",
+        "value": 10,
+        "refs": {
+          "node_ids": [
+            "n_obj_00009",
+            "n_obj_00012",
+            "n_obj_00013",
+            "n_obj_00014",
+            "n_obj_00017",
+            "n_obj_00035",
+            "n_obj_00036",
+            "n_obj_00054",
+            "n_obj_00106",
+            "n_obj_00107"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "cargo_truck",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00009",
+              "n_obj_00012",
+              "n_obj_00013",
+              "n_obj_00014",
+              "n_obj_00017",
+              "n_obj_00035",
+              "n_obj_00036",
+              "n_obj_00054",
+              "n_obj_00106",
+              "n_obj_00107"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "cargo_truck"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00009",
+              "n_obj_00012",
+              "n_obj_00013",
+              "n_obj_00014",
+              "n_obj_00017",
+              "n_obj_00035",
+              "n_obj_00036",
+              "n_obj_00054",
+              "n_obj_00106",
+              "n_obj_00107"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001257",
+    "scene_id": "RSF-S00001257",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the roundabouts shown in the image.",
+    "answer": "4",
+    "answer_type": "text",
+    "choices": [
+      "5",
+      "3",
+      "6",
+      "4"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001257_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001257.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "roundabout",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "roundabout",
+        "value": 4,
+        "refs": {
+          "node_ids": [
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "roundabout",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "roundabout"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001247",
+    "scene_id": "RSF-S00001247",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the bridges shown in the image.",
+    "answer": "8",
+    "answer_type": "text",
+    "choices": [
+      "7",
+      "10",
+      "9",
+      "8"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001247_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001247.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "bridge",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00314",
+            "n_obj_00315",
+            "n_obj_00329",
+            "n_obj_00330",
+            "n_obj_00331",
+            "n_obj_00332",
+            "n_obj_00333",
+            "n_obj_00344"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "bridge",
+        "value": 8,
+        "refs": {
+          "node_ids": [
+            "n_obj_00314",
+            "n_obj_00315",
+            "n_obj_00329",
+            "n_obj_00330",
+            "n_obj_00331",
+            "n_obj_00332",
+            "n_obj_00333",
+            "n_obj_00344"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "bridge",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00314",
+              "n_obj_00315",
+              "n_obj_00329",
+              "n_obj_00330",
+              "n_obj_00331",
+              "n_obj_00332",
+              "n_obj_00333",
+              "n_obj_00344"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "bridge"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00314",
+              "n_obj_00315",
+              "n_obj_00329",
+              "n_obj_00330",
+              "n_obj_00331",
+              "n_obj_00332",
+              "n_obj_00333",
+              "n_obj_00344"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002952",
+    "scene_id": "RSF-S00002952",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "How many airplanes are visible in the image?",
+    "answer": "12",
+    "answer_type": "text",
+    "choices": [
+      "12",
+      "11",
+      "14",
+      "13"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002952_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002952.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "airplane",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_0",
+            "n_obj_1",
+            "n_obj_2",
+            "n_obj_3",
+            "n_obj_4",
+            "n_obj_5",
+            "n_obj_6",
+            "n_obj_7",
+            "n_obj_8",
+            "n_obj_9",
+            "n_obj_10",
+            "n_obj_11"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "airplane",
+        "value": 12,
+        "refs": {
+          "node_ids": [
+            "n_obj_0",
+            "n_obj_1",
+            "n_obj_2",
+            "n_obj_3",
+            "n_obj_4",
+            "n_obj_5",
+            "n_obj_6",
+            "n_obj_7",
+            "n_obj_8",
+            "n_obj_9",
+            "n_obj_10",
+            "n_obj_11"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "airplane",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0",
+              "n_obj_1",
+              "n_obj_2",
+              "n_obj_3",
+              "n_obj_4",
+              "n_obj_5",
+              "n_obj_6",
+              "n_obj_7",
+              "n_obj_8",
+              "n_obj_9",
+              "n_obj_10",
+              "n_obj_11"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "airplane"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0",
+              "n_obj_1",
+              "n_obj_2",
+              "n_obj_3",
+              "n_obj_4",
+              "n_obj_5",
+              "n_obj_6",
+              "n_obj_7",
+              "n_obj_8",
+              "n_obj_9",
+              "n_obj_10",
+              "n_obj_11"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001957",
+    "scene_id": "RSF-S00001957",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the boeing747s shown in the image.",
+    "answer": "6",
+    "answer_type": "text",
+    "choices": [
+      "7",
+      "8",
+      "6",
+      "5"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001957_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001957.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "boeing747",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00007",
+            "n_obj_00008",
+            "n_obj_00013",
+            "n_obj_00017"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "boeing747",
+        "value": 6,
+        "refs": {
+          "node_ids": [
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00007",
+            "n_obj_00008",
+            "n_obj_00013",
+            "n_obj_00017"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "boeing747",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00007",
+              "n_obj_00008",
+              "n_obj_00013",
+              "n_obj_00017"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "boeing747"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00007",
+              "n_obj_00008",
+              "n_obj_00013",
+              "n_obj_00017"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000923",
+    "scene_id": "RSF-S00000923",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the harbors shown in the image.",
+    "answer": "5",
+    "answer_type": "text",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "4"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000923_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000923.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "harbor",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00031",
+            "n_obj_00032",
+            "n_obj_00033",
+            "n_obj_00034",
+            "n_obj_00110"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "harbor",
+        "value": 5,
+        "refs": {
+          "node_ids": [
+            "n_obj_00031",
+            "n_obj_00032",
+            "n_obj_00033",
+            "n_obj_00034",
+            "n_obj_00110"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "harbor",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00031",
+              "n_obj_00032",
+              "n_obj_00033",
+              "n_obj_00034",
+              "n_obj_00110"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "harbor"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00031",
+              "n_obj_00032",
+              "n_obj_00033",
+              "n_obj_00034",
+              "n_obj_00110"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00003229",
+    "scene_id": "RSF-S00003229",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the roads shown in the image.",
+    "answer": "11",
+    "answer_type": "text",
+    "choices": [
+      "11",
+      "13",
+      "12",
+      "10"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00003229_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00003229.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "road",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_6",
+            "n_obj_7",
+            "n_obj_8",
+            "n_obj_9",
+            "n_obj_10",
+            "n_obj_11",
+            "n_obj_12",
+            "n_obj_14",
+            "n_obj_15",
+            "n_obj_16",
+            "n_obj_17"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "road",
+        "value": 11,
+        "refs": {
+          "node_ids": [
+            "n_obj_6",
+            "n_obj_7",
+            "n_obj_8",
+            "n_obj_9",
+            "n_obj_10",
+            "n_obj_11",
+            "n_obj_12",
+            "n_obj_14",
+            "n_obj_15",
+            "n_obj_16",
+            "n_obj_17"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "road",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_6",
+              "n_obj_7",
+              "n_obj_8",
+              "n_obj_9",
+              "n_obj_10",
+              "n_obj_11",
+              "n_obj_12",
+              "n_obj_14",
+              "n_obj_15",
+              "n_obj_16",
+              "n_obj_17"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "road"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_6",
+              "n_obj_7",
+              "n_obj_8",
+              "n_obj_9",
+              "n_obj_10",
+              "n_obj_11",
+              "n_obj_12",
+              "n_obj_14",
+              "n_obj_15",
+              "n_obj_16",
+              "n_obj_17"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002138",
+    "scene_id": "RSF-S00002138",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the a330s shown in the image.",
+    "answer": "3",
+    "answer_type": "text",
+    "choices": [
+      "4",
+      "2",
+      "3",
+      "5"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002138_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002138.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "a330",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00004",
+            "n_obj_00006",
+            "n_obj_00007"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "a330",
+        "value": 3,
+        "refs": {
+          "node_ids": [
+            "n_obj_00004",
+            "n_obj_00006",
+            "n_obj_00007"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "a330",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00004",
+              "n_obj_00006",
+              "n_obj_00007"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "a330"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00004",
+              "n_obj_00006",
+              "n_obj_00007"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001571",
+    "scene_id": "RSF-S00001571",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the a220s shown in the image.",
+    "answer": "4",
+    "answer_type": "text",
+    "choices": [
+      "4",
+      "6",
+      "5",
+      "3"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001571_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001571.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "a220",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00002",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "a220",
+        "value": 4,
+        "refs": {
+          "node_ids": [
+            "n_obj_00002",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "a220",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "a220"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001709",
+    "scene_id": "RSF-S00001709",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the boeing787s shown in the image.",
+    "answer": "7",
+    "answer_type": "text",
+    "choices": [
+      "9",
+      "7",
+      "8",
+      "6"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001709_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001709.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "boeing787",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00007",
+            "n_obj_00008",
+            "n_obj_00009",
+            "n_obj_00012"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "boeing787",
+        "value": 7,
+        "refs": {
+          "node_ids": [
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00007",
+            "n_obj_00008",
+            "n_obj_00009",
+            "n_obj_00012"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "boeing787",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00007",
+              "n_obj_00008",
+              "n_obj_00009",
+              "n_obj_00012"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "boeing787"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00007",
+              "n_obj_00008",
+              "n_obj_00009",
+              "n_obj_00012"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001097",
+    "scene_id": "RSF-S00001097",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "How many roundabouts are visible in the image?",
+    "answer": "8",
+    "answer_type": "text",
+    "choices": [
+      "10",
+      "7",
+      "9",
+      "8"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001097_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001097.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "roundabout",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00010",
+            "n_obj_00011",
+            "n_obj_00012",
+            "n_obj_00013",
+            "n_obj_00014",
+            "n_obj_00015",
+            "n_obj_00016",
+            "n_obj_00017"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "roundabout",
+        "value": 8,
+        "refs": {
+          "node_ids": [
+            "n_obj_00010",
+            "n_obj_00011",
+            "n_obj_00012",
+            "n_obj_00013",
+            "n_obj_00014",
+            "n_obj_00015",
+            "n_obj_00016",
+            "n_obj_00017"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "roundabout",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00010",
+              "n_obj_00011",
+              "n_obj_00012",
+              "n_obj_00013",
+              "n_obj_00014",
+              "n_obj_00015",
+              "n_obj_00016",
+              "n_obj_00017"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "roundabout"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00010",
+              "n_obj_00011",
+              "n_obj_00012",
+              "n_obj_00013",
+              "n_obj_00014",
+              "n_obj_00015",
+              "n_obj_00016",
+              "n_obj_00017"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00003144",
+    "scene_id": "RSF-S00003144",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "How many buildings are visible in the image?",
+    "answer": "12",
+    "answer_type": "text",
+    "choices": [
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00003144_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00003144.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "building",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_2",
+            "n_obj_3",
+            "n_obj_4",
+            "n_obj_5",
+            "n_obj_6",
+            "n_obj_7",
+            "n_obj_8",
+            "n_obj_9",
+            "n_obj_10",
+            "n_obj_11",
+            "n_obj_12",
+            "n_obj_15"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "building",
+        "value": 12,
+        "refs": {
+          "node_ids": [
+            "n_obj_2",
+            "n_obj_3",
+            "n_obj_4",
+            "n_obj_5",
+            "n_obj_6",
+            "n_obj_7",
+            "n_obj_8",
+            "n_obj_9",
+            "n_obj_10",
+            "n_obj_11",
+            "n_obj_12",
+            "n_obj_15"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "building",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_2",
+              "n_obj_3",
+              "n_obj_4",
+              "n_obj_5",
+              "n_obj_6",
+              "n_obj_7",
+              "n_obj_8",
+              "n_obj_9",
+              "n_obj_10",
+              "n_obj_11",
+              "n_obj_12",
+              "n_obj_15"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "building"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_2",
+              "n_obj_3",
+              "n_obj_4",
+              "n_obj_5",
+              "n_obj_6",
+              "n_obj_7",
+              "n_obj_8",
+              "n_obj_9",
+              "n_obj_10",
+              "n_obj_11",
+              "n_obj_12",
+              "n_obj_15"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001200",
+    "scene_id": "RSF-S00001200",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the helicopters shown in the image.",
+    "answer": "9",
+    "answer_type": "text",
+    "choices": [
+      "11",
+      "8",
+      "10",
+      "9"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001200_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001200.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "helicopter",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00150",
+            "n_obj_00151",
+            "n_obj_00152",
+            "n_obj_00227",
+            "n_obj_00248",
+            "n_obj_00249",
+            "n_obj_00250",
+            "n_obj_00251",
+            "n_obj_00252"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "helicopter",
+        "value": 9,
+        "refs": {
+          "node_ids": [
+            "n_obj_00150",
+            "n_obj_00151",
+            "n_obj_00152",
+            "n_obj_00227",
+            "n_obj_00248",
+            "n_obj_00249",
+            "n_obj_00250",
+            "n_obj_00251",
+            "n_obj_00252"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "helicopter",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00150",
+              "n_obj_00151",
+              "n_obj_00152",
+              "n_obj_00227",
+              "n_obj_00248",
+              "n_obj_00249",
+              "n_obj_00250",
+              "n_obj_00251",
+              "n_obj_00252"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "helicopter"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00150",
+              "n_obj_00151",
+              "n_obj_00152",
+              "n_obj_00227",
+              "n_obj_00248",
+              "n_obj_00249",
+              "n_obj_00250",
+              "n_obj_00251",
+              "n_obj_00252"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000869",
+    "scene_id": "RSF-S00000869",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the overpasses shown in the image.",
+    "answer": "3",
+    "answer_type": "text",
+    "choices": [
+      "4",
+      "2",
+      "3",
+      "5"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000869_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000869.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "overpass",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "overpass",
+        "value": 3,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "overpass",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "overpass"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001787",
+    "scene_id": "RSF-S00001787",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the tugboats shown in the image.",
+    "answer": "10",
+    "answer_type": "text",
+    "choices": [
+      "11",
+      "10",
+      "12",
+      "9"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001787_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001787.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "tugboat",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006",
+            "n_obj_00009",
+            "n_obj_00010",
+            "n_obj_00011",
+            "n_obj_00012",
+            "n_obj_00013",
+            "n_obj_00014",
+            "n_obj_00015"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "tugboat",
+        "value": 10,
+        "refs": {
+          "node_ids": [
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006",
+            "n_obj_00009",
+            "n_obj_00010",
+            "n_obj_00011",
+            "n_obj_00012",
+            "n_obj_00013",
+            "n_obj_00014",
+            "n_obj_00015"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "tugboat",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006",
+              "n_obj_00009",
+              "n_obj_00010",
+              "n_obj_00011",
+              "n_obj_00012",
+              "n_obj_00013",
+              "n_obj_00014",
+              "n_obj_00015"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "tugboat"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006",
+              "n_obj_00009",
+              "n_obj_00010",
+              "n_obj_00011",
+              "n_obj_00012",
+              "n_obj_00013",
+              "n_obj_00014",
+              "n_obj_00015"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001172",
+    "scene_id": "RSF-S00001172",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "How many harbors can be identified in the image?",
+    "answer": "11",
+    "answer_type": "text",
+    "choices": [
+      "11",
+      "10",
+      "13",
+      "12"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001172_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001172.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "harbor",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00094",
+            "n_obj_00095",
+            "n_obj_00096",
+            "n_obj_00097",
+            "n_obj_00098",
+            "n_obj_00099",
+            "n_obj_00100",
+            "n_obj_00101",
+            "n_obj_00102",
+            "n_obj_00103",
+            "n_obj_00276"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "harbor",
+        "value": 11,
+        "refs": {
+          "node_ids": [
+            "n_obj_00094",
+            "n_obj_00095",
+            "n_obj_00096",
+            "n_obj_00097",
+            "n_obj_00098",
+            "n_obj_00099",
+            "n_obj_00100",
+            "n_obj_00101",
+            "n_obj_00102",
+            "n_obj_00103",
+            "n_obj_00276"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "harbor",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00094",
+              "n_obj_00095",
+              "n_obj_00096",
+              "n_obj_00097",
+              "n_obj_00098",
+              "n_obj_00099",
+              "n_obj_00100",
+              "n_obj_00101",
+              "n_obj_00102",
+              "n_obj_00103",
+              "n_obj_00276"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "harbor"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00094",
+              "n_obj_00095",
+              "n_obj_00096",
+              "n_obj_00097",
+              "n_obj_00098",
+              "n_obj_00099",
+              "n_obj_00100",
+              "n_obj_00101",
+              "n_obj_00102",
+              "n_obj_00103",
+              "n_obj_00276"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002339",
+    "scene_id": "RSF-S00002339",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the boeing777s shown in the image.",
+    "answer": "4",
+    "answer_type": "text",
+    "choices": [
+      "6",
+      "5",
+      "4",
+      "3"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002339_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002339.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "boeing777",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00002",
+            "n_obj_00006",
+            "n_obj_00007",
+            "n_obj_00008"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "boeing777",
+        "value": 4,
+        "refs": {
+          "node_ids": [
+            "n_obj_00002",
+            "n_obj_00006",
+            "n_obj_00007",
+            "n_obj_00008"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "boeing777",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002",
+              "n_obj_00006",
+              "n_obj_00007",
+              "n_obj_00008"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "boeing777"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002",
+              "n_obj_00006",
+              "n_obj_00007",
+              "n_obj_00008"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000560",
+    "scene_id": "RSF-S00000560",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the windmills shown in the image.",
+    "answer": "6",
+    "answer_type": "text",
+    "choices": [
+      "6",
+      "8",
+      "7",
+      "5"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000560_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000560.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "windmill",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "windmill",
+        "value": 6,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "windmill",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "windmill"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001428",
+    "scene_id": "RSF-S00001428",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the a321s shown in the image.",
+    "answer": "7",
+    "answer_type": "text",
+    "choices": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001428_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001428.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "a321",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00003",
+            "n_obj_00008",
+            "n_obj_00013",
+            "n_obj_00014",
+            "n_obj_00015",
+            "n_obj_00016",
+            "n_obj_00019"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "a321",
+        "value": 7,
+        "refs": {
+          "node_ids": [
+            "n_obj_00003",
+            "n_obj_00008",
+            "n_obj_00013",
+            "n_obj_00014",
+            "n_obj_00015",
+            "n_obj_00016",
+            "n_obj_00019"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "a321",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00003",
+              "n_obj_00008",
+              "n_obj_00013",
+              "n_obj_00014",
+              "n_obj_00015",
+              "n_obj_00016",
+              "n_obj_00019"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "a321"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00003",
+              "n_obj_00008",
+              "n_obj_00013",
+              "n_obj_00014",
+              "n_obj_00015",
+              "n_obj_00016",
+              "n_obj_00019"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000933",
+    "scene_id": "RSF-S00000933",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the ships shown in the image.",
+    "answer": "9",
+    "answer_type": "text",
+    "choices": [
+      "9",
+      "8",
+      "10",
+      "11"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000933_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000933.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006",
+            "n_obj_00022",
+            "n_obj_00023",
+            "n_obj_00024",
+            "n_obj_00035",
+            "n_obj_00043"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "ship",
+        "value": 9,
+        "refs": {
+          "node_ids": [
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006",
+            "n_obj_00022",
+            "n_obj_00023",
+            "n_obj_00024",
+            "n_obj_00035",
+            "n_obj_00043"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006",
+              "n_obj_00022",
+              "n_obj_00023",
+              "n_obj_00024",
+              "n_obj_00035",
+              "n_obj_00043"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006",
+              "n_obj_00022",
+              "n_obj_00023",
+              "n_obj_00024",
+              "n_obj_00035",
+              "n_obj_00043"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001814",
+    "scene_id": "RSF-S00001814",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "How many a220s are visible in the image?",
+    "answer": "11",
+    "answer_type": "text",
+    "choices": [
+      "12",
+      "10",
+      "13",
+      "11"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001814_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001814.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "a220",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00006",
+            "n_obj_00009",
+            "n_obj_00012",
+            "n_obj_00013",
+            "n_obj_00014",
+            "n_obj_00015",
+            "n_obj_00016",
+            "n_obj_00017",
+            "n_obj_00019",
+            "n_obj_00020"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "a220",
+        "value": 11,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00006",
+            "n_obj_00009",
+            "n_obj_00012",
+            "n_obj_00013",
+            "n_obj_00014",
+            "n_obj_00015",
+            "n_obj_00016",
+            "n_obj_00017",
+            "n_obj_00019",
+            "n_obj_00020"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "a220",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00006",
+              "n_obj_00009",
+              "n_obj_00012",
+              "n_obj_00013",
+              "n_obj_00014",
+              "n_obj_00015",
+              "n_obj_00016",
+              "n_obj_00017",
+              "n_obj_00019",
+              "n_obj_00020"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "a220"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00006",
+              "n_obj_00009",
+              "n_obj_00012",
+              "n_obj_00013",
+              "n_obj_00014",
+              "n_obj_00015",
+              "n_obj_00016",
+              "n_obj_00017",
+              "n_obj_00019",
+              "n_obj_00020"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000904",
+    "scene_id": "RSF-S00000904",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "How many harbors are visible in the image?",
+    "answer": "8",
+    "answer_type": "text",
+    "choices": [
+      "10",
+      "9",
+      "7",
+      "8"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000904_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000904.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "harbor",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00005",
+            "n_obj_00006",
+            "n_obj_00007",
+            "n_obj_00008",
+            "n_obj_00009",
+            "n_obj_00010",
+            "n_obj_00011",
+            "n_obj_00012"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "harbor",
+        "value": 8,
+        "refs": {
+          "node_ids": [
+            "n_obj_00005",
+            "n_obj_00006",
+            "n_obj_00007",
+            "n_obj_00008",
+            "n_obj_00009",
+            "n_obj_00010",
+            "n_obj_00011",
+            "n_obj_00012"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "harbor",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00005",
+              "n_obj_00006",
+              "n_obj_00007",
+              "n_obj_00008",
+              "n_obj_00009",
+              "n_obj_00010",
+              "n_obj_00011",
+              "n_obj_00012"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "harbor"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00005",
+              "n_obj_00006",
+              "n_obj_00007",
+              "n_obj_00008",
+              "n_obj_00009",
+              "n_obj_00010",
+              "n_obj_00011",
+              "n_obj_00012"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001224",
+    "scene_id": "RSF-S00001224",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the basketball courts shown in the image.",
+    "answer": "3",
+    "answer_type": "text",
+    "choices": [
+      "2",
+      "4",
+      "3",
+      "5"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001224_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001224.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "basketball_court",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "basketball_court",
+        "value": 3,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00003"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "basketball_court",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "basketball_court"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00003"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001309",
+    "scene_id": "RSF-S00001309",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the motorboats shown in the image.",
+    "answer": "9",
+    "answer_type": "text",
+    "choices": [
+      "10",
+      "11",
+      "8",
+      "9"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001309_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001309.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "motorboat",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00007",
+            "n_obj_00008",
+            "n_obj_00009",
+            "n_obj_00010",
+            "n_obj_00011"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "motorboat",
+        "value": 9,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00007",
+            "n_obj_00008",
+            "n_obj_00009",
+            "n_obj_00010",
+            "n_obj_00011"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "motorboat",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00007",
+              "n_obj_00008",
+              "n_obj_00009",
+              "n_obj_00010",
+              "n_obj_00011"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "motorboat"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00007",
+              "n_obj_00008",
+              "n_obj_00009",
+              "n_obj_00010",
+              "n_obj_00011"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002870",
+    "scene_id": "RSF-S00002870",
+    "level": "Perception",
+    "subcategory": "object_counting",
+    "question": "Count the buildings shown in the image.",
+    "answer": "10",
+    "answer_type": "text",
+    "choices": [
+      "12",
+      "10",
+      "9",
+      "11"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002870_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002870.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "building",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_5",
+            "n_obj_6",
+            "n_obj_7",
+            "n_obj_8",
+            "n_obj_9",
+            "n_obj_10",
+            "n_obj_11",
+            "n_obj_12",
+            "n_obj_13",
+            "n_obj_14"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Counting",
+        "time": "t1",
+        "subject": "building",
+        "value": 10,
+        "refs": {
+          "node_ids": [
+            "n_obj_5",
+            "n_obj_6",
+            "n_obj_7",
+            "n_obj_8",
+            "n_obj_9",
+            "n_obj_10",
+            "n_obj_11",
+            "n_obj_12",
+            "n_obj_13",
+            "n_obj_14"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_count",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "building",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_5",
+              "n_obj_6",
+              "n_obj_7",
+              "n_obj_8",
+              "n_obj_9",
+              "n_obj_10",
+              "n_obj_11",
+              "n_obj_12",
+              "n_obj_13",
+              "n_obj_14"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Counting",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "building"
+          },
+          "outputs": {
+            "answer": "quantity"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_5",
+              "n_obj_6",
+              "n_obj_7",
+              "n_obj_8",
+              "n_obj_9",
+              "n_obj_10",
+              "n_obj_11",
+              "n_obj_12",
+              "n_obj_13",
+              "n_obj_14"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value_text",
+        "claim_type": "Counting",
+        "field": "quantity",
+        "var": "answer"
+      }
+    }
+  }
+]

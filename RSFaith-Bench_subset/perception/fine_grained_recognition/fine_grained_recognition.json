@@ -1,0 +1,6140 @@
+[
+  {
+    "question_id": "RSF-Q00004468",
+    "scene_id": "RSF-S00004468",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which of the given types describes the ship in the center-right?",
+    "answer": "passenger ship",
+    "answer_type": "text",
+    "choices": [
+      "dry cargo ship",
+      "passenger ship",
+      "engineering ship",
+      "liquid cargo ship"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00004468_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00004468.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_7"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "ship",
+        "value": "center-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_7"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "ship",
+        "name": "subtype",
+        "value": "passenger_ship",
+        "refs": {
+          "node_ids": [
+            "n_obj_7"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_7"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": "center-right"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_7"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_7"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002096",
+    "scene_id": "RSF-S00002096",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which subtype best matches the aircraft in the bottom-center?",
+    "answer": "A330",
+    "answer_type": "text",
+    "choices": [
+      "A330",
+      "A350",
+      "A220",
+      "A321"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002096_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002096.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00003"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": "bottom-center",
+        "refs": {
+          "node_ids": [
+            "n_obj_00003"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "aircraft",
+        "name": "subtype",
+        "value": "a330",
+        "refs": {
+          "node_ids": [
+            "n_obj_00003"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00003"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": "bottom-center"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00003"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00003"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001633",
+    "scene_id": "RSF-S00001633",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Among the following categories, which one applies to the large vehicle in the bottom-left?",
+    "answer": "truck tractor",
+    "answer_type": "text",
+    "choices": [
+      "truck tractor",
+      "cargo truck",
+      "trailer",
+      "dump truck"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001633_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001633.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00053"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "value": "bottom-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_00053"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "name": "subtype",
+        "value": "truck_tractor",
+        "refs": {
+          "node_ids": [
+            "n_obj_00053"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00053"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "value": "bottom-left"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00053"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00053"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00004464",
+    "scene_id": "RSF-S00004464",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which fine-grained label best describes the ship in the center?",
+    "answer": "dry cargo ship",
+    "answer_type": "text",
+    "choices": [
+      "liquid cargo ship",
+      "dry cargo ship",
+      "engineering ship",
+      "other ship"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00004464_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00004464.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_1"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "ship",
+        "value": "center",
+        "refs": {
+          "node_ids": [
+            "n_obj_1"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "ship",
+        "name": "subtype",
+        "value": "dry_cargo_ship",
+        "refs": {
+          "node_ids": [
+            "n_obj_1"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_1"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": "center"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_1"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_1"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002111",
+    "scene_id": "RSF-S00002111",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which subtype best matches the aircraft in the bottom-right?",
+    "answer": "Boeing 777",
+    "answer_type": "text",
+    "choices": [
+      "Boeing 787",
+      "Boeing 747",
+      "Boeing 737",
+      "Boeing 777"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002111_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002111.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00008"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": "bottom-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_00008"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "aircraft",
+        "name": "subtype",
+        "value": "boeing777",
+        "refs": {
+          "node_ids": [
+            "n_obj_00008"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00008"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": "bottom-right"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00008"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00008"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00004511",
+    "scene_id": "RSF-S00004511",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which label from the options correctly identifies the ship in the top-left?",
+    "answer": "engineering ship",
+    "answer_type": "text",
+    "choices": [
+      "liquid cargo ship",
+      "engineering ship",
+      "dry cargo ship",
+      "other ship"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00004511_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00004511.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_2"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "ship",
+        "value": "top-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_2"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "ship",
+        "name": "subtype",
+        "value": "engineering_ship",
+        "refs": {
+          "node_ids": [
+            "n_obj_2"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_2"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": "top-left"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_2"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_2"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001960",
+    "scene_id": "RSF-S00001960",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which fine-grained label best describes the large vehicle?",
+    "answer": "dump truck",
+    "answer_type": "text",
+    "choices": [
+      "dump truck",
+      "cargo truck",
+      "truck tractor",
+      "trailer"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001960_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001960.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00037"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "name": "subtype",
+        "value": "dump_truck",
+        "refs": {
+          "node_ids": [
+            "n_obj_00037"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00037"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00037"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001901",
+    "scene_id": "RSF-S00001901",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which subtype best matches the aircraft?",
+    "answer": "other airplane",
+    "answer_type": "text",
+    "choices": [
+      "A330",
+      "A220",
+      "other airplane",
+      "A321"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001901_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001901.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "aircraft",
+        "name": "subtype",
+        "value": "other_airplane",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002061",
+    "scene_id": "RSF-S00002061",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which label from the options correctly identifies the aircraft?",
+    "answer": "Boeing 787",
+    "answer_type": "text",
+    "choices": [
+      "Boeing 737",
+      "Boeing 787",
+      "Boeing 747",
+      "Boeing 777"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002061_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002061.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "aircraft",
+        "name": "subtype",
+        "value": "boeing787",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00004172",
+    "scene_id": "RSF-S00004172",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which category among the options fits the ship in the bottom-left?",
+    "answer": "liquid cargo ship",
+    "answer_type": "text",
+    "choices": [
+      "liquid cargo ship",
+      "other ship",
+      "engineering ship",
+      "dry cargo ship"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00004172_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00004172.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_2"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "ship",
+        "value": "bottom-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_2"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "ship",
+        "name": "subtype",
+        "value": "liquid_cargo_ship",
+        "refs": {
+          "node_ids": [
+            "n_obj_2"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_2"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": "bottom-left"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_2"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_2"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001939",
+    "scene_id": "RSF-S00001939",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which of the given types describes the large vehicle in the center-left?",
+    "answer": "tractor",
+    "answer_type": "text",
+    "choices": [
+      "truck tractor",
+      "tractor",
+      "dump truck",
+      "cargo truck"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001939_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001939.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00020"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "value": "center-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_00020"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "name": "subtype",
+        "value": "tractor",
+        "refs": {
+          "node_ids": [
+            "n_obj_00020"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00020"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "value": "center-left"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00020"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00020"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001764",
+    "scene_id": "RSF-S00001764",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which category among the options fits the aircraft?",
+    "answer": "A330",
+    "answer_type": "text",
+    "choices": [
+      "A350",
+      "A330",
+      "A220",
+      "A321"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001764_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001764.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "aircraft",
+        "name": "subtype",
+        "value": "a330",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001529",
+    "scene_id": "RSF-S00001529",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which of the given types describes the ship?",
+    "answer": "other ship",
+    "answer_type": "text",
+    "choices": [
+      "dry cargo ship",
+      "fishing boat",
+      "other ship",
+      "engineering ship"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001529_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001529.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00037"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "ship",
+        "name": "subtype",
+        "value": "other_ship",
+        "refs": {
+          "node_ids": [
+            "n_obj_00037"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00037"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00037"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002313",
+    "scene_id": "RSF-S00002313",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which subtype best matches the large vehicle in the center-right?",
+    "answer": "cargo truck",
+    "answer_type": "text",
+    "choices": [
+      "cargo truck",
+      "trailer",
+      "truck tractor",
+      "dump truck"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002313_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002313.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00064"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "value": "center-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_00064"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "name": "subtype",
+        "value": "cargo_truck",
+        "refs": {
+          "node_ids": [
+            "n_obj_00064"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00064"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "value": "center-right"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00064"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00064"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00003952",
+    "scene_id": "RSF-S00003952",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which fine-grained label best describes the ship in the top-center?",
+    "answer": "passenger ship",
+    "answer_type": "text",
+    "choices": [
+      "engineering ship",
+      "passenger ship",
+      "dry cargo ship",
+      "liquid cargo ship"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00003952_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00003952.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "ship",
+        "value": "top-center",
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "ship",
+        "name": "subtype",
+        "value": "passenger_ship",
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": "top-center"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002133",
+    "scene_id": "RSF-S00002133",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Among the following categories, which one applies to the large vehicle in the top-left?",
+    "answer": "truck tractor",
+    "answer_type": "text",
+    "choices": [
+      "trailer",
+      "dump truck",
+      "cargo truck",
+      "truck tractor"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002133_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002133.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00062"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "value": "top-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_00062"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "name": "subtype",
+        "value": "truck_tractor",
+        "refs": {
+          "node_ids": [
+            "n_obj_00062"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00062"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "value": "top-left"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00062"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00062"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002019",
+    "scene_id": "RSF-S00002019",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which category among the options fits the aircraft in the bottom-center?",
+    "answer": "ARJ21",
+    "answer_type": "text",
+    "choices": [
+      "A330",
+      "A220",
+      "ARJ21",
+      "A321"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002019_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002019.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00021"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": "bottom-center",
+        "refs": {
+          "node_ids": [
+            "n_obj_00021"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "aircraft",
+        "name": "subtype",
+        "value": "arj21",
+        "refs": {
+          "node_ids": [
+            "n_obj_00021"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00021"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": "bottom-center"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00021"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00021"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001966",
+    "scene_id": "RSF-S00001966",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which fine-grained label best describes the aircraft?",
+    "answer": "Boeing 747",
+    "answer_type": "text",
+    "choices": [
+      "Boeing 737",
+      "Boeing 787",
+      "Boeing 777",
+      "Boeing 747"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001966_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001966.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "aircraft",
+        "name": "subtype",
+        "value": "boeing747",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001552",
+    "scene_id": "RSF-S00001552",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which label from the options correctly identifies the aircraft in the center-right?",
+    "answer": "C919",
+    "answer_type": "text",
+    "choices": [
+      "A321",
+      "A220",
+      "A330",
+      "C919"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001552_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001552.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00009"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": "center-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_00009"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "aircraft",
+        "name": "subtype",
+        "value": "c919",
+        "refs": {
+          "node_ids": [
+            "n_obj_00009"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00009"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": "center-right"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00009"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00009"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001982",
+    "scene_id": "RSF-S00001982",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which category among the options fits the large vehicle?",
+    "answer": "trailer",
+    "answer_type": "text",
+    "choices": [
+      "dump truck",
+      "truck tractor",
+      "cargo truck",
+      "trailer"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001982_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001982.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00004"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "name": "subtype",
+        "value": "trailer",
+        "refs": {
+          "node_ids": [
+            "n_obj_00004"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00004"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00004"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001537",
+    "scene_id": "RSF-S00001537",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which subtype best matches the aircraft in the top-left?",
+    "answer": "A350",
+    "answer_type": "text",
+    "choices": [
+      "A350",
+      "A330",
+      "A220",
+      "A321"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001537_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001537.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": "top-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "aircraft",
+        "name": "subtype",
+        "value": "a350",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": "top-left"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00004402",
+    "scene_id": "RSF-S00004402",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Among the following categories, which one applies to the ship?",
+    "answer": "liquid cargo ship",
+    "answer_type": "text",
+    "choices": [
+      "liquid cargo ship",
+      "dry cargo ship",
+      "engineering ship",
+      "other ship"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00004402_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00004402.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "ship",
+        "name": "subtype",
+        "value": "liquid_cargo_ship",
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00004078",
+    "scene_id": "RSF-S00004078",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Among the following categories, which one applies to the ship in the top-center?",
+    "answer": "warship",
+    "answer_type": "text",
+    "choices": [
+      "engineering ship",
+      "liquid cargo ship",
+      "warship",
+      "dry cargo ship"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00004078_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00004078.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "ship",
+        "value": "top-center",
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "ship",
+        "name": "subtype",
+        "value": "warship",
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": "top-center"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001902",
+    "scene_id": "RSF-S00001902",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which fine-grained label best describes the aircraft in the top-center?",
+    "answer": "Boeing 777",
+    "answer_type": "text",
+    "choices": [
+      "Boeing 747",
+      "Boeing 777",
+      "Boeing 787",
+      "Boeing 737"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001902_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001902.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00007"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": "top-center",
+        "refs": {
+          "node_ids": [
+            "n_obj_00007"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "aircraft",
+        "name": "subtype",
+        "value": "boeing777",
+        "refs": {
+          "node_ids": [
+            "n_obj_00007"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00007"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": "top-center"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00007"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00007"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001782",
+    "scene_id": "RSF-S00001782",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which label from the options correctly identifies the large vehicle?",
+    "answer": "cargo truck",
+    "answer_type": "text",
+    "choices": [
+      "dump truck",
+      "truck tractor",
+      "trailer",
+      "cargo truck"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001782_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001782.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00014"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "name": "subtype",
+        "value": "cargo_truck",
+        "refs": {
+          "node_ids": [
+            "n_obj_00014"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00014"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00014"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002060",
+    "scene_id": "RSF-S00002060",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which of the given types describes the aircraft in the center?",
+    "answer": "ARJ21",
+    "answer_type": "text",
+    "choices": [
+      "ARJ21",
+      "A321",
+      "A220",
+      "A330"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002060_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002060.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00003"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": "center",
+        "refs": {
+          "node_ids": [
+            "n_obj_00003"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "aircraft",
+        "name": "subtype",
+        "value": "arj21",
+        "refs": {
+          "node_ids": [
+            "n_obj_00003"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00003"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": "center"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00003"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00003"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001393",
+    "scene_id": "RSF-S00001393",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which of the given types describes the large vehicle?",
+    "answer": "trailer",
+    "answer_type": "text",
+    "choices": [
+      "trailer",
+      "truck tractor",
+      "cargo truck",
+      "dump truck"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001393_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001393.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00002"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "name": "subtype",
+        "value": "trailer",
+        "refs": {
+          "node_ids": [
+            "n_obj_00002"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001707",
+    "scene_id": "RSF-S00001707",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which category among the options fits the aircraft in the center-left?",
+    "answer": "C919",
+    "answer_type": "text",
+    "choices": [
+      "C919",
+      "A330",
+      "A321",
+      "A220"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001707_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001707.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00014"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": "center-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_00014"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "aircraft",
+        "name": "subtype",
+        "value": "c919",
+        "refs": {
+          "node_ids": [
+            "n_obj_00014"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00014"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": "center-left"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00014"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00014"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00003956",
+    "scene_id": "RSF-S00003956",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which fine-grained label best describes the ship in the top-left?",
+    "answer": "passenger ship",
+    "answer_type": "text",
+    "choices": [
+      "passenger ship",
+      "liquid cargo ship",
+      "dry cargo ship",
+      "engineering ship"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00003956_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00003956.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_2"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "ship",
+        "value": "top-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_2"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "ship",
+        "name": "subtype",
+        "value": "passenger_ship",
+        "refs": {
+          "node_ids": [
+            "n_obj_2"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_2"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": "top-left"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_2"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_2"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001602",
+    "scene_id": "RSF-S00001602",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which label from the options correctly identifies the large vehicle in the bottom-center?",
+    "answer": "truck tractor",
+    "answer_type": "text",
+    "choices": [
+      "dump truck",
+      "cargo truck",
+      "trailer",
+      "truck tractor"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001602_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001602.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00014"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "value": "bottom-center",
+        "refs": {
+          "node_ids": [
+            "n_obj_00014"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "name": "subtype",
+        "value": "truck_tractor",
+        "refs": {
+          "node_ids": [
+            "n_obj_00014"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00014"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "value": "bottom-center"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00014"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00014"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001693",
+    "scene_id": "RSF-S00001693",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which subtype best matches the ship?",
+    "answer": "other ship",
+    "answer_type": "text",
+    "choices": [
+      "other ship",
+      "dry cargo ship",
+      "engineering ship",
+      "fishing boat"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001693_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001693.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "ship",
+        "name": "subtype",
+        "value": "other_ship",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001933",
+    "scene_id": "RSF-S00001933",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which of the given types describes the aircraft?",
+    "answer": "Boeing 737",
+    "answer_type": "text",
+    "choices": [
+      "Boeing 747",
+      "Boeing 777",
+      "Boeing 737",
+      "Boeing 787"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001933_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001933.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "aircraft",
+        "name": "subtype",
+        "value": "boeing737",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002688",
+    "scene_id": "RSF-S00002688",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which of the given types describes the ship in the bottom-center?",
+    "answer": "engineering ship",
+    "answer_type": "text",
+    "choices": [
+      "dry cargo ship",
+      "engineering ship",
+      "liquid cargo ship",
+      "other ship"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002688_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002688.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_2"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "ship",
+        "value": "bottom-center",
+        "refs": {
+          "node_ids": [
+            "n_obj_2"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "ship",
+        "name": "subtype",
+        "value": "engineering_ship",
+        "refs": {
+          "node_ids": [
+            "n_obj_2"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_2"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": "bottom-center"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_2"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_2"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002238",
+    "scene_id": "RSF-S00002238",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which subtype best matches the aircraft in the center-right?",
+    "answer": "Boeing 777",
+    "answer_type": "text",
+    "choices": [
+      "Boeing 777",
+      "Boeing 737",
+      "Boeing 787",
+      "Boeing 747"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002238_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002238.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00004"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": "center-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_00004"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "aircraft",
+        "name": "subtype",
+        "value": "boeing777",
+        "refs": {
+          "node_ids": [
+            "n_obj_00004"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00004"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": "center-right"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00004"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00004"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001794",
+    "scene_id": "RSF-S00001794",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which subtype best matches the large vehicle?",
+    "answer": "dump truck",
+    "answer_type": "text",
+    "choices": [
+      "trailer",
+      "cargo truck",
+      "dump truck",
+      "truck tractor"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001794_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001794.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00010"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "name": "subtype",
+        "value": "dump_truck",
+        "refs": {
+          "node_ids": [
+            "n_obj_00010"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00010"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00010"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001983",
+    "scene_id": "RSF-S00001983",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which fine-grained label best describes the ship?",
+    "answer": "dry cargo ship",
+    "answer_type": "text",
+    "choices": [
+      "engineering ship",
+      "dry cargo ship",
+      "passenger ship",
+      "liquid cargo ship"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001983_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001983.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "ship",
+        "name": "subtype",
+        "value": "dry_cargo_ship",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002003",
+    "scene_id": "RSF-S00002003",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which category among the options fits the aircraft in the bottom-left?",
+    "answer": "C919",
+    "answer_type": "text",
+    "choices": [
+      "A220",
+      "A321",
+      "A330",
+      "C919"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002003_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002003.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00004"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": "bottom-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_00004"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "aircraft",
+        "name": "subtype",
+        "value": "c919",
+        "refs": {
+          "node_ids": [
+            "n_obj_00004"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00004"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": "bottom-left"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00004"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00004"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00004135",
+    "scene_id": "RSF-S00004135",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Among the following categories, which one applies to the ship in the top-left?",
+    "answer": "warship",
+    "answer_type": "text",
+    "choices": [
+      "dry cargo ship",
+      "warship",
+      "engineering ship",
+      "liquid cargo ship"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00004135_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00004135.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_1"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "ship",
+        "value": "top-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_1"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "ship",
+        "name": "subtype",
+        "value": "warship",
+        "refs": {
+          "node_ids": [
+            "n_obj_1"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_1"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": "top-left"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_1"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_1"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002237",
+    "scene_id": "RSF-S00002237",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which fine-grained label best describes the aircraft in the bottom-right?",
+    "answer": "ARJ21",
+    "answer_type": "text",
+    "choices": [
+      "A220",
+      "A330",
+      "ARJ21",
+      "A321"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002237_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002237.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00002"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": "bottom-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_00002"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "aircraft",
+        "name": "subtype",
+        "value": "arj21",
+        "refs": {
+          "node_ids": [
+            "n_obj_00002"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": "bottom-right"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001739",
+    "scene_id": "RSF-S00001739",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which of the given types describes the large vehicle in the center-right?",
+    "answer": "tractor",
+    "answer_type": "text",
+    "choices": [
+      "dump truck",
+      "tractor",
+      "cargo truck",
+      "truck tractor"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001739_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001739.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00037"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "value": "center-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_00037"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "name": "subtype",
+        "value": "tractor",
+        "refs": {
+          "node_ids": [
+            "n_obj_00037"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00037"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "value": "center-right"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00037"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00037"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001654",
+    "scene_id": "RSF-S00001654",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which subtype best matches the aircraft in the bottom-left?",
+    "answer": "A321",
+    "answer_type": "text",
+    "choices": [
+      "A350",
+      "A330",
+      "A220",
+      "A321"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001654_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001654.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": "bottom-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "aircraft",
+        "name": "subtype",
+        "value": "a321",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": "bottom-left"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001554",
+    "scene_id": "RSF-S00001554",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which label from the options correctly identifies the ship?",
+    "answer": "other ship",
+    "answer_type": "text",
+    "choices": [
+      "engineering ship",
+      "dry cargo ship",
+      "other ship",
+      "fishing boat"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001554_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001554.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "ship",
+        "name": "subtype",
+        "value": "other_ship",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001402",
+    "scene_id": "RSF-S00001402",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which category among the options fits the large vehicle in the center-left?",
+    "answer": "truck tractor",
+    "answer_type": "text",
+    "choices": [
+      "dump truck",
+      "trailer",
+      "cargo truck",
+      "truck tractor"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001402_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001402.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00012"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "value": "center-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_00012"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "large_vehicle",
+        "name": "subtype",
+        "value": "truck_tractor",
+        "refs": {
+          "node_ids": [
+            "n_obj_00012"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00012"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "value": "center-left"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00012"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "large_vehicle",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00012"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001951",
+    "scene_id": "RSF-S00001951",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which category among the options fits the ship?",
+    "answer": "engineering ship",
+    "answer_type": "text",
+    "choices": [
+      "liquid cargo ship",
+      "dry cargo ship",
+      "passenger ship",
+      "engineering ship"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001951_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001951.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "ship",
+        "name": "subtype",
+        "value": "engineering_ship",
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002307",
+    "scene_id": "RSF-S00002307",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which fine-grained label best describes the aircraft in the center-right?",
+    "answer": "Boeing 777",
+    "answer_type": "text",
+    "choices": [
+      "Boeing 777",
+      "Boeing 737",
+      "Boeing 747",
+      "Boeing 787"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002307_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002307.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00004"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": "center-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_00004"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "aircraft",
+        "name": "subtype",
+        "value": "boeing777",
+        "refs": {
+          "node_ids": [
+            "n_obj_00004"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00004"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "value": "center-right"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00004"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00004"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00004520",
+    "scene_id": "RSF-S00004520",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which label from the options correctly identifies the ship in the center-right?",
+    "answer": "warship",
+    "answer_type": "text",
+    "choices": [
+      "liquid cargo ship",
+      "warship",
+      "dry cargo ship",
+      "engineering ship"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00004520_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00004520.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_1"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "ship",
+        "value": "center-right",
+        "refs": {
+          "node_ids": [
+            "n_obj_1"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "ship",
+        "name": "subtype",
+        "value": "warship",
+        "refs": {
+          "node_ids": [
+            "n_obj_1"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_1"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": "center-right"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_1"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_1"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00004065",
+    "scene_id": "RSF-S00004065",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which of the given types describes the ship in the top-center?",
+    "answer": "passenger ship",
+    "answer_type": "text",
+    "choices": [
+      "liquid cargo ship",
+      "passenger ship",
+      "dry cargo ship",
+      "engineering ship"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00004065_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00004065.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_3"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "ship",
+        "value": "top-center",
+        "refs": {
+          "node_ids": [
+            "n_obj_3"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "ship",
+        "name": "subtype",
+        "value": "passenger_ship",
+        "refs": {
+          "node_ids": [
+            "n_obj_3"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_3"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": "top-center"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_3"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_3"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00004184",
+    "scene_id": "RSF-S00004184",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Among the following categories, which one applies to the ship in the bottom-center?",
+    "answer": "warship",
+    "answer_type": "text",
+    "choices": [
+      "warship",
+      "dry cargo ship",
+      "engineering ship",
+      "liquid cargo ship"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00004184_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00004184.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "ship",
+        "value": "bottom-center",
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "ship",
+        "name": "subtype",
+        "value": "warship",
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": "bottom-center"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00004081",
+    "scene_id": "RSF-S00004081",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Which category among the options fits the ship in the top-left?",
+    "answer": "passenger ship",
+    "answer_type": "text",
+    "choices": [
+      "dry cargo ship",
+      "passenger ship",
+      "liquid cargo ship",
+      "engineering ship"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00004081_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00004081.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_7"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "ship",
+        "value": "top-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_7"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "ship",
+        "name": "subtype",
+        "value": "passenger_ship",
+        "refs": {
+          "node_ids": [
+            "n_obj_7"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_7"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": "top-left"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_7"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_7"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00004398",
+    "scene_id": "RSF-S00004398",
+    "level": "Perception",
+    "subcategory": "fine_grained_recognition",
+    "question": "Among the following categories, which one applies to the ship in the center-left?",
+    "answer": "warship",
+    "answer_type": "text",
+    "choices": [
+      "engineering ship",
+      "dry cargo ship",
+      "warship",
+      "liquid cargo ship"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00004398_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00004398.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_1"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Location",
+        "time": "t1",
+        "subject": "ship",
+        "value": "center-left",
+        "refs": {
+          "node_ids": [
+            "n_obj_1"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "ship",
+        "name": "subtype",
+        "value": "warship",
+        "refs": {
+          "node_ids": [
+            "n_obj_1"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_attribute",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": true
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_1"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Location",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "value": "center-left"
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_1"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship",
+            "name": "subtype"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_1"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "slot_value",
+        "claim_type": "Attribute",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  }
+]

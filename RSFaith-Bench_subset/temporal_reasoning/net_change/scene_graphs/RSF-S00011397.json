@@ -1,0 +1,115 @@
+{
+  "scene_id": "RSF-S00011397",
+  "graph_meta": {
+    "temporal_mode": "pair",
+    "image_size": [
+      1024,
+      1024
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_t1_28e0ac16-02ee-4b26-83ff-d22ea39cb79b",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          290.8196,
+          923.7696,
+          320.7202,
+          990.4082
+        ],
+        "polygon": [
+          [
+            293.3469,
+            923.8803
+          ],
+          [
+            290.8196,
+            989.5892
+          ],
+          [
+            319.6026,
+            990.4082
+          ],
+          [
+            320.7202,
+            923.7696
+          ],
+          [
+            293.3469,
+            923.8803
+          ]
+        ],
+        "center": [
+          305.7699,
+          957.0889
+        ],
+        "area": 1992.5341,
+        "region_bin_3x3": "bottom-left"
+      },
+      "attributes": {
+        "uid": "28e0ac16_02ee_4b26_83ff_d22ea39cb79b"
+      }
+    },
+    {
+      "node_id": "n_t2_28e0ac16-02ee-4b26-83ff-d22ea39cb79b",
+      "node_type": "object",
+      "time": "t2",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          290.8196,
+          923.7696,
+          320.7202,
+          990.4082
+        ],
+        "polygon": [
+          [
+            293.3469,
+            923.8803
+          ],
+          [
+            320.7202,
+            923.7696
+          ],
+          [
+            319.6026,
+            990.4082
+          ],
+          [
+            290.8196,
+            989.5892
+          ],
+          [
+            293.3469,
+            923.8803
+          ]
+        ],
+        "center": [
+          305.7699,
+          957.0889
+        ],
+        "area": 1992.5341,
+        "region_bin_3x3": "bottom-left"
+      },
+      "attributes": {
+        "uid": "28e0ac16_02ee_4b26_83ff_d22ea39cb79b",
+        "damage_level": "destroyed"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "e_tm_00001",
+      "edge_type": "temporal",
+      "relation_type": "same_instance",
+      "source": "n_t1_28e0ac16-02ee-4b26-83ff-d22ea39cb79b",
+      "target": "n_t2_28e0ac16-02ee-4b26-83ff-d22ea39cb79b"
+    }
+  ],
+  "global_inventory": {}
+}

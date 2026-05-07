@@ -1,0 +1,1995 @@
+{
+  "scene_id": "RSF-S00008768",
+  "graph_meta": {
+    "temporal_mode": "pair",
+    "image_size": [
+      512,
+      512
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_t2_water",
+      "node_type": "region",
+      "time": "t2",
+      "canonical_leaf": "water",
+      "canonical_root": "water",
+      "geometry": {
+        "bbox": [
+          297.0,
+          95.0,
+          493.0,
+          198.0
+        ],
+        "center": [
+          395.0,
+          146.5
+        ],
+        "area": 20188.0,
+        "region_bin_3x3": "top-right",
+        "components": [
+          {
+            "component_id": "c001",
+            "bbox": [
+              297.0,
+              95.0,
+              493.0,
+              198.0
+            ],
+            "center": [
+              395.0,
+              146.5
+            ],
+            "area": 1955,
+            "region_bin_3x3": "top-right"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 1955
+      }
+    },
+    {
+      "node_id": "n_t1_NVG_surface",
+      "node_type": "region",
+      "time": "t1",
+      "canonical_leaf": "non_vegetated_surface",
+      "canonical_root": "non_vegetated_surface",
+      "geometry": {
+        "bbox": [
+          0.0,
+          0.0,
+          508.0,
+          494.0
+        ],
+        "center": [
+          254.0,
+          247.0
+        ],
+        "area": 250952.0,
+        "region_bin_3x3": "center",
+        "components": [
+          {
+            "component_id": "c004",
+            "bbox": [
+              9.0,
+              269.0,
+              98.0,
+              333.0
+            ],
+            "center": [
+              53.5,
+              301.0
+            ],
+            "area": 1286,
+            "region_bin_3x3": "center-left"
+          },
+          {
+            "component_id": "c006",
+            "bbox": [
+              449.0,
+              332.0,
+              497.0,
+              376.0
+            ],
+            "center": [
+              473.0,
+              354.0
+            ],
+            "area": 976,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c010",
+            "bbox": [
+              377.0,
+              408.0,
+              416.0,
+              457.0
+            ],
+            "center": [
+              396.5,
+              432.5
+            ],
+            "area": 913,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c005",
+            "bbox": [
+              0.0,
+              291.0,
+              35.0,
+              354.0
+            ],
+            "center": [
+              17.5,
+              322.5
+            ],
+            "area": 858,
+            "region_bin_3x3": "center-left"
+          },
+          {
+            "component_id": "c008",
+            "bbox": [
+              0.0,
+              388.0,
+              33.0,
+              417.0
+            ],
+            "center": [
+              16.5,
+              402.5
+            ],
+            "area": 654,
+            "region_bin_3x3": "bottom-left"
+          },
+          {
+            "component_id": "c001",
+            "bbox": [
+              414.0,
+              0.0,
+              473.0,
+              34.0
+            ],
+            "center": [
+              443.5,
+              17.0
+            ],
+            "area": 649,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c012",
+            "bbox": [
+              401.0,
+              457.0,
+              464.0,
+              494.0
+            ],
+            "center": [
+              432.5,
+              475.5
+            ],
+            "area": 564,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c011",
+            "bbox": [
+              472.0,
+              414.0,
+              508.0,
+              437.0
+            ],
+            "center": [
+              490.0,
+              425.5
+            ],
+            "area": 355,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c007",
+            "bbox": [
+              402.0,
+              377.0,
+              434.0,
+              399.0
+            ],
+            "center": [
+              418.0,
+              388.0
+            ],
+            "area": 328,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c009",
+            "bbox": [
+              438.0,
+              401.0,
+              461.0,
+              427.0
+            ],
+            "center": [
+              449.5,
+              414.0
+            ],
+            "area": 146,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c003",
+            "bbox": [
+              340.0,
+              46.0,
+              352.0,
+              58.0
+            ],
+            "center": [
+              346.0,
+              52.0
+            ],
+            "area": 72,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c002",
+            "bbox": [
+              337.0,
+              5.0,
+              347.0,
+              14.0
+            ],
+            "center": [
+              342.0,
+              9.5
+            ],
+            "area": 52,
+            "region_bin_3x3": "top-right"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 6853
+      }
+    },
+    {
+      "node_id": "n_t2_NVG_surface",
+      "node_type": "region",
+      "time": "t2",
+      "canonical_leaf": "non_vegetated_surface",
+      "canonical_root": "non_vegetated_surface",
+      "geometry": {
+        "bbox": [
+          37.0,
+          0.0,
+          512.0,
+          512.0
+        ],
+        "center": [
+          274.5,
+          256.0
+        ],
+        "area": 243200.0,
+        "region_bin_3x3": "center",
+        "components": [
+          {
+            "component_id": "c002",
+            "bbox": [
+              309.0,
+              0.0,
+              512.0,
+              161.0
+            ],
+            "center": [
+              410.5,
+              80.5
+            ],
+            "area": 11736,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c012",
+            "bbox": [
+              241.0,
+              124.0,
+              424.0,
+              372.0
+            ],
+            "center": [
+              332.5,
+              248.0
+            ],
+            "area": 10200,
+            "region_bin_3x3": "center"
+          },
+          {
+            "component_id": "c029",
+            "bbox": [
+              37.0,
+              316.0,
+              305.0,
+              512.0
+            ],
+            "center": [
+              171.0,
+              414.0
+            ],
+            "area": 9719,
+            "region_bin_3x3": "bottom-center"
+          },
+          {
+            "component_id": "c024",
+            "bbox": [
+              373.0,
+              232.0,
+              470.0,
+              372.0
+            ],
+            "center": [
+              421.5,
+              302.0
+            ],
+            "area": 2508,
+            "region_bin_3x3": "center-right"
+          },
+          {
+            "component_id": "c015",
+            "bbox": [
+              146.0,
+              156.0,
+              210.0,
+              243.0
+            ],
+            "center": [
+              178.0,
+              199.5
+            ],
+            "area": 1509,
+            "region_bin_3x3": "center"
+          },
+          {
+            "component_id": "c052",
+            "bbox": [
+              487.0,
+              452.0,
+              512.0,
+              511.0
+            ],
+            "center": [
+              499.5,
+              481.5
+            ],
+            "area": 725,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c023",
+            "bbox": [
+              124.0,
+              205.0,
+              172.0,
+              236.0
+            ],
+            "center": [
+              148.0,
+              220.5
+            ],
+            "area": 595,
+            "region_bin_3x3": "center-left"
+          },
+          {
+            "component_id": "c001",
+            "bbox": [
+              348.0,
+              0.0,
+              375.0,
+              14.0
+            ],
+            "center": [
+              361.5,
+              7.0
+            ],
+            "area": 187,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c027",
+            "bbox": [
+              225.0,
+              262.0,
+              239.0,
+              273.0
+            ],
+            "center": [
+              232.0,
+              267.5
+            ],
+            "area": 84,
+            "region_bin_3x3": "center"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 37361
+      }
+    },
+    {
+      "node_id": "n_t1_low_vegetation",
+      "node_type": "region",
+      "time": "t1",
+      "canonical_leaf": "low_vegetation",
+      "canonical_root": "low_vegetation",
+      "geometry": {
+        "bbox": [
+          37.0,
+          0.0,
+          512.0,
+          512.0
+        ],
+        "center": [
+          274.5,
+          256.0
+        ],
+        "area": 243200.0,
+        "region_bin_3x3": "center",
+        "components": [
+          {
+            "component_id": "c013",
+            "bbox": [
+              37.0,
+              95.0,
+              493.0,
+              512.0
+            ],
+            "center": [
+              265.0,
+              303.5
+            ],
+            "area": 80752,
+            "region_bin_3x3": "center"
+          },
+          {
+            "component_id": "c001",
+            "bbox": [
+              358.0,
+              0.0,
+              512.0,
+              161.0
+            ],
+            "center": [
+              435.0,
+              80.5
+            ],
+            "area": 14862,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c021",
+            "bbox": [
+              124.0,
+              156.0,
+              210.0,
+              237.0
+            ],
+            "center": [
+              167.0,
+              196.5
+            ],
+            "area": 4161,
+            "region_bin_3x3": "center-left"
+          },
+          {
+            "component_id": "c007",
+            "bbox": [
+              311.0,
+              71.0,
+              511.0,
+              189.0
+            ],
+            "center": [
+              411.0,
+              130.0
+            ],
+            "area": 3969,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c034",
+            "bbox": [
+              373.0,
+              461.0,
+              477.0,
+              512.0
+            ],
+            "center": [
+              425.0,
+              486.5
+            ],
+            "area": 3032,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c029",
+            "bbox": [
+              473.0,
+              259.0,
+              512.0,
+              300.0
+            ],
+            "center": [
+              492.5,
+              279.5
+            ],
+            "area": 932,
+            "region_bin_3x3": "center-right"
+          },
+          {
+            "component_id": "c030",
+            "bbox": [
+              476.0,
+              340.0,
+              512.0,
+              385.0
+            ],
+            "center": [
+              494.0,
+              362.5
+            ],
+            "area": 766,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c031",
+            "bbox": [
+              442.0,
+              406.0,
+              479.0,
+              436.0
+            ],
+            "center": [
+              460.5,
+              421.0
+            ],
+            "area": 751,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c033",
+            "bbox": [
+              487.0,
+              452.0,
+              512.0,
+              511.0
+            ],
+            "center": [
+              499.5,
+              481.5
+            ],
+            "area": 725,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c032",
+            "bbox": [
+              475.0,
+              425.0,
+              504.0,
+              446.0
+            ],
+            "center": [
+              489.5,
+              435.5
+            ],
+            "area": 315,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c009",
+            "bbox": [
+              471.0,
+              84.0,
+              502.0,
+              106.0
+            ],
+            "center": [
+              486.5,
+              95.0
+            ],
+            "area": 276,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c006",
+            "bbox": [
+              363.0,
+              56.0,
+              402.0,
+              84.0
+            ],
+            "center": [
+              382.5,
+              70.0
+            ],
+            "area": 265,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c016",
+            "bbox": [
+              459.0,
+              110.0,
+              494.0,
+              133.0
+            ],
+            "center": [
+              476.5,
+              121.5
+            ],
+            "area": 215,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c015",
+            "bbox": [
+              436.0,
+              100.0,
+              456.0,
+              113.0
+            ],
+            "center": [
+              446.0,
+              106.5
+            ],
+            "area": 124,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c019",
+            "bbox": [
+              502.0,
+              134.0,
+              506.0,
+              138.0
+            ],
+            "center": [
+              504.0,
+              136.0
+            ],
+            "area": 16,
+            "region_bin_3x3": "top-right"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 111219
+      }
+    },
+    {
+      "node_id": "n_t2_low_vegetation",
+      "node_type": "region",
+      "time": "t2",
+      "canonical_leaf": "low_vegetation",
+      "canonical_root": "low_vegetation",
+      "geometry": {
+        "bbox": [
+          420.0,
+          207.0,
+          430.0,
+          221.0
+        ],
+        "center": [
+          425.0,
+          214.0
+        ],
+        "area": 140.0,
+        "region_bin_3x3": "center-right",
+        "components": [
+          {
+            "component_id": "c001",
+            "bbox": [
+              420.0,
+              207.0,
+              430.0,
+              221.0
+            ],
+            "center": [
+              425.0,
+              214.0
+            ],
+            "area": 55,
+            "region_bin_3x3": "center-right"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 55
+      }
+    },
+    {
+      "node_id": "n_t1_trees",
+      "node_type": "region",
+      "time": "t1",
+      "canonical_leaf": "tree",
+      "canonical_root": "tree",
+      "geometry": {
+        "bbox": [
+          160.0,
+          386.0,
+          428.0,
+          494.0
+        ],
+        "center": [
+          294.0,
+          440.0
+        ],
+        "area": 28944.0,
+        "region_bin_3x3": "bottom-center",
+        "components": [
+          {
+            "component_id": "c001",
+            "bbox": [
+              394.0,
+              386.0,
+              428.0,
+              421.0
+            ],
+            "center": [
+              411.0,
+              403.5
+            ],
+            "area": 693,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c002",
+            "bbox": [
+              160.0,
+              429.0,
+              216.0,
+              461.0
+            ],
+            "center": [
+              188.0,
+              445.0
+            ],
+            "area": 305,
+            "region_bin_3x3": "bottom-center"
+          },
+          {
+            "component_id": "c004",
+            "bbox": [
+              235.0,
+              467.0,
+              285.0,
+              494.0
+            ],
+            "center": [
+              260.0,
+              480.5
+            ],
+            "area": 204,
+            "region_bin_3x3": "bottom-center"
+          },
+          {
+            "component_id": "c003",
+            "bbox": [
+              219.0,
+              459.0,
+              233.0,
+              468.0
+            ],
+            "center": [
+              226.0,
+              463.5
+            ],
+            "area": 63,
+            "region_bin_3x3": "bottom-center"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 1265
+      }
+    },
+    {
+      "node_id": "n_t2_trees",
+      "node_type": "region",
+      "time": "t2",
+      "canonical_leaf": "tree",
+      "canonical_root": "tree",
+      "geometry": {
+        "bbox": [
+          0.0,
+          1.0,
+          511.0,
+          509.0
+        ],
+        "center": [
+          255.5,
+          255.0
+        ],
+        "area": 259588.0,
+        "region_bin_3x3": "center",
+        "components": [
+          {
+            "component_id": "c006",
+            "bbox": [
+              288.0,
+              99.0,
+              492.0,
+              363.0
+            ],
+            "center": [
+              390.0,
+              231.0
+            ],
+            "area": 7105,
+            "region_bin_3x3": "center-right"
+          },
+          {
+            "component_id": "c004",
+            "bbox": [
+              311.0,
+              69.0,
+              511.0,
+              189.0
+            ],
+            "center": [
+              411.0,
+              129.0
+            ],
+            "area": 4308,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c016",
+            "bbox": [
+              181.0,
+              457.0,
+              332.0,
+              509.0
+            ],
+            "center": [
+              256.5,
+              483.0
+            ],
+            "area": 2713,
+            "region_bin_3x3": "bottom-center"
+          },
+          {
+            "component_id": "c012",
+            "bbox": [
+              9.0,
+              269.0,
+              98.0,
+              333.0
+            ],
+            "center": [
+              53.5,
+              301.0
+            ],
+            "area": 1286,
+            "region_bin_3x3": "center-left"
+          },
+          {
+            "component_id": "c017",
+            "bbox": [
+              98.0,
+              461.0,
+              132.0,
+              500.0
+            ],
+            "center": [
+              115.0,
+              480.5
+            ],
+            "area": 764,
+            "region_bin_3x3": "bottom-left"
+          },
+          {
+            "component_id": "c010",
+            "bbox": [
+              167.0,
+              183.0,
+              191.0,
+              232.0
+            ],
+            "center": [
+              179.0,
+              207.5
+            ],
+            "area": 720,
+            "region_bin_3x3": "center"
+          },
+          {
+            "component_id": "c014",
+            "bbox": [
+              0.0,
+              388.0,
+              33.0,
+              417.0
+            ],
+            "center": [
+              16.5,
+              402.5
+            ],
+            "area": 654,
+            "region_bin_3x3": "bottom-left"
+          },
+          {
+            "component_id": "c003",
+            "bbox": [
+              340.0,
+              46.0,
+              402.0,
+              84.0
+            ],
+            "center": [
+              371.0,
+              65.0
+            ],
+            "area": 431,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c005",
+            "bbox": [
+              471.0,
+              84.0,
+              502.0,
+              106.0
+            ],
+            "center": [
+              486.5,
+              95.0
+            ],
+            "area": 276,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c008",
+            "bbox": [
+              459.0,
+              110.0,
+              494.0,
+              133.0
+            ],
+            "center": [
+              476.5,
+              121.5
+            ],
+            "area": 215,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c011",
+            "bbox": [
+              6.0,
+              259.0,
+              35.0,
+              276.0
+            ],
+            "center": [
+              20.5,
+              267.5
+            ],
+            "area": 131,
+            "region_bin_3x3": "center-left"
+          },
+          {
+            "component_id": "c015",
+            "bbox": [
+              317.0,
+              403.0,
+              341.0,
+              456.0
+            ],
+            "center": [
+              329.0,
+              429.5
+            ],
+            "area": 128,
+            "region_bin_3x3": "bottom-center"
+          },
+          {
+            "component_id": "c007",
+            "bbox": [
+              436.0,
+              100.0,
+              456.0,
+              113.0
+            ],
+            "center": [
+              446.0,
+              106.5
+            ],
+            "area": 124,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c002",
+            "bbox": [
+              337.0,
+              5.0,
+              356.0,
+              19.0
+            ],
+            "center": [
+              346.5,
+              12.0
+            ],
+            "area": 119,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c001",
+            "bbox": [
+              245.0,
+              1.0,
+              265.0,
+              10.0
+            ],
+            "center": [
+              255.0,
+              5.5
+            ],
+            "area": 107,
+            "region_bin_3x3": "top-center"
+          },
+          {
+            "component_id": "c013",
+            "bbox": [
+              341.0,
+              365.0,
+              360.0,
+              405.0
+            ],
+            "center": [
+              350.5,
+              385.0
+            ],
+            "area": 64,
+            "region_bin_3x3": "bottom-right"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 19161
+      }
+    },
+    {
+      "node_id": "n_t1_buildings",
+      "node_type": "region",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          5.0,
+          0.0,
+          462.0,
+          505.0
+        ],
+        "center": [
+          233.5,
+          252.5
+        ],
+        "area": 230785.0,
+        "region_bin_3x3": "center",
+        "components": [
+          {
+            "component_id": "c018",
+            "bbox": [
+              147.0,
+              306.0,
+              228.0,
+              424.0
+            ],
+            "center": [
+              187.5,
+              365.0
+            ],
+            "area": 1754,
+            "region_bin_3x3": "bottom-center"
+          },
+          {
+            "component_id": "c019",
+            "bbox": [
+              67.0,
+              429.0,
+              143.0,
+              505.0
+            ],
+            "center": [
+              105.0,
+              467.0
+            ],
+            "area": 1311,
+            "region_bin_3x3": "bottom-left"
+          },
+          {
+            "component_id": "c012",
+            "bbox": [
+              420.0,
+              201.0,
+              462.0,
+              236.0
+            ],
+            "center": [
+              441.0,
+              218.5
+            ],
+            "area": 856,
+            "region_bin_3x3": "center-right"
+          },
+          {
+            "component_id": "c009",
+            "bbox": [
+              309.0,
+              42.0,
+              361.0,
+              80.0
+            ],
+            "center": [
+              335.0,
+              61.0
+            ],
+            "area": 566,
+            "region_bin_3x3": "top-center"
+          },
+          {
+            "component_id": "c017",
+            "bbox": [
+              68.0,
+              280.0,
+              100.0,
+              308.0
+            ],
+            "center": [
+              84.0,
+              294.0
+            ],
+            "area": 430,
+            "region_bin_3x3": "center-left"
+          },
+          {
+            "component_id": "c011",
+            "bbox": [
+              314.0,
+              69.0,
+              356.0,
+              93.0
+            ],
+            "center": [
+              335.0,
+              81.0
+            ],
+            "area": 339,
+            "region_bin_3x3": "top-center"
+          },
+          {
+            "component_id": "c003",
+            "bbox": [
+              435.0,
+              3.0,
+              458.0,
+              23.0
+            ],
+            "center": [
+              446.5,
+              13.0
+            ],
+            "area": 319,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c001",
+            "bbox": [
+              348.0,
+              0.0,
+              375.0,
+              14.0
+            ],
+            "center": [
+              361.5,
+              7.0
+            ],
+            "area": 187,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c005",
+            "bbox": [
+              365.0,
+              16.0,
+              382.0,
+              34.0
+            ],
+            "center": [
+              373.5,
+              25.0
+            ],
+            "area": 185,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c014",
+            "bbox": [
+              5.0,
+              243.0,
+              24.0,
+              258.0
+            ],
+            "center": [
+              14.5,
+              250.5
+            ],
+            "area": 171,
+            "region_bin_3x3": "center-left"
+          },
+          {
+            "component_id": "c008",
+            "bbox": [
+              353.0,
+              39.0,
+              370.0,
+              54.0
+            ],
+            "center": [
+              361.5,
+              46.5
+            ],
+            "area": 165,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c015",
+            "bbox": [
+              6.0,
+              259.0,
+              35.0,
+              276.0
+            ],
+            "center": [
+              20.5,
+              267.5
+            ],
+            "area": 131,
+            "region_bin_3x3": "center-left"
+          },
+          {
+            "component_id": "c016",
+            "bbox": [
+              49.0,
+              277.0,
+              68.0,
+              292.0
+            ],
+            "center": [
+              58.5,
+              284.5
+            ],
+            "area": 120,
+            "region_bin_3x3": "center-left"
+          },
+          {
+            "component_id": "c002",
+            "bbox": [
+              245.0,
+              1.0,
+              265.0,
+              10.0
+            ],
+            "center": [
+              255.0,
+              5.5
+            ],
+            "area": 107,
+            "region_bin_3x3": "top-center"
+          },
+          {
+            "component_id": "c010",
+            "bbox": [
+              349.0,
+              54.0,
+              365.0,
+              65.0
+            ],
+            "center": [
+              357.0,
+              59.5
+            ],
+            "area": 94,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c013",
+            "bbox": [
+              172.0,
+              233.0,
+              185.0,
+              243.0
+            ],
+            "center": [
+              178.5,
+              238.0
+            ],
+            "area": 85,
+            "region_bin_3x3": "center"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 6899
+      }
+    },
+    {
+      "node_id": "n_t2_buildings",
+      "node_type": "region",
+      "time": "t2",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          0.0,
+          0.0,
+          512.0,
+          512.0
+        ],
+        "center": [
+          256.0,
+          256.0
+        ],
+        "area": 262144.0,
+        "region_bin_3x3": "center",
+        "components": [
+          {
+            "component_id": "c004",
+            "bbox": [
+              256.0,
+              144.0,
+              358.0,
+              238.0
+            ],
+            "center": [
+              307.0,
+              191.0
+            ],
+            "area": 5647,
+            "region_bin_3x3": "center"
+          },
+          {
+            "component_id": "c014",
+            "bbox": [
+              373.0,
+              457.0,
+              477.0,
+              512.0
+            ],
+            "center": [
+              425.0,
+              484.5
+            ],
+            "area": 3596,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c001",
+            "bbox": [
+              379.0,
+              0.0,
+              483.0,
+              54.0
+            ],
+            "center": [
+              431.0,
+              27.0
+            ],
+            "area": 3307,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c008",
+            "bbox": [
+              163.0,
+              270.0,
+              236.0,
+              406.0
+            ],
+            "center": [
+              199.5,
+              338.0
+            ],
+            "area": 1883,
+            "region_bin_3x3": "center"
+          },
+          {
+            "component_id": "c012",
+            "bbox": [
+              449.0,
+              332.0,
+              512.0,
+              385.0
+            ],
+            "center": [
+              480.5,
+              358.5
+            ],
+            "area": 1742,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c002",
+            "bbox": [
+              475.0,
+              1.0,
+              512.0,
+              86.0
+            ],
+            "center": [
+              493.5,
+              43.5
+            ],
+            "area": 1705,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c013",
+            "bbox": [
+              438.0,
+              401.0,
+              508.0,
+              446.0
+            ],
+            "center": [
+              473.0,
+              423.5
+            ],
+            "area": 1567,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c005",
+            "bbox": [
+              129.0,
+              167.0,
+              177.0,
+              219.0
+            ],
+            "center": [
+              153.0,
+              193.0
+            ],
+            "area": 1422,
+            "region_bin_3x3": "center-left"
+          },
+          {
+            "component_id": "c007",
+            "bbox": [
+              473.0,
+              259.0,
+              512.0,
+              300.0
+            ],
+            "center": [
+              492.5,
+              279.5
+            ],
+            "area": 932,
+            "region_bin_3x3": "center-right"
+          },
+          {
+            "component_id": "c011",
+            "bbox": [
+              0.0,
+              291.0,
+              35.0,
+              354.0
+            ],
+            "center": [
+              17.5,
+              322.5
+            ],
+            "area": 858,
+            "region_bin_3x3": "center-left"
+          },
+          {
+            "component_id": "c010",
+            "bbox": [
+              68.0,
+              280.0,
+              100.0,
+              308.0
+            ],
+            "center": [
+              84.0,
+              294.0
+            ],
+            "area": 430,
+            "region_bin_3x3": "center-left"
+          },
+          {
+            "component_id": "c006",
+            "bbox": [
+              5.0,
+              243.0,
+              24.0,
+              258.0
+            ],
+            "center": [
+              14.5,
+              250.5
+            ],
+            "area": 171,
+            "region_bin_3x3": "center-left"
+          },
+          {
+            "component_id": "c009",
+            "bbox": [
+              49.0,
+              277.0,
+              68.0,
+              292.0
+            ],
+            "center": [
+              58.5,
+              284.5
+            ],
+            "area": 120,
+            "region_bin_3x3": "center-left"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 23381
+      }
+    },
+    {
+      "node_id": "n_t2_playgrounds",
+      "node_type": "region",
+      "time": "t2",
+      "canonical_leaf": "playground",
+      "canonical_root": "playground",
+      "geometry": {
+        "bbox": [
+          158.0,
+          232.0,
+          434.0,
+          496.0
+        ],
+        "center": [
+          296.0,
+          364.0
+        ],
+        "area": 72864.0,
+        "region_bin_3x3": "bottom-center",
+        "components": [
+          {
+            "component_id": "c001",
+            "bbox": [
+              158.0,
+              232.0,
+              377.0,
+              496.0
+            ],
+            "center": [
+              267.5,
+              364.0
+            ],
+            "area": 35279,
+            "region_bin_3x3": "bottom-center"
+          },
+          {
+            "component_id": "c004",
+            "bbox": [
+              318.0,
+              359.0,
+              434.0,
+              473.0
+            ],
+            "center": [
+              376.0,
+              416.0
+            ],
+            "area": 7599,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c002",
+            "bbox": [
+              365.0,
+              238.0,
+              411.0,
+              294.0
+            ],
+            "center": [
+              388.0,
+              266.0
+            ],
+            "area": 1444,
+            "region_bin_3x3": "center-right"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 44323
+      }
+    },
+    {
+      "node_id": "n_change_00001",
+      "node_type": "change_unit",
+      "time": "pair",
+      "canonical_leaf": "change_region",
+      "canonical_root": "change_region",
+      "geometry": {
+        "bbox": [
+          0.0,
+          0.0,
+          512.0,
+          512.0
+        ],
+        "center": [
+          256.0,
+          256.0
+        ],
+        "area": 262144.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {
+        "aggregate_area": 126236,
+        "change_state": "changed"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "e_sp_00001",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t2_water",
+      "target": "n_t2_buildings"
+    },
+    {
+      "edge_id": "e_sp_00002",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t2_water",
+      "target": "n_t2_NVG_surface"
+    },
+    {
+      "edge_id": "e_sp_00003",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t2_water",
+      "target": "n_t2_trees"
+    },
+    {
+      "edge_id": "e_sp_00004",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_t2_water",
+      "target": "n_t2_low_vegetation"
+    },
+    {
+      "edge_id": "e_sp_00005",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_t2_water",
+      "target": "n_t2_playgrounds"
+    },
+    {
+      "edge_id": "e_sp_00006",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t1_NVG_surface",
+      "target": "n_t1_buildings"
+    },
+    {
+      "edge_id": "e_sp_00007",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t1_NVG_surface",
+      "target": "n_t1_low_vegetation"
+    },
+    {
+      "edge_id": "e_sp_00008",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t1_NVG_surface",
+      "target": "n_t1_trees"
+    },
+    {
+      "edge_id": "e_sp_00009",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t2_NVG_surface",
+      "target": "n_t2_low_vegetation"
+    },
+    {
+      "edge_id": "e_sp_00010",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t2_NVG_surface",
+      "target": "n_t2_playgrounds"
+    },
+    {
+      "edge_id": "e_sp_00011",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t2_NVG_surface",
+      "target": "n_t2_water"
+    },
+    {
+      "edge_id": "e_sp_00012",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t2_NVG_surface",
+      "target": "n_t2_buildings"
+    },
+    {
+      "edge_id": "e_sp_00013",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t2_NVG_surface",
+      "target": "n_t2_trees"
+    },
+    {
+      "edge_id": "e_sp_00014",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t1_low_vegetation",
+      "target": "n_t1_trees"
+    },
+    {
+      "edge_id": "e_sp_00015",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t1_low_vegetation",
+      "target": "n_t1_NVG_surface"
+    },
+    {
+      "edge_id": "e_sp_00016",
+      "edge_type": "spatial",
+      "relation_type": "overlap",
+      "source": "n_t1_low_vegetation",
+      "target": "n_t1_buildings"
+    },
+    {
+      "edge_id": "e_sp_00017",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t2_low_vegetation",
+      "target": "n_t2_buildings"
+    },
+    {
+      "edge_id": "e_sp_00018",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t2_low_vegetation",
+      "target": "n_t2_NVG_surface"
+    },
+    {
+      "edge_id": "e_sp_00019",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t2_low_vegetation",
+      "target": "n_t2_trees"
+    },
+    {
+      "edge_id": "e_sp_00020",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_t2_low_vegetation",
+      "target": "n_t2_water"
+    },
+    {
+      "edge_id": "e_sp_00021",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t1_trees",
+      "target": "n_t1_buildings"
+    },
+    {
+      "edge_id": "e_sp_00022",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t1_trees",
+      "target": "n_t1_low_vegetation"
+    },
+    {
+      "edge_id": "e_sp_00023",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t1_trees",
+      "target": "n_t1_NVG_surface"
+    },
+    {
+      "edge_id": "e_sp_00024",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t2_trees",
+      "target": "n_t2_low_vegetation"
+    },
+    {
+      "edge_id": "e_sp_00025",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t2_trees",
+      "target": "n_t2_NVG_surface"
+    },
+    {
+      "edge_id": "e_sp_00026",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t2_trees",
+      "target": "n_t2_playgrounds"
+    },
+    {
+      "edge_id": "e_sp_00027",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t2_trees",
+      "target": "n_t2_water"
+    },
+    {
+      "edge_id": "e_sp_00028",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t2_trees",
+      "target": "n_t2_buildings"
+    },
+    {
+      "edge_id": "e_sp_00029",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t1_buildings",
+      "target": "n_t1_trees"
+    },
+    {
+      "edge_id": "e_sp_00030",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t1_buildings",
+      "target": "n_t1_NVG_surface"
+    },
+    {
+      "edge_id": "e_sp_00031",
+      "edge_type": "spatial",
+      "relation_type": "overlap",
+      "source": "n_t1_buildings",
+      "target": "n_t1_low_vegetation"
+    },
+    {
+      "edge_id": "e_sp_00032",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t2_buildings",
+      "target": "n_t2_low_vegetation"
+    },
+    {
+      "edge_id": "e_sp_00033",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t2_buildings",
+      "target": "n_t2_NVG_surface"
+    },
+    {
+      "edge_id": "e_sp_00034",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t2_buildings",
+      "target": "n_t2_playgrounds"
+    },
+    {
+      "edge_id": "e_sp_00035",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t2_buildings",
+      "target": "n_t2_water"
+    },
+    {
+      "edge_id": "e_sp_00036",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t2_buildings",
+      "target": "n_t2_trees"
+    },
+    {
+      "edge_id": "e_sp_00037",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t2_playgrounds",
+      "target": "n_t2_buildings"
+    },
+    {
+      "edge_id": "e_sp_00038",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t2_playgrounds",
+      "target": "n_t2_NVG_surface"
+    },
+    {
+      "edge_id": "e_sp_00039",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t2_playgrounds",
+      "target": "n_t2_trees"
+    },
+    {
+      "edge_id": "e_sp_00040",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_t2_playgrounds",
+      "target": "n_t2_water"
+    }
+  ],
+  "global_inventory": {
+    "inventory_type": "temporal_semantic",
+    "semantic_inventory": {
+      "semantic_areas": {
+        "t1": {
+          "non_vegetated_surface": {
+            "aggregate_area": 6853
+          },
+          "low_vegetation": {
+            "aggregate_area": 111219
+          },
+          "tree": {
+            "aggregate_area": 1265
+          },
+          "building": {
+            "aggregate_area": 6899
+          }
+        },
+        "t2": {
+          "water": {
+            "aggregate_area": 1955
+          },
+          "non_vegetated_surface": {
+            "aggregate_area": 37361
+          },
+          "low_vegetation": {
+            "aggregate_area": 55
+          },
+          "tree": {
+            "aggregate_area": 19161
+          },
+          "building": {
+            "aggregate_area": 23381
+          },
+          "playground": {
+            "aggregate_area": 44323
+          }
+        }
+      },
+      "transfers": {
+        "non_vegetated_surface": {
+          "tree": 2064,
+          "building": 3548,
+          "playground": 1241
+        },
+        "low_vegetation": {
+          "water": 1955,
+          "non_vegetated_surface": 34595,
+          "tree": 15429,
+          "building": 17701,
+          "playground": 41539
+        },
+        "tree": {
+          "non_vegetated_surface": 16,
+          "playground": 1249
+        },
+        "building": {
+          "non_vegetated_surface": 2750,
+          "low_vegetation": 55,
+          "tree": 1668,
+          "playground": 294
+        }
+      },
+      "change_pixels": 126236
+    }
+  }
+}

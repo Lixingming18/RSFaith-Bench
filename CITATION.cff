@@ -1,0 +1,6 @@
+cff-version: 1.2.0
+title: "RSFaith-Bench"
+message: "Please cite the RSFaith-Bench paper when using this benchmark."
+authors:
+  - family-names: "RSFaith-Bench Authors"
+version: "0.1.0"

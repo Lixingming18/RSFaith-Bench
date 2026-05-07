@@ -1,0 +1,1085 @@
+{
+  "scene_id": "RSF-S00009732",
+  "graph_meta": {
+    "temporal_mode": "pair",
+    "image_size": [
+      512,
+      512
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_t1_water",
+      "node_type": "region",
+      "time": "t1",
+      "canonical_leaf": "water",
+      "canonical_root": "water",
+      "geometry": {
+        "bbox": [
+          32.0,
+          64.0,
+          86.0,
+          178.0
+        ],
+        "center": [
+          59.0,
+          121.0
+        ],
+        "area": 6156.0,
+        "region_bin_3x3": "top-left",
+        "components": [
+          {
+            "component_id": "c001",
+            "bbox": [
+              32.0,
+              64.0,
+              64.0,
+              75.0
+            ],
+            "center": [
+              48.0,
+              69.5
+            ],
+            "area": 289,
+            "region_bin_3x3": "top-left"
+          },
+          {
+            "component_id": "c002",
+            "bbox": [
+              58.0,
+              172.0,
+              86.0,
+              178.0
+            ],
+            "center": [
+              72.0,
+              175.0
+            ],
+            "area": 155,
+            "region_bin_3x3": "center-left"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 444
+      }
+    },
+    {
+      "node_id": "n_t1_NVG_surface",
+      "node_type": "region",
+      "time": "t1",
+      "canonical_leaf": "non_vegetated_surface",
+      "canonical_root": "non_vegetated_surface",
+      "geometry": {
+        "bbox": [
+          153.0,
+          98.0,
+          512.0,
+          430.0
+        ],
+        "center": [
+          332.5,
+          264.0
+        ],
+        "area": 119188.0,
+        "region_bin_3x3": "center",
+        "components": [
+          {
+            "component_id": "c001",
+            "bbox": [
+              153.0,
+              98.0,
+              456.0,
+              171.0
+            ],
+            "center": [
+              304.5,
+              134.5
+            ],
+            "area": 9204,
+            "region_bin_3x3": "top-center"
+          },
+          {
+            "component_id": "c003",
+            "bbox": [
+              497.0,
+              138.0,
+              512.0,
+              329.0
+            ],
+            "center": [
+              504.5,
+              233.5
+            ],
+            "area": 1193,
+            "region_bin_3x3": "center-right"
+          },
+          {
+            "component_id": "c002",
+            "bbox": [
+              470.0,
+              110.0,
+              512.0,
+              118.0
+            ],
+            "center": [
+              491.0,
+              114.0
+            ],
+            "area": 177,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c006",
+            "bbox": [
+              372.0,
+              429.0,
+              395.0,
+              430.0
+            ],
+            "center": [
+              383.5,
+              429.5
+            ],
+            "area": 23,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c005",
+            "bbox": [
+              248.0,
+              382.0,
+              252.0,
+              391.0
+            ],
+            "center": [
+              250.0,
+              386.5
+            ],
+            "area": 18,
+            "region_bin_3x3": "bottom-center"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 10616
+      }
+    },
+    {
+      "node_id": "n_t2_NVG_surface",
+      "node_type": "region",
+      "time": "t2",
+      "canonical_leaf": "non_vegetated_surface",
+      "canonical_root": "non_vegetated_surface",
+      "geometry": {
+        "bbox": [
+          0.0,
+          64.0,
+          492.0,
+          512.0
+        ],
+        "center": [
+          246.0,
+          288.0
+        ],
+        "area": 220416.0,
+        "region_bin_3x3": "center",
+        "components": [
+          {
+            "component_id": "c005",
+            "bbox": [
+              250.0,
+              306.0,
+              463.0,
+              512.0
+            ],
+            "center": [
+              356.5,
+              409.0
+            ],
+            "area": 18421,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c004",
+            "bbox": [
+              211.0,
+              251.0,
+              372.0,
+              429.0
+            ],
+            "center": [
+              291.5,
+              340.0
+            ],
+            "area": 5891,
+            "region_bin_3x3": "center"
+          },
+          {
+            "component_id": "c003",
+            "bbox": [
+              0.0,
+              135.0,
+              120.0,
+              179.0
+            ],
+            "center": [
+              60.0,
+              157.0
+            ],
+            "area": 2431,
+            "region_bin_3x3": "top-left"
+          },
+          {
+            "component_id": "c006",
+            "bbox": [
+              236.0,
+              309.0,
+              314.0,
+              336.0
+            ],
+            "center": [
+              275.0,
+              322.5
+            ],
+            "area": 1890,
+            "region_bin_3x3": "center"
+          },
+          {
+            "component_id": "c001",
+            "bbox": [
+              0.0,
+              64.0,
+              99.0,
+              101.0
+            ],
+            "center": [
+              49.5,
+              82.5
+            ],
+            "area": 1881,
+            "region_bin_3x3": "top-left"
+          },
+          {
+            "component_id": "c008",
+            "bbox": [
+              473.0,
+              395.0,
+              492.0,
+              425.0
+            ],
+            "center": [
+              482.5,
+              410.0
+            ],
+            "area": 542,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c002",
+            "bbox": [
+              456.0,
+              118.0,
+              469.0,
+              128.0
+            ],
+            "center": [
+              462.5,
+              123.0
+            ],
+            "area": 105,
+            "region_bin_3x3": "top-right"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 31163
+      }
+    },
+    {
+      "node_id": "n_t2_low_vegetation",
+      "node_type": "region",
+      "time": "t2",
+      "canonical_leaf": "low_vegetation",
+      "canonical_root": "low_vegetation",
+      "geometry": {
+        "bbox": [
+          248.0,
+          373.0,
+          282.0,
+          391.0
+        ],
+        "center": [
+          265.0,
+          382.0
+        ],
+        "area": 612.0,
+        "region_bin_3x3": "bottom-center",
+        "components": [
+          {
+            "component_id": "c001",
+            "bbox": [
+              248.0,
+              373.0,
+              282.0,
+              391.0
+            ],
+            "center": [
+              265.0,
+              382.0
+            ],
+            "area": 438,
+            "region_bin_3x3": "bottom-center"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 438
+      }
+    },
+    {
+      "node_id": "n_t1_trees",
+      "node_type": "region",
+      "time": "t1",
+      "canonical_leaf": "tree",
+      "canonical_root": "tree",
+      "geometry": {
+        "bbox": [
+          0.0,
+          64.0,
+          512.0,
+          512.0
+        ],
+        "center": [
+          256.0,
+          288.0
+        ],
+        "area": 229376.0,
+        "region_bin_3x3": "center",
+        "components": [
+          {
+            "component_id": "c008",
+            "bbox": [
+              250.0,
+              306.0,
+              463.0,
+              512.0
+            ],
+            "center": [
+              356.5,
+              409.0
+            ],
+            "area": 10841,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c004",
+            "bbox": [
+              338.0,
+              113.0,
+              512.0,
+              156.0
+            ],
+            "center": [
+              425.0,
+              134.5
+            ],
+            "area": 3147,
+            "region_bin_3x3": "top-right"
+          },
+          {
+            "component_id": "c006",
+            "bbox": [
+              0.0,
+              135.0,
+              59.0,
+              183.0
+            ],
+            "center": [
+              29.5,
+              159.0
+            ],
+            "area": 1657,
+            "region_bin_3x3": "top-left"
+          },
+          {
+            "component_id": "c002",
+            "bbox": [
+              0.0,
+              65.0,
+              33.0,
+              101.0
+            ],
+            "center": [
+              16.5,
+              83.0
+            ],
+            "area": 992,
+            "region_bin_3x3": "top-left"
+          },
+          {
+            "component_id": "c005",
+            "bbox": [
+              182.0,
+              117.0,
+              315.0,
+              132.0
+            ],
+            "center": [
+              248.5,
+              124.5
+            ],
+            "area": 806,
+            "region_bin_3x3": "top-center"
+          },
+          {
+            "component_id": "c007",
+            "bbox": [
+              84.0,
+              141.0,
+              120.0,
+              178.0
+            ],
+            "center": [
+              102.0,
+              159.5
+            ],
+            "area": 761,
+            "region_bin_3x3": "top-left"
+          },
+          {
+            "component_id": "c001",
+            "bbox": [
+              63.0,
+              64.0,
+              99.0,
+              88.0
+            ],
+            "center": [
+              81.0,
+              76.0
+            ],
+            "area": 600,
+            "region_bin_3x3": "top-left"
+          },
+          {
+            "component_id": "c003",
+            "bbox": [
+              334.0,
+              106.0,
+              454.0,
+              119.0
+            ],
+            "center": [
+              394.0,
+              112.5
+            ],
+            "area": 556,
+            "region_bin_3x3": "top-right"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 19360
+      }
+    },
+    {
+      "node_id": "n_t1_buildings",
+      "node_type": "region",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          211.0,
+          139.0,
+          512.0,
+          510.0
+        ],
+        "center": [
+          361.5,
+          324.5
+        ],
+        "area": 111671.0,
+        "region_bin_3x3": "center-right",
+        "components": [
+          {
+            "component_id": "c002",
+            "bbox": [
+              211.0,
+              167.0,
+              512.0,
+              429.0
+            ],
+            "center": [
+              361.5,
+              298.0
+            ],
+            "area": 13603,
+            "region_bin_3x3": "center-right"
+          },
+          {
+            "component_id": "c007",
+            "bbox": [
+              367.0,
+              477.0,
+              437.0,
+              510.0
+            ],
+            "center": [
+              402.0,
+              493.5
+            ],
+            "area": 2076,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c004",
+            "bbox": [
+              249.0,
+              361.0,
+              317.0,
+              394.0
+            ],
+            "center": [
+              283.0,
+              377.5
+            ],
+            "area": 1956,
+            "region_bin_3x3": "bottom-center"
+          },
+          {
+            "component_id": "c003",
+            "bbox": [
+              236.0,
+              309.0,
+              314.0,
+              336.0
+            ],
+            "center": [
+              275.0,
+              322.5
+            ],
+            "area": 1890,
+            "region_bin_3x3": "center"
+          },
+          {
+            "component_id": "c008",
+            "bbox": [
+              275.0,
+              478.0,
+              343.0,
+              505.0
+            ],
+            "center": [
+              309.0,
+              491.5
+            ],
+            "area": 1491,
+            "region_bin_3x3": "bottom-center"
+          },
+          {
+            "component_id": "c005",
+            "bbox": [
+              262.0,
+              423.0,
+              330.0,
+              448.0
+            ],
+            "center": [
+              296.0,
+              435.5
+            ],
+            "area": 1458,
+            "region_bin_3x3": "bottom-center"
+          },
+          {
+            "component_id": "c006",
+            "bbox": [
+              385.0,
+              444.0,
+              446.0,
+              465.0
+            ],
+            "center": [
+              415.5,
+              454.5
+            ],
+            "area": 1020,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c001",
+            "bbox": [
+              342.0,
+              139.0,
+              384.0,
+              163.0
+            ],
+            "center": [
+              363.0,
+              151.0
+            ],
+            "area": 707,
+            "region_bin_3x3": "top-right"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 24201
+      }
+    },
+    {
+      "node_id": "n_t2_buildings",
+      "node_type": "region",
+      "time": "t2",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          0.0,
+          98.0,
+          512.0,
+          255.0
+        ],
+        "center": [
+          256.0,
+          176.5
+        ],
+        "area": 80384.0,
+        "region_bin_3x3": "center",
+        "components": [
+          {
+            "component_id": "c001",
+            "bbox": [
+              153.0,
+              98.0,
+              512.0,
+              255.0
+            ],
+            "center": [
+              332.5,
+              176.5
+            ],
+            "area": 32272,
+            "region_bin_3x3": "center"
+          },
+          {
+            "component_id": "c002",
+            "bbox": [
+              0.0,
+              166.0,
+              10.0,
+              183.0
+            ],
+            "center": [
+              5.0,
+              174.5
+            ],
+            "area": 142,
+            "region_bin_3x3": "center-left"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 32414
+      }
+    },
+    {
+      "node_id": "n_t1_playgrounds",
+      "node_type": "region",
+      "time": "t1",
+      "canonical_leaf": "playground",
+      "canonical_root": "playground",
+      "geometry": {
+        "bbox": [
+          358.0,
+          130.0,
+          507.0,
+          324.0
+        ],
+        "center": [
+          432.5,
+          227.0
+        ],
+        "area": 28906.0,
+        "region_bin_3x3": "center-right",
+        "components": [
+          {
+            "component_id": "c001",
+            "bbox": [
+              358.0,
+              130.0,
+              507.0,
+              317.0
+            ],
+            "center": [
+              432.5,
+              223.5
+            ],
+            "area": 14983,
+            "region_bin_3x3": "center-right"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 14988
+      }
+    },
+    {
+      "node_id": "n_t2_playgrounds",
+      "node_type": "region",
+      "time": "t2",
+      "canonical_leaf": "playground",
+      "canonical_root": "playground",
+      "geometry": {
+        "bbox": [
+          367.0,
+          254.0,
+          512.0,
+          430.0
+        ],
+        "center": [
+          439.5,
+          342.0
+        ],
+        "area": 25520.0,
+        "region_bin_3x3": "bottom-right",
+        "components": [
+          {
+            "component_id": "c003",
+            "bbox": [
+              368.0,
+              339.0,
+              512.0,
+              430.0
+            ],
+            "center": [
+              440.0,
+              384.5
+            ],
+            "area": 5392,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c001",
+            "bbox": [
+              507.0,
+              254.0,
+              512.0,
+              329.0
+            ],
+            "center": [
+              509.5,
+              291.5
+            ],
+            "area": 195,
+            "region_bin_3x3": "center-right"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 5594
+      }
+    },
+    {
+      "node_id": "n_change_00001",
+      "node_type": "change_unit",
+      "time": "pair",
+      "canonical_leaf": "change_region",
+      "canonical_root": "change_region",
+      "geometry": {
+        "bbox": [
+          0.0,
+          64.0,
+          512.0,
+          512.0
+        ],
+        "center": [
+          256.0,
+          288.0
+        ],
+        "area": 229376.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {
+        "aggregate_area": 69609,
+        "change_state": "changed"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "e_sp_00001",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t1_water",
+      "target": "n_t1_trees"
+    },
+    {
+      "edge_id": "e_sp_00002",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_t1_water",
+      "target": "n_t1_buildings"
+    },
+    {
+      "edge_id": "e_sp_00003",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_t1_water",
+      "target": "n_t1_NVG_surface"
+    },
+    {
+      "edge_id": "e_sp_00004",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_t1_water",
+      "target": "n_t1_playgrounds"
+    },
+    {
+      "edge_id": "e_sp_00005",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t1_NVG_surface",
+      "target": "n_t1_playgrounds"
+    },
+    {
+      "edge_id": "e_sp_00006",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t1_NVG_surface",
+      "target": "n_t1_trees"
+    },
+    {
+      "edge_id": "e_sp_00007",
+      "edge_type": "spatial",
+      "relation_type": "overlap",
+      "source": "n_t1_NVG_surface",
+      "target": "n_t1_buildings"
+    },
+    {
+      "edge_id": "e_sp_00008",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_t1_NVG_surface",
+      "target": "n_t1_water"
+    },
+    {
+      "edge_id": "e_sp_00009",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t2_NVG_surface",
+      "target": "n_t2_buildings"
+    },
+    {
+      "edge_id": "e_sp_00010",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t2_NVG_surface",
+      "target": "n_t2_low_vegetation"
+    },
+    {
+      "edge_id": "e_sp_00011",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t2_low_vegetation",
+      "target": "n_t2_NVG_surface"
+    },
+    {
+      "edge_id": "e_sp_00012",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_t2_low_vegetation",
+      "target": "n_t2_buildings"
+    },
+    {
+      "edge_id": "e_sp_00013",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_t2_low_vegetation",
+      "target": "n_t2_playgrounds"
+    },
+    {
+      "edge_id": "e_sp_00014",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t1_trees",
+      "target": "n_t1_buildings"
+    },
+    {
+      "edge_id": "e_sp_00015",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t1_trees",
+      "target": "n_t1_NVG_surface"
+    },
+    {
+      "edge_id": "e_sp_00016",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t1_trees",
+      "target": "n_t1_playgrounds"
+    },
+    {
+      "edge_id": "e_sp_00017",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t1_trees",
+      "target": "n_t1_water"
+    },
+    {
+      "edge_id": "e_sp_00018",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t1_buildings",
+      "target": "n_t1_playgrounds"
+    },
+    {
+      "edge_id": "e_sp_00019",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t1_buildings",
+      "target": "n_t1_trees"
+    },
+    {
+      "edge_id": "e_sp_00020",
+      "edge_type": "spatial",
+      "relation_type": "overlap",
+      "source": "n_t1_buildings",
+      "target": "n_t1_NVG_surface"
+    },
+    {
+      "edge_id": "e_sp_00021",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_t1_buildings",
+      "target": "n_t1_water"
+    },
+    {
+      "edge_id": "e_sp_00022",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t2_buildings",
+      "target": "n_t2_NVG_surface"
+    },
+    {
+      "edge_id": "e_sp_00023",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_t2_buildings",
+      "target": "n_t2_low_vegetation"
+    },
+    {
+      "edge_id": "e_sp_00024",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_t2_buildings",
+      "target": "n_t2_playgrounds"
+    },
+    {
+      "edge_id": "e_sp_00025",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t1_playgrounds",
+      "target": "n_t1_buildings"
+    },
+    {
+      "edge_id": "e_sp_00026",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t1_playgrounds",
+      "target": "n_t1_NVG_surface"
+    },
+    {
+      "edge_id": "e_sp_00027",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t1_playgrounds",
+      "target": "n_t1_trees"
+    },
+    {
+      "edge_id": "e_sp_00028",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_t1_playgrounds",
+      "target": "n_t1_water"
+    },
+    {
+      "edge_id": "e_sp_00029",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_t2_playgrounds",
+      "target": "n_t2_buildings"
+    },
+    {
+      "edge_id": "e_sp_00030",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_t2_playgrounds",
+      "target": "n_t2_low_vegetation"
+    }
+  ],
+  "global_inventory": {
+    "inventory_type": "temporal_semantic",
+    "semantic_inventory": {
+      "semantic_areas": {
+        "t1": {
+          "water": {
+            "aggregate_area": 444
+          },
+          "non_vegetated_surface": {
+            "aggregate_area": 10616
+          },
+          "tree": {
+            "aggregate_area": 19360
+          },
+          "building": {
+            "aggregate_area": 24201
+          },
+          "playground": {
+            "aggregate_area": 14988
+          }
+        },
+        "t2": {
+          "non_vegetated_surface": {
+            "aggregate_area": 31163
+          },
+          "low_vegetation": {
+            "aggregate_area": 438
+          },
+          "building": {
+            "aggregate_area": 32414
+          },
+          "playground": {
+            "aggregate_area": 5594
+          }
+        }
+      },
+      "transfers": {
+        "water": {
+          "non_vegetated_surface": 444
+        },
+        "non_vegetated_surface": {
+          "low_vegetation": 19,
+          "building": 10379,
+          "playground": 218
+        },
+        "tree": {
+          "non_vegetated_surface": 14814,
+          "building": 4546
+        },
+        "building": {
+          "non_vegetated_surface": 15731,
+          "low_vegetation": 419,
+          "playground": 5376
+        },
+        "playground": {
+          "non_vegetated_surface": 174,
+          "building": 14814
+        }
+      },
+      "change_pixels": 69609
+    }
+  }
+}

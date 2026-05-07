@@ -1,0 +1,150 @@
+{
+  "dataset_name": "RSFaith-Bench_subset",
+  "items_per_subcategory": 50,
+  "levels": {
+    "perception": {
+      "fine_grained_recognition": 50,
+      "object_counting": 50,
+      "object_localization": 50,
+      "object_presence": 50
+    },
+    "relational_reasoning": {
+      "aggregate_distribution": 50,
+      "directional": 50,
+      "projective_ordering": 50,
+      "proximity": 50,
+      "topological": 50
+    },
+    "temporal_reasoning": {
+      "category_turnover": 50,
+      "net_change": 50,
+      "semantic_transition": 50
+    }
+  },
+  "total_records": 600,
+  "source_release": "RSFaith-Bench public release snapshot",
+  "selection": "diversity-constrained public subset",
+  "diversity": {
+    "fine_grained_recognition": {
+      "unique_questions": 50,
+      "max_question_repetition": 1,
+      "unique_templates": 12,
+      "max_template_repetition": 6,
+      "unique_answers": 21,
+      "image_rejects": {
+        "low_contrast": 2
+      },
+      "pool_checked": 160
+    },
+    "object_counting": {
+      "unique_questions": 49,
+      "max_question_repetition": 2,
+      "unique_templates": 49,
+      "max_template_repetition": 2,
+      "unique_answers": 10,
+      "image_rejects": {},
+      "pool_checked": 160
+    },
+    "object_localization": {
+      "unique_questions": 50,
+      "max_question_repetition": 1,
+      "unique_templates": 8,
+      "max_template_repetition": 8,
+      "unique_answers": 11,
+      "image_rejects": {},
+      "pool_checked": 160
+    },
+    "object_presence": {
+      "unique_questions": 50,
+      "max_question_repetition": 1,
+      "unique_templates": 4,
+      "max_template_repetition": 42,
+      "unique_answers": 2,
+      "image_rejects": {
+        "low_contrast": 1
+      },
+      "pool_checked": 81
+    },
+    "aggregate_distribution": {
+      "unique_questions": 50,
+      "max_question_repetition": 1,
+      "unique_templates": 50,
+      "max_template_repetition": 1,
+      "unique_answers": 18,
+      "image_rejects": {
+        "image_error": 6
+      },
+      "pool_checked": 160
+    },
+    "directional": {
+      "unique_questions": 50,
+      "max_question_repetition": 1,
+      "unique_templates": 12,
+      "max_template_repetition": 5,
+      "unique_answers": 49,
+      "image_rejects": {
+        "low_contrast": 2
+      },
+      "pool_checked": 160
+    },
+    "projective_ordering": {
+      "unique_questions": 50,
+      "max_question_repetition": 1,
+      "unique_templates": 36,
+      "max_template_repetition": 3,
+      "unique_answers": 42,
+      "image_rejects": {},
+      "pool_checked": 160
+    },
+    "proximity": {
+      "unique_questions": 50,
+      "max_question_repetition": 1,
+      "unique_templates": 8,
+      "max_template_repetition": 7,
+      "unique_answers": 50,
+      "image_rejects": {
+        "low_contrast": 1,
+        "image_error": 1
+      },
+      "pool_checked": 160
+    },
+    "topological": {
+      "unique_questions": 50,
+      "max_question_repetition": 1,
+      "unique_templates": 13,
+      "max_template_repetition": 5,
+      "unique_answers": 50,
+      "image_rejects": {},
+      "pool_checked": 160
+    },
+    "category_turnover": {
+      "unique_questions": 12,
+      "max_question_repetition": 5,
+      "unique_templates": 12,
+      "max_template_repetition": 5,
+      "unique_answers": 6,
+      "image_rejects": {},
+      "pool_checked": 160
+    },
+    "net_change": {
+      "unique_questions": 50,
+      "max_question_repetition": 1,
+      "unique_templates": 24,
+      "max_template_repetition": 6,
+      "unique_answers": 10,
+      "image_rejects": {
+        "blank_ratio": 5
+      },
+      "pool_checked": 160
+    },
+    "semantic_transition": {
+      "unique_questions": 50,
+      "max_question_repetition": 1,
+      "unique_templates": 16,
+      "max_template_repetition": 4,
+      "unique_answers": 6,
+      "image_rejects": {},
+      "pool_checked": 160
+    }
+  }
+}

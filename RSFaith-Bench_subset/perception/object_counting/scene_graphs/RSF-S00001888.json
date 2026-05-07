@@ -1,0 +1,203 @@
+{
+  "scene_id": "RSF-S00001888",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      1000,
+      1000
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "boeing737",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          551.0,
+          213.0,
+          621.0,
+          283.0
+        ],
+        "polygon": [
+          [
+            551.0,
+            253.0
+          ],
+          [
+            591.0,
+            283.0
+          ],
+          [
+            621.0,
+            243.0
+          ],
+          [
+            581.0,
+            213.0
+          ]
+        ],
+        "center": [
+          586.0,
+          248.0
+        ],
+        "area": 4900.0,
+        "region_bin_3x3": "top-center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00002",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "a220",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          587.0,
+          179.0,
+          648.0,
+          241.0
+        ],
+        "polygon": [
+          [
+            587.0,
+            219.0
+          ],
+          [
+            623.0,
+            241.0
+          ],
+          [
+            648.0,
+            202.0
+          ],
+          [
+            612.0,
+            179.0
+          ]
+        ],
+        "center": [
+          617.5,
+          210.0
+        ],
+        "area": 3782.0,
+        "region_bin_3x3": "top-center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00003",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "boeing737",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          653.0,
+          103.0,
+          719.0,
+          169.0
+        ],
+        "polygon": [
+          [
+            653.0,
+            139.0
+          ],
+          [
+            691.0,
+            169.0
+          ],
+          [
+            719.0,
+            132.0
+          ],
+          [
+            681.0,
+            103.0
+          ]
+        ],
+        "center": [
+          686.0,
+          136.0
+        ],
+        "area": 4356.0,
+        "region_bin_3x3": "top-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00004",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "boeing737",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          744.0,
+          188.0,
+          810.0,
+          254.0
+        ],
+        "polygon": [
+          [
+            744.0,
+            224.0
+          ],
+          [
+            781.0,
+            254.0
+          ],
+          [
+            810.0,
+            218.0
+          ],
+          [
+            773.0,
+            188.0
+          ]
+        ],
+        "center": [
+          777.0,
+          221.0
+        ],
+        "area": 4356.0,
+        "region_bin_3x3": "top-right"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "e_sp_00001",
+      "edge_type": "spatial",
+      "relation_type": "overlap",
+      "source": "n_obj_00001",
+      "target": "n_obj_00002"
+    },
+    {
+      "edge_id": "e_sp_00002",
+      "edge_type": "spatial",
+      "relation_type": "overlap",
+      "source": "n_obj_00002",
+      "target": "n_obj_00001"
+    },
+    {
+      "edge_id": "e_sp_00003",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00002",
+      "target": "n_obj_00004"
+    },
+    {
+      "edge_id": "e_sp_00004",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00004",
+      "target": "n_obj_00002"
+    }
+  ],
+  "global_inventory": {}
+}

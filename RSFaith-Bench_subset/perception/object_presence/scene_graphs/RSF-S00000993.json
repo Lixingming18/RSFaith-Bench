@@ -1,0 +1,94 @@
+{
+  "scene_id": "RSF-S00000993",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      4000,
+      4000
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "baseball_field",
+      "canonical_root": "baseball_field",
+      "geometry": {
+        "bbox": [
+          2333.0,
+          3216.0,
+          2380.0,
+          3260.0
+        ],
+        "polygon": [
+          [
+            2342.0,
+            3260.0
+          ],
+          [
+            2380.0,
+            3252.0
+          ],
+          [
+            2373.0,
+            3216.0
+          ],
+          [
+            2333.0,
+            3219.0
+          ]
+        ],
+        "center": [
+          2356.5,
+          3238.0
+        ],
+        "area": 2068.0,
+        "region_bin_3x3": "bottom-center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00002",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "baseball_field",
+      "canonical_root": "baseball_field",
+      "geometry": {
+        "bbox": [
+          2279.0,
+          3545.0,
+          2331.0,
+          3596.0
+        ],
+        "polygon": [
+          [
+            2317.0,
+            3545.0
+          ],
+          [
+            2331.0,
+            3585.0
+          ],
+          [
+            2291.0,
+            3596.0
+          ],
+          [
+            2279.0,
+            3551.0
+          ]
+        ],
+        "center": [
+          2305.0,
+          3570.5
+        ],
+        "area": 2652.0,
+        "region_bin_3x3": "bottom-center"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [],
+  "global_inventory": {}
+}

@@ -1,0 +1,190 @@
+{
+  "scene_id": "RSF-S00008288",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      800,
+      800
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "storage_tank",
+      "canonical_root": "storage_tank",
+      "geometry": {
+        "bbox": [
+          126.0,
+          328.0,
+          247.0,
+          454.0
+        ],
+        "center": [
+          186.5,
+          391.0
+        ],
+        "area": 15246.0,
+        "region_bin_3x3": "center-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00002",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "storage_tank",
+      "canonical_root": "storage_tank",
+      "geometry": {
+        "bbox": [
+          224.0,
+          255.0,
+          347.0,
+          377.0
+        ],
+        "center": [
+          285.5,
+          316.0
+        ],
+        "area": 15006.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00003",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "storage_tank",
+      "canonical_root": "storage_tank",
+      "geometry": {
+        "bbox": [
+          320.0,
+          179.0,
+          443.0,
+          301.0
+        ],
+        "center": [
+          381.5,
+          240.0
+        ],
+        "area": 15006.0,
+        "region_bin_3x3": "top-center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00004",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "storage_tank",
+      "canonical_root": "storage_tank",
+      "geometry": {
+        "bbox": [
+          418.0,
+          106.0,
+          541.0,
+          228.0
+        ],
+        "center": [
+          479.5,
+          167.0
+        ],
+        "area": 15006.0,
+        "region_bin_3x3": "top-center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00005",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "storage_tank",
+      "canonical_root": "storage_tank",
+      "geometry": {
+        "bbox": [
+          517.0,
+          31.0,
+          637.0,
+          152.0
+        ],
+        "center": [
+          577.0,
+          91.5
+        ],
+        "area": 14520.0,
+        "region_bin_3x3": "top-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00006",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "storage_tank",
+      "canonical_root": "storage_tank",
+      "geometry": {
+        "bbox": [
+          172.0,
+          652.0,
+          288.0,
+          768.0
+        ],
+        "center": [
+          230.0,
+          710.0
+        ],
+        "area": 13456.0,
+        "region_bin_3x3": "bottom-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00007",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "storage_tank",
+      "canonical_root": "storage_tank",
+      "geometry": {
+        "bbox": [
+          289.0,
+          563.0,
+          405.0,
+          680.0
+        ],
+        "center": [
+          347.0,
+          621.5
+        ],
+        "area": 13572.0,
+        "region_bin_3x3": "bottom-center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00008",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "storage_tank",
+      "canonical_root": "storage_tank",
+      "geometry": {
+        "bbox": [
+          404.0,
+          475.0,
+          520.0,
+          592.0
+        ],
+        "center": [
+          462.0,
+          533.5
+        ],
+        "area": 13572.0,
+        "region_bin_3x3": "bottom-center"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [],
+  "global_inventory": {}
+}

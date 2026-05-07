@@ -1,0 +1,299 @@
+{
+  "scene_id": "RSF-S00006535",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      1000,
+      1000
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_0",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "motorboat",
+      "canonical_root": "ship",
+      "geometry": {
+        "bbox": [
+          635.0,
+          381.0,
+          648.0,
+          407.0
+        ],
+        "polygon": [
+          [
+            648.0,
+            406.0
+          ],
+          [
+            641.0,
+            381.0
+          ],
+          [
+            635.0,
+            382.0
+          ],
+          [
+            641.0,
+            407.0
+          ]
+        ],
+        "center": [
+          641.5,
+          394.0
+        ],
+        "area": 338.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_1",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "motorboat",
+      "canonical_root": "ship",
+      "geometry": {
+        "bbox": [
+          809.0,
+          457.0,
+          824.0,
+          489.0
+        ],
+        "polygon": [
+          [
+            817.0,
+            489.0
+          ],
+          [
+            824.0,
+            459.0
+          ],
+          [
+            816.0,
+            457.0
+          ],
+          [
+            809.0,
+            487.0
+          ]
+        ],
+        "center": [
+          816.5,
+          473.0
+        ],
+        "area": 480.0,
+        "region_bin_3x3": "center-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_2",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "motorboat",
+      "canonical_root": "ship",
+      "geometry": {
+        "bbox": [
+          864.0,
+          810.0,
+          885.0,
+          823.0
+        ],
+        "polygon": [
+          [
+            866.0,
+            823.0
+          ],
+          [
+            885.0,
+            818.0
+          ],
+          [
+            883.0,
+            810.0
+          ],
+          [
+            864.0,
+            815.0
+          ]
+        ],
+        "center": [
+          874.5,
+          816.5
+        ],
+        "area": 273.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_3",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "motorboat",
+      "canonical_root": "ship",
+      "geometry": {
+        "bbox": [
+          653.0,
+          783.0,
+          671.0,
+          808.0
+        ],
+        "polygon": [
+          [
+            671.0,
+            804.0
+          ],
+          [
+            660.0,
+            783.0
+          ],
+          [
+            653.0,
+            786.0
+          ],
+          [
+            664.0,
+            808.0
+          ]
+        ],
+        "center": [
+          662.0,
+          795.5
+        ],
+        "area": 450.0,
+        "region_bin_3x3": "bottom-center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_4",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "water",
+      "canonical_root": "water",
+      "geometry": {
+        "bbox": [
+          0.0,
+          0.0,
+          999.0,
+          999.0
+        ],
+        "polygon": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            999.0,
+            0.0
+          ],
+          [
+            999.0,
+            999.0
+          ],
+          [
+            0.0,
+            999.0
+          ]
+        ],
+        "center": [
+          499.5,
+          499.5
+        ],
+        "area": 998001.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "e_sp_00001",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_obj_0",
+      "target": "n_obj_4"
+    },
+    {
+      "edge_id": "e_sp_00002",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_obj_1",
+      "target": "n_obj_4"
+    },
+    {
+      "edge_id": "e_sp_00003",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_obj_2",
+      "target": "n_obj_4"
+    },
+    {
+      "edge_id": "e_sp_00004",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_obj_3",
+      "target": "n_obj_4"
+    },
+    {
+      "edge_id": "e_sp_00005",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_obj_4",
+      "target": "n_obj_3"
+    },
+    {
+      "edge_id": "e_sp_00006",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_obj_4",
+      "target": "n_obj_2"
+    },
+    {
+      "edge_id": "e_sp_00007",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_obj_4",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00008",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_obj_4",
+      "target": "n_obj_1"
+    },
+    {
+      "edge_id": "e_sp_00009",
+      "edge_type": "spatial",
+      "relation_type": "sail_on",
+      "source": "n_obj_0",
+      "target": "n_obj_4"
+    },
+    {
+      "edge_id": "e_sp_00010",
+      "edge_type": "spatial",
+      "relation_type": "sail_on",
+      "source": "n_obj_1",
+      "target": "n_obj_4"
+    },
+    {
+      "edge_id": "e_sp_00011",
+      "edge_type": "spatial",
+      "relation_type": "sail_on",
+      "source": "n_obj_2",
+      "target": "n_obj_4"
+    },
+    {
+      "edge_id": "e_sp_00012",
+      "edge_type": "spatial",
+      "relation_type": "sail_on",
+      "source": "n_obj_3",
+      "target": "n_obj_4"
+    }
+  ],
+  "global_inventory": {}
+}

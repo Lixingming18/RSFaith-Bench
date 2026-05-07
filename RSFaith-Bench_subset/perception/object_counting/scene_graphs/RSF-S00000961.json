@@ -1,0 +1,414 @@
+{
+  "scene_id": "RSF-S00000961",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      2403,
+      3883
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "aircraft",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          2150.0,
+          390.0,
+          2321.0,
+          570.0
+        ],
+        "polygon": [
+          [
+            2321.0,
+            496.0
+          ],
+          [
+            2244.0,
+            570.0
+          ],
+          [
+            2150.0,
+            469.0
+          ],
+          [
+            2236.0,
+            390.0
+          ]
+        ],
+        "center": [
+          2235.5,
+          480.0
+        ],
+        "area": 30780.0,
+        "region_bin_3x3": "top-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00002",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "aircraft",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          2049.0,
+          469.0,
+          2229.0,
+          657.0
+        ],
+        "polygon": [
+          [
+            2229.0,
+            582.0
+          ],
+          [
+            2140.0,
+            657.0
+          ],
+          [
+            2049.0,
+            551.0
+          ],
+          [
+            2140.0,
+            469.0
+          ]
+        ],
+        "center": [
+          2139.0,
+          563.0
+        ],
+        "area": 33840.0,
+        "region_bin_3x3": "top-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00003",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "aircraft",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          1972.0,
+          577.0,
+          2133.0,
+          743.0
+        ],
+        "polygon": [
+          [
+            2133.0,
+            678.0
+          ],
+          [
+            2047.0,
+            743.0
+          ],
+          [
+            1972.0,
+            645.0
+          ],
+          [
+            2054.0,
+            577.0
+          ]
+        ],
+        "center": [
+          2052.5,
+          660.0
+        ],
+        "area": 26726.0,
+        "region_bin_3x3": "top-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00004",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "aircraft",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          1600.0,
+          594.0,
+          1975.0,
+          1012.0
+        ],
+        "polygon": [
+          [
+            1972.0,
+            1012.0
+          ],
+          [
+            1600.0,
+            979.0
+          ],
+          [
+            1631.0,
+            594.0
+          ],
+          [
+            1975.0,
+            618.0
+          ]
+        ],
+        "center": [
+          1787.5,
+          803.0
+        ],
+        "area": 156750.0,
+        "region_bin_3x3": "top-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00005",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "aircraft",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          1345.0,
+          942.0,
+          1609.0,
+          1329.0
+        ],
+        "polygon": [
+          [
+            1554.0,
+            1329.0
+          ],
+          [
+            1345.0,
+            1291.0
+          ],
+          [
+            1400.0,
+            942.0
+          ],
+          [
+            1609.0,
+            976.0
+          ]
+        ],
+        "center": [
+          1477.0,
+          1135.5
+        ],
+        "area": 102168.0,
+        "region_bin_3x3": "top-center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00006",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "aircraft",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          1134.0,
+          1077.0,
+          1434.0,
+          1462.0
+        ],
+        "polygon": [
+          [
+            1434.0,
+            1442.0
+          ],
+          [
+            1179.0,
+            1462.0
+          ],
+          [
+            1134.0,
+            1094.0
+          ],
+          [
+            1383.0,
+            1077.0
+          ]
+        ],
+        "center": [
+          1284.0,
+          1269.5
+        ],
+        "area": 115500.0,
+        "region_bin_3x3": "top-center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00007",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "aircraft",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          651.0,
+          1313.0,
+          1177.0,
+          1803.0
+        ],
+        "polygon": [
+          [
+            1177.0,
+            1702.0
+          ],
+          [
+            735.0,
+            1803.0
+          ],
+          [
+            651.0,
+            1387.0
+          ],
+          [
+            1066.0,
+            1313.0
+          ]
+        ],
+        "center": [
+          914.0,
+          1558.0
+        ],
+        "area": 257740.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00008",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "aircraft",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          160.0,
+          1781.0,
+          634.0,
+          2228.0
+        ],
+        "polygon": [
+          [
+            634.0,
+            2190.0
+          ],
+          [
+            184.0,
+            2228.0
+          ],
+          [
+            160.0,
+            1817.0
+          ],
+          [
+            583.0,
+            1781.0
+          ]
+        ],
+        "center": [
+          397.0,
+          2004.5
+        ],
+        "area": 211878.0,
+        "region_bin_3x3": "center-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00009",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "aircraft",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          456.0,
+          2593.0,
+          1004.0,
+          3144.0
+        ],
+        "polygon": [
+          [
+            836.0,
+            2593.0
+          ],
+          [
+            1004.0,
+            2975.0
+          ],
+          [
+            622.0,
+            3144.0
+          ],
+          [
+            456.0,
+            2750.0
+          ]
+        ],
+        "center": [
+          730.0,
+          2868.5
+        ],
+        "area": 301948.0,
+        "region_bin_3x3": "bottom-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00010",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "aircraft",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          735.0,
+          2987.0,
+          1374.0,
+          3631.0
+        ],
+        "polygon": [
+          [
+            1141.0,
+            2987.0
+          ],
+          [
+            1374.0,
+            3396.0
+          ],
+          [
+            960.0,
+            3631.0
+          ],
+          [
+            735.0,
+            3199.0
+          ]
+        ],
+        "center": [
+          1054.5,
+          3309.0
+        ],
+        "area": 411516.0,
+        "region_bin_3x3": "bottom-center"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [],
+  "global_inventory": {}
+}

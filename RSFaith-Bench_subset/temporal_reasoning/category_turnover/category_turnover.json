@@ -1,0 +1,6702 @@
+[
+  {
+    "question_id": "RSF-Q00012005",
+    "scene_id": "RSF-S00010211",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category is newly present in the later image?",
+    "answer": "water",
+    "answer_type": "text",
+    "choices": [
+      "water",
+      "non vegetated surface",
+      "tree",
+      "low vegetation"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00010211_t1.jpg",
+      "t2": "images/RSF-S00010211_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00010211.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "water",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "water",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_water"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "water",
+        "name": "aggregate_area",
+        "value": 8149,
+        "refs": {
+          "node_ids": [
+            "n_t2_water"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "water"
+          },
+          "outputs": {
+            "exists:water:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "water"
+          },
+          "outputs": {
+            "exists:water:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_water"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "water",
+            "name": "aggregate_area",
+            "value": 8149
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_water"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "water",
+          "non_vegetated_surface",
+          "tree",
+          "low_vegetation"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00009950",
+    "scene_id": "RSF-S00008986",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "What category appears in the later image but not in the earlier image?",
+    "answer": "non vegetated surface",
+    "answer_type": "text",
+    "choices": [
+      "building",
+      "water",
+      "non vegetated surface",
+      "low vegetation"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00008986_t1.jpg",
+      "t2": "images/RSF-S00008986_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00008986.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "non_vegetated_surface",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "non_vegetated_surface",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_NVG_surface"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "non_vegetated_surface",
+        "name": "aggregate_area",
+        "value": 41248,
+        "refs": {
+          "node_ids": [
+            "n_t2_NVG_surface"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface"
+          },
+          "outputs": {
+            "exists:non_vegetated_surface:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface"
+          },
+          "outputs": {
+            "exists:non_vegetated_surface:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_NVG_surface"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface",
+            "name": "aggregate_area",
+            "value": 41248
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_NVG_surface"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "building",
+          "water",
+          "non_vegetated_surface",
+          "low_vegetation"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00012358",
+    "scene_id": "RSF-S00010420",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category appears in the earlier image but not in the later image?",
+    "answer": "water",
+    "answer_type": "text",
+    "choices": [
+      "water",
+      "building",
+      "tree",
+      "non vegetated surface"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00010420_t1.jpg",
+      "t2": "images/RSF-S00010420_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00010420.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "water",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_water"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "water",
+        "name": "aggregate_area",
+        "value": 3939,
+        "refs": {
+          "node_ids": [
+            "n_t1_water"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "water",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "water"
+          },
+          "outputs": {
+            "exists:water:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_water"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "water",
+            "name": "aggregate_area",
+            "value": 3939
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_water"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "water"
+          },
+          "outputs": {
+            "exists:water:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "water",
+          "building",
+          "tree",
+          "non_vegetated_surface"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00011945",
+    "scene_id": "RSF-S00010168",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "What category can be seen in the earlier image but not in the later image?",
+    "answer": "playground",
+    "answer_type": "text",
+    "choices": [
+      "water",
+      "playground",
+      "low vegetation",
+      "non vegetated surface"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00010168_t1.jpg",
+      "t2": "images/RSF-S00010168_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00010168.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "playground",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_playgrounds"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "playground",
+        "name": "aggregate_area",
+        "value": 3403,
+        "refs": {
+          "node_ids": [
+            "n_t1_playgrounds"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "playground",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "playground"
+          },
+          "outputs": {
+            "exists:playground:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_playgrounds"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "playground",
+            "name": "aggregate_area",
+            "value": 3403
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_playgrounds"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "playground"
+          },
+          "outputs": {
+            "exists:playground:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "water",
+          "playground",
+          "low_vegetation",
+          "non_vegetated_surface"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00010476",
+    "scene_id": "RSF-S00009308",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category appears only after the earlier image?",
+    "answer": "building",
+    "answer_type": "text",
+    "choices": [
+      "water",
+      "non vegetated surface",
+      "tree",
+      "building"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00009308_t1.jpg",
+      "t2": "images/RSF-S00009308_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00009308.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "building",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "building",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_buildings"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "building",
+        "name": "aggregate_area",
+        "value": 103339,
+        "refs": {
+          "node_ids": [
+            "n_t2_buildings"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "building"
+          },
+          "outputs": {
+            "exists:building:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "building"
+          },
+          "outputs": {
+            "exists:building:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_buildings"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "building",
+            "name": "aggregate_area",
+            "value": 103339
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_buildings"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "water",
+          "non_vegetated_surface",
+          "tree",
+          "building"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00009944",
+    "scene_id": "RSF-S00008982",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category is present only in the later image?",
+    "answer": "low vegetation",
+    "answer_type": "text",
+    "choices": [
+      "low vegetation",
+      "tree",
+      "non vegetated surface",
+      "building"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00008982_t1.jpg",
+      "t2": "images/RSF-S00008982_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00008982.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "low_vegetation",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "low_vegetation",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_low_vegetation"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "low_vegetation",
+        "name": "aggregate_area",
+        "value": 4342,
+        "refs": {
+          "node_ids": [
+            "n_t2_low_vegetation"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "low_vegetation"
+          },
+          "outputs": {
+            "exists:low_vegetation:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "low_vegetation"
+          },
+          "outputs": {
+            "exists:low_vegetation:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_low_vegetation"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "low_vegetation",
+            "name": "aggregate_area",
+            "value": 4342
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_low_vegetation"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "low_vegetation",
+          "tree",
+          "non_vegetated_surface",
+          "building"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00011953",
+    "scene_id": "RSF-S00010176",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category is absent from the later image?",
+    "answer": "tree",
+    "answer_type": "text",
+    "choices": [
+      "building",
+      "non vegetated surface",
+      "water",
+      "tree"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00010176_t1.jpg",
+      "t2": "images/RSF-S00010176_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00010176.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "tree",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_trees"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "tree",
+        "name": "aggregate_area",
+        "value": 11244,
+        "refs": {
+          "node_ids": [
+            "n_t1_trees"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "tree",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "tree"
+          },
+          "outputs": {
+            "exists:tree:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_trees"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "tree",
+            "name": "aggregate_area",
+            "value": 11244
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_trees"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "tree"
+          },
+          "outputs": {
+            "exists:tree:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "building",
+          "non_vegetated_surface",
+          "water",
+          "tree"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00010596",
+    "scene_id": "RSF-S00009385",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "What new category is present in the later image?",
+    "answer": "non vegetated surface",
+    "answer_type": "text",
+    "choices": [
+      "water",
+      "non vegetated surface",
+      "tree",
+      "building"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00009385_t1.jpg",
+      "t2": "images/RSF-S00009385_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00009385.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "non_vegetated_surface",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "non_vegetated_surface",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_NVG_surface"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "non_vegetated_surface",
+        "name": "aggregate_area",
+        "value": 19979,
+        "refs": {
+          "node_ids": [
+            "n_t2_NVG_surface"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface"
+          },
+          "outputs": {
+            "exists:non_vegetated_surface:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface"
+          },
+          "outputs": {
+            "exists:non_vegetated_surface:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_NVG_surface"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface",
+            "name": "aggregate_area",
+            "value": 19979
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_NVG_surface"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "water",
+          "non_vegetated_surface",
+          "tree",
+          "building"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00012670",
+    "scene_id": "RSF-S00010632",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category is present only in the earlier image?",
+    "answer": "low vegetation",
+    "answer_type": "text",
+    "choices": [
+      "building",
+      "water",
+      "non vegetated surface",
+      "low vegetation"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00010632_t1.jpg",
+      "t2": "images/RSF-S00010632_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00010632.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "low_vegetation",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_low_vegetation"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "low_vegetation",
+        "name": "aggregate_area",
+        "value": 5714,
+        "refs": {
+          "node_ids": [
+            "n_t1_low_vegetation"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "low_vegetation",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "low_vegetation"
+          },
+          "outputs": {
+            "exists:low_vegetation:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_low_vegetation"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "low_vegetation",
+            "name": "aggregate_area",
+            "value": 5714
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_low_vegetation"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "low_vegetation"
+          },
+          "outputs": {
+            "exists:low_vegetation:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "building",
+          "water",
+          "non_vegetated_surface",
+          "low_vegetation"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00012882",
+    "scene_id": "RSF-S00010776",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category is no longer present in the later image?",
+    "answer": "playground",
+    "answer_type": "text",
+    "choices": [
+      "water",
+      "building",
+      "playground",
+      "non vegetated surface"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00010776_t1.jpg",
+      "t2": "images/RSF-S00010776_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00010776.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "playground",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_playgrounds"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "playground",
+        "name": "aggregate_area",
+        "value": 7669,
+        "refs": {
+          "node_ids": [
+            "n_t1_playgrounds"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "playground",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "playground"
+          },
+          "outputs": {
+            "exists:playground:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_playgrounds"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "playground",
+            "name": "aggregate_area",
+            "value": 7669
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_playgrounds"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "playground"
+          },
+          "outputs": {
+            "exists:playground:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "water",
+          "building",
+          "playground",
+          "non_vegetated_surface"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00012553",
+    "scene_id": "RSF-S00010552",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "What category disappears from the earlier image to the later image?",
+    "answer": "building",
+    "answer_type": "text",
+    "choices": [
+      "building",
+      "water",
+      "non vegetated surface",
+      "tree"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00010552_t1.jpg",
+      "t2": "images/RSF-S00010552_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00010552.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "building",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_buildings"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "building",
+        "name": "aggregate_area",
+        "value": 14510,
+        "refs": {
+          "node_ids": [
+            "n_t1_buildings"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "building",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "building"
+          },
+          "outputs": {
+            "exists:building:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_buildings"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "building",
+            "name": "aggregate_area",
+            "value": 14510
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_buildings"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "building"
+          },
+          "outputs": {
+            "exists:building:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "building",
+          "water",
+          "non_vegetated_surface",
+          "tree"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00010771",
+    "scene_id": "RSF-S00009504",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category can be seen in the later image but not in the earlier image?",
+    "answer": "playground",
+    "answer_type": "text",
+    "choices": [
+      "playground",
+      "building",
+      "non vegetated surface",
+      "low vegetation"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00009504_t1.jpg",
+      "t2": "images/RSF-S00009504_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00009504.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "playground",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "playground",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_playgrounds"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "playground",
+        "name": "aggregate_area",
+        "value": 9043,
+        "refs": {
+          "node_ids": [
+            "n_t2_playgrounds"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "playground"
+          },
+          "outputs": {
+            "exists:playground:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "playground"
+          },
+          "outputs": {
+            "exists:playground:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_playgrounds"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "playground",
+            "name": "aggregate_area",
+            "value": 9043
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_playgrounds"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "playground",
+          "building",
+          "non_vegetated_surface",
+          "low_vegetation"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00009858",
+    "scene_id": "RSF-S00008934",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "What new category is present in the later image?",
+    "answer": "low vegetation",
+    "answer_type": "text",
+    "choices": [
+      "water",
+      "low vegetation",
+      "non vegetated surface",
+      "building"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00008934_t1.jpg",
+      "t2": "images/RSF-S00008934_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00008934.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "low_vegetation",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "low_vegetation",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_low_vegetation"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "low_vegetation",
+        "name": "aggregate_area",
+        "value": 5969,
+        "refs": {
+          "node_ids": [
+            "n_t2_low_vegetation"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "low_vegetation"
+          },
+          "outputs": {
+            "exists:low_vegetation:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "low_vegetation"
+          },
+          "outputs": {
+            "exists:low_vegetation:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_low_vegetation"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "low_vegetation",
+            "name": "aggregate_area",
+            "value": 5969
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_low_vegetation"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "water",
+          "low_vegetation",
+          "non_vegetated_surface",
+          "building"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00010297",
+    "scene_id": "RSF-S00009198",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category is present only in the later image?",
+    "answer": "non vegetated surface",
+    "answer_type": "text",
+    "choices": [
+      "non vegetated surface",
+      "tree",
+      "water",
+      "building"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00009198_t1.jpg",
+      "t2": "images/RSF-S00009198_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00009198.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "non_vegetated_surface",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "non_vegetated_surface",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_NVG_surface"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "non_vegetated_surface",
+        "name": "aggregate_area",
+        "value": 21825,
+        "refs": {
+          "node_ids": [
+            "n_t2_NVG_surface"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface"
+          },
+          "outputs": {
+            "exists:non_vegetated_surface:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface"
+          },
+          "outputs": {
+            "exists:non_vegetated_surface:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_NVG_surface"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface",
+            "name": "aggregate_area",
+            "value": 21825
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_NVG_surface"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "non_vegetated_surface",
+          "tree",
+          "water",
+          "building"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00010616",
+    "scene_id": "RSF-S00009402",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category is present only in the earlier image?",
+    "answer": "tree",
+    "answer_type": "text",
+    "choices": [
+      "water",
+      "tree",
+      "non vegetated surface",
+      "building"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00009402_t1.jpg",
+      "t2": "images/RSF-S00009402_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00009402.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "tree",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_trees"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "tree",
+        "name": "aggregate_area",
+        "value": 7017,
+        "refs": {
+          "node_ids": [
+            "n_t1_trees"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "tree",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "tree"
+          },
+          "outputs": {
+            "exists:tree:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_trees"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "tree",
+            "name": "aggregate_area",
+            "value": 7017
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_trees"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "tree"
+          },
+          "outputs": {
+            "exists:tree:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "water",
+          "tree",
+          "non_vegetated_surface",
+          "building"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00012764",
+    "scene_id": "RSF-S00010700",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "What category can be seen in the earlier image but not in the later image?",
+    "answer": "playground",
+    "answer_type": "text",
+    "choices": [
+      "tree",
+      "playground",
+      "water",
+      "non vegetated surface"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00010700_t1.jpg",
+      "t2": "images/RSF-S00010700_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00010700.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "playground",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_playgrounds"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "playground",
+        "name": "aggregate_area",
+        "value": 2883,
+        "refs": {
+          "node_ids": [
+            "n_t1_playgrounds"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "playground",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "playground"
+          },
+          "outputs": {
+            "exists:playground:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_playgrounds"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "playground",
+            "name": "aggregate_area",
+            "value": 2883
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_playgrounds"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "playground"
+          },
+          "outputs": {
+            "exists:playground:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "tree",
+          "playground",
+          "water",
+          "non_vegetated_surface"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00009965",
+    "scene_id": "RSF-S00008997",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category appears only after the earlier image?",
+    "answer": "low vegetation",
+    "answer_type": "text",
+    "choices": [
+      "low vegetation",
+      "water",
+      "non vegetated surface",
+      "building"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00008997_t1.jpg",
+      "t2": "images/RSF-S00008997_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00008997.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "low_vegetation",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "low_vegetation",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_low_vegetation"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "low_vegetation",
+        "name": "aggregate_area",
+        "value": 98426,
+        "refs": {
+          "node_ids": [
+            "n_t2_low_vegetation"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "low_vegetation"
+          },
+          "outputs": {
+            "exists:low_vegetation:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "low_vegetation"
+          },
+          "outputs": {
+            "exists:low_vegetation:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_low_vegetation"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "low_vegetation",
+            "name": "aggregate_area",
+            "value": 98426
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_low_vegetation"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "low_vegetation",
+          "water",
+          "non_vegetated_surface",
+          "building"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00011357",
+    "scene_id": "RSF-S00009820",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category is absent from the later image?",
+    "answer": "building",
+    "answer_type": "text",
+    "choices": [
+      "tree",
+      "building",
+      "non vegetated surface",
+      "water"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00009820_t1.jpg",
+      "t2": "images/RSF-S00009820_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00009820.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "building",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_buildings"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "building",
+        "name": "aggregate_area",
+        "value": 42085,
+        "refs": {
+          "node_ids": [
+            "n_t1_buildings"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "building",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "building"
+          },
+          "outputs": {
+            "exists:building:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_buildings"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "building",
+            "name": "aggregate_area",
+            "value": 42085
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_buildings"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "building"
+          },
+          "outputs": {
+            "exists:building:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "tree",
+          "building",
+          "non_vegetated_surface",
+          "water"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00012801",
+    "scene_id": "RSF-S00010726",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category appears in the earlier image but not in the later image?",
+    "answer": "water",
+    "answer_type": "text",
+    "choices": [
+      "water",
+      "low vegetation",
+      "building",
+      "non vegetated surface"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00010726_t1.jpg",
+      "t2": "images/RSF-S00010726_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00010726.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "water",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_water"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "water",
+        "name": "aggregate_area",
+        "value": 7046,
+        "refs": {
+          "node_ids": [
+            "n_t1_water"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "water",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "water"
+          },
+          "outputs": {
+            "exists:water:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_water"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "water",
+            "name": "aggregate_area",
+            "value": 7046
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_water"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "water"
+          },
+          "outputs": {
+            "exists:water:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "water",
+          "low_vegetation",
+          "building",
+          "non_vegetated_surface"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00009954",
+    "scene_id": "RSF-S00008989",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "What category appears in the later image but not in the earlier image?",
+    "answer": "non vegetated surface",
+    "answer_type": "text",
+    "choices": [
+      "building",
+      "water",
+      "low vegetation",
+      "non vegetated surface"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00008989_t1.jpg",
+      "t2": "images/RSF-S00008989_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00008989.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "non_vegetated_surface",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "non_vegetated_surface",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_NVG_surface"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "non_vegetated_surface",
+        "name": "aggregate_area",
+        "value": 6260,
+        "refs": {
+          "node_ids": [
+            "n_t2_NVG_surface"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface"
+          },
+          "outputs": {
+            "exists:non_vegetated_surface:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface"
+          },
+          "outputs": {
+            "exists:non_vegetated_surface:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_NVG_surface"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface",
+            "name": "aggregate_area",
+            "value": 6260
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_NVG_surface"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "building",
+          "water",
+          "low_vegetation",
+          "non_vegetated_surface"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00010294",
+    "scene_id": "RSF-S00009195",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category is no longer present in the later image?",
+    "answer": "building",
+    "answer_type": "text",
+    "choices": [
+      "building",
+      "playground",
+      "water",
+      "non vegetated surface"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00009195_t1.jpg",
+      "t2": "images/RSF-S00009195_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00009195.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "building",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_buildings"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "building",
+        "name": "aggregate_area",
+        "value": 10594,
+        "refs": {
+          "node_ids": [
+            "n_t1_buildings"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "building",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "building"
+          },
+          "outputs": {
+            "exists:building:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_buildings"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "building",
+            "name": "aggregate_area",
+            "value": 10594
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_buildings"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "building"
+          },
+          "outputs": {
+            "exists:building:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "building",
+          "playground",
+          "water",
+          "non_vegetated_surface"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00009882",
+    "scene_id": "RSF-S00008950",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category is newly present in the later image?",
+    "answer": "tree",
+    "answer_type": "text",
+    "choices": [
+      "non vegetated surface",
+      "building",
+      "tree",
+      "water"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00008950_t1.jpg",
+      "t2": "images/RSF-S00008950_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00008950.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "tree",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "tree",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_trees"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "tree",
+        "name": "aggregate_area",
+        "value": 12032,
+        "refs": {
+          "node_ids": [
+            "n_t2_trees"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "tree"
+          },
+          "outputs": {
+            "exists:tree:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "tree"
+          },
+          "outputs": {
+            "exists:tree:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_trees"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "tree",
+            "name": "aggregate_area",
+            "value": 12032
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_trees"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "non_vegetated_surface",
+          "building",
+          "tree",
+          "water"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00010526",
+    "scene_id": "RSF-S00009338",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category can be seen in the later image but not in the earlier image?",
+    "answer": "playground",
+    "answer_type": "text",
+    "choices": [
+      "low vegetation",
+      "building",
+      "non vegetated surface",
+      "playground"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00009338_t1.jpg",
+      "t2": "images/RSF-S00009338_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00009338.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "playground",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "playground",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_playgrounds"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "playground",
+        "name": "aggregate_area",
+        "value": 8013,
+        "refs": {
+          "node_ids": [
+            "n_t2_playgrounds"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "playground"
+          },
+          "outputs": {
+            "exists:playground:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "playground"
+          },
+          "outputs": {
+            "exists:playground:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_playgrounds"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "playground",
+            "name": "aggregate_area",
+            "value": 8013
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_playgrounds"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "low_vegetation",
+          "building",
+          "non_vegetated_surface",
+          "playground"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00009923",
+    "scene_id": "RSF-S00008972",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "What category disappears from the earlier image to the later image?",
+    "answer": "water",
+    "answer_type": "text",
+    "choices": [
+      "building",
+      "low vegetation",
+      "non vegetated surface",
+      "water"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00008972_t1.jpg",
+      "t2": "images/RSF-S00008972_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00008972.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "water",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_water"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "water",
+        "name": "aggregate_area",
+        "value": 4293,
+        "refs": {
+          "node_ids": [
+            "n_t1_water"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "water",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "water"
+          },
+          "outputs": {
+            "exists:water:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_water"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "water",
+            "name": "aggregate_area",
+            "value": 4293
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_water"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "water"
+          },
+          "outputs": {
+            "exists:water:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "building",
+          "low_vegetation",
+          "non_vegetated_surface",
+          "water"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00012793",
+    "scene_id": "RSF-S00010722",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "What new category is present in the later image?",
+    "answer": "low vegetation",
+    "answer_type": "text",
+    "choices": [
+      "building",
+      "water",
+      "low vegetation",
+      "non vegetated surface"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00010722_t1.jpg",
+      "t2": "images/RSF-S00010722_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00010722.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "low_vegetation",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "low_vegetation",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_low_vegetation"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "low_vegetation",
+        "name": "aggregate_area",
+        "value": 3617,
+        "refs": {
+          "node_ids": [
+            "n_t2_low_vegetation"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "low_vegetation"
+          },
+          "outputs": {
+            "exists:low_vegetation:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "low_vegetation"
+          },
+          "outputs": {
+            "exists:low_vegetation:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_low_vegetation"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "low_vegetation",
+            "name": "aggregate_area",
+            "value": 3617
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_low_vegetation"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "building",
+          "water",
+          "low_vegetation",
+          "non_vegetated_surface"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00011857",
+    "scene_id": "RSF-S00010113",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category is absent from the later image?",
+    "answer": "non vegetated surface",
+    "answer_type": "text",
+    "choices": [
+      "building",
+      "water",
+      "non vegetated surface",
+      "tree"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00010113_t1.jpg",
+      "t2": "images/RSF-S00010113_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00010113.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "non_vegetated_surface",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_NVG_surface"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "non_vegetated_surface",
+        "name": "aggregate_area",
+        "value": 16452,
+        "refs": {
+          "node_ids": [
+            "n_t1_NVG_surface"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "non_vegetated_surface",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface"
+          },
+          "outputs": {
+            "exists:non_vegetated_surface:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_NVG_surface"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface",
+            "name": "aggregate_area",
+            "value": 16452
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_NVG_surface"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface"
+          },
+          "outputs": {
+            "exists:non_vegetated_surface:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "building",
+          "water",
+          "non_vegetated_surface",
+          "tree"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00011363",
+    "scene_id": "RSF-S00009825",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category appears only after the earlier image?",
+    "answer": "tree",
+    "answer_type": "text",
+    "choices": [
+      "building",
+      "playground",
+      "non vegetated surface",
+      "tree"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00009825_t1.jpg",
+      "t2": "images/RSF-S00009825_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00009825.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "tree",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "tree",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_trees"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "tree",
+        "name": "aggregate_area",
+        "value": 4037,
+        "refs": {
+          "node_ids": [
+            "n_t2_trees"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "tree"
+          },
+          "outputs": {
+            "exists:tree:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "tree"
+          },
+          "outputs": {
+            "exists:tree:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_trees"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "tree",
+            "name": "aggregate_area",
+            "value": 4037
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_trees"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "building",
+          "playground",
+          "non_vegetated_surface",
+          "tree"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00009757",
+    "scene_id": "RSF-S00008871",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category is present only in the earlier image?",
+    "answer": "low vegetation",
+    "answer_type": "text",
+    "choices": [
+      "low vegetation",
+      "non vegetated surface",
+      "building",
+      "tree"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00008871_t1.jpg",
+      "t2": "images/RSF-S00008871_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00008871.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "low_vegetation",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_low_vegetation"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "low_vegetation",
+        "name": "aggregate_area",
+        "value": 62906,
+        "refs": {
+          "node_ids": [
+            "n_t1_low_vegetation"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "low_vegetation",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "low_vegetation"
+          },
+          "outputs": {
+            "exists:low_vegetation:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_low_vegetation"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "low_vegetation",
+            "name": "aggregate_area",
+            "value": 62906
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_low_vegetation"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "low_vegetation"
+          },
+          "outputs": {
+            "exists:low_vegetation:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "low_vegetation",
+          "non_vegetated_surface",
+          "building",
+          "tree"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00010359",
+    "scene_id": "RSF-S00009237",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category is no longer present in the later image?",
+    "answer": "building",
+    "answer_type": "text",
+    "choices": [
+      "building",
+      "water",
+      "tree",
+      "non vegetated surface"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00009237_t1.jpg",
+      "t2": "images/RSF-S00009237_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00009237.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "building",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_buildings"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "building",
+        "name": "aggregate_area",
+        "value": 21275,
+        "refs": {
+          "node_ids": [
+            "n_t1_buildings"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "building",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "building"
+          },
+          "outputs": {
+            "exists:building:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_buildings"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "building",
+            "name": "aggregate_area",
+            "value": 21275
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_buildings"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "building"
+          },
+          "outputs": {
+            "exists:building:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "building",
+          "water",
+          "tree",
+          "non_vegetated_surface"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00010777",
+    "scene_id": "RSF-S00009507",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category appears in the earlier image but not in the later image?",
+    "answer": "playground",
+    "answer_type": "text",
+    "choices": [
+      "non vegetated surface",
+      "playground",
+      "low vegetation",
+      "building"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00009507_t1.jpg",
+      "t2": "images/RSF-S00009507_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00009507.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "playground",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_playgrounds"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "playground",
+        "name": "aggregate_area",
+        "value": 3444,
+        "refs": {
+          "node_ids": [
+            "n_t1_playgrounds"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "playground",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "playground"
+          },
+          "outputs": {
+            "exists:playground:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_playgrounds"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "playground",
+            "name": "aggregate_area",
+            "value": 3444
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_playgrounds"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "playground"
+          },
+          "outputs": {
+            "exists:playground:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "non_vegetated_surface",
+          "playground",
+          "low_vegetation",
+          "building"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00012508",
+    "scene_id": "RSF-S00010518",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category is newly present in the later image?",
+    "answer": "water",
+    "answer_type": "text",
+    "choices": [
+      "water",
+      "playground",
+      "non vegetated surface",
+      "building"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00010518_t1.jpg",
+      "t2": "images/RSF-S00010518_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00010518.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "water",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "water",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_water"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "water",
+        "name": "aggregate_area",
+        "value": 7706,
+        "refs": {
+          "node_ids": [
+            "n_t2_water"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "water"
+          },
+          "outputs": {
+            "exists:water:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "water"
+          },
+          "outputs": {
+            "exists:water:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_water"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "water",
+            "name": "aggregate_area",
+            "value": 7706
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_water"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "water",
+          "playground",
+          "non_vegetated_surface",
+          "building"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00011916",
+    "scene_id": "RSF-S00010148",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "What category appears in the later image but not in the earlier image?",
+    "answer": "non vegetated surface",
+    "answer_type": "text",
+    "choices": [
+      "building",
+      "non vegetated surface",
+      "tree",
+      "low vegetation"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00010148_t1.jpg",
+      "t2": "images/RSF-S00010148_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00010148.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "non_vegetated_surface",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "non_vegetated_surface",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_NVG_surface"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "non_vegetated_surface",
+        "name": "aggregate_area",
+        "value": 10661,
+        "refs": {
+          "node_ids": [
+            "n_t2_NVG_surface"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface"
+          },
+          "outputs": {
+            "exists:non_vegetated_surface:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface"
+          },
+          "outputs": {
+            "exists:non_vegetated_surface:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_NVG_surface"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface",
+            "name": "aggregate_area",
+            "value": 10661
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_NVG_surface"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "building",
+          "non_vegetated_surface",
+          "tree",
+          "low_vegetation"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00010607",
+    "scene_id": "RSF-S00009393",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category is present only in the later image?",
+    "answer": "tree",
+    "answer_type": "text",
+    "choices": [
+      "tree",
+      "building",
+      "non vegetated surface",
+      "water"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00009393_t1.jpg",
+      "t2": "images/RSF-S00009393_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00009393.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "tree",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "tree",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_trees"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "tree",
+        "name": "aggregate_area",
+        "value": 19772,
+        "refs": {
+          "node_ids": [
+            "n_t2_trees"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "tree"
+          },
+          "outputs": {
+            "exists:tree:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "tree"
+          },
+          "outputs": {
+            "exists:tree:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_trees"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "tree",
+            "name": "aggregate_area",
+            "value": 19772
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_trees"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "tree",
+          "building",
+          "non_vegetated_surface",
+          "water"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00010218",
+    "scene_id": "RSF-S00009145",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "What category can be seen in the earlier image but not in the later image?",
+    "answer": "playground",
+    "answer_type": "text",
+    "choices": [
+      "playground",
+      "low vegetation",
+      "non vegetated surface",
+      "building"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00009145_t1.jpg",
+      "t2": "images/RSF-S00009145_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00009145.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "playground",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_playgrounds"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "playground",
+        "name": "aggregate_area",
+        "value": 25073,
+        "refs": {
+          "node_ids": [
+            "n_t1_playgrounds"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "playground",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "playground"
+          },
+          "outputs": {
+            "exists:playground:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_playgrounds"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "playground",
+            "name": "aggregate_area",
+            "value": 25073
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_playgrounds"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "playground"
+          },
+          "outputs": {
+            "exists:playground:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "playground",
+          "low_vegetation",
+          "non_vegetated_surface",
+          "building"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00009484",
+    "scene_id": "RSF-S00008733",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category can be seen in the later image but not in the earlier image?",
+    "answer": "non vegetated surface",
+    "answer_type": "text",
+    "choices": [
+      "low vegetation",
+      "tree",
+      "building",
+      "non vegetated surface"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00008733_t1.jpg",
+      "t2": "images/RSF-S00008733_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00008733.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "non_vegetated_surface",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "non_vegetated_surface",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_NVG_surface"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "non_vegetated_surface",
+        "name": "aggregate_area",
+        "value": 8376,
+        "refs": {
+          "node_ids": [
+            "n_t2_NVG_surface"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface"
+          },
+          "outputs": {
+            "exists:non_vegetated_surface:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface"
+          },
+          "outputs": {
+            "exists:non_vegetated_surface:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_NVG_surface"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface",
+            "name": "aggregate_area",
+            "value": 8376
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_NVG_surface"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "low_vegetation",
+          "tree",
+          "building",
+          "non_vegetated_surface"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00009961",
+    "scene_id": "RSF-S00008993",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "What category disappears from the earlier image to the later image?",
+    "answer": "building",
+    "answer_type": "text",
+    "choices": [
+      "building",
+      "water",
+      "non vegetated surface",
+      "low vegetation"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00008993_t1.jpg",
+      "t2": "images/RSF-S00008993_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00008993.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "building",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_buildings"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "building",
+        "name": "aggregate_area",
+        "value": 9774,
+        "refs": {
+          "node_ids": [
+            "n_t1_buildings"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "building",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "building"
+          },
+          "outputs": {
+            "exists:building:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_buildings"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "building",
+            "name": "aggregate_area",
+            "value": 9774
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_buildings"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "building"
+          },
+          "outputs": {
+            "exists:building:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "building",
+          "water",
+          "non_vegetated_surface",
+          "low_vegetation"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00009951",
+    "scene_id": "RSF-S00008987",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category is present only in the later image?",
+    "answer": "low vegetation",
+    "answer_type": "text",
+    "choices": [
+      "water",
+      "building",
+      "low vegetation",
+      "non vegetated surface"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00008987_t1.jpg",
+      "t2": "images/RSF-S00008987_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00008987.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "low_vegetation",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "low_vegetation",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_low_vegetation"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "low_vegetation",
+        "name": "aggregate_area",
+        "value": 12981,
+        "refs": {
+          "node_ids": [
+            "n_t2_low_vegetation"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "low_vegetation"
+          },
+          "outputs": {
+            "exists:low_vegetation:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "low_vegetation"
+          },
+          "outputs": {
+            "exists:low_vegetation:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_low_vegetation"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "low_vegetation",
+            "name": "aggregate_area",
+            "value": 12981
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_low_vegetation"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "water",
+          "building",
+          "low_vegetation",
+          "non_vegetated_surface"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00010157",
+    "scene_id": "RSF-S00009107",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "What new category is present in the later image?",
+    "answer": "tree",
+    "answer_type": "text",
+    "choices": [
+      "non vegetated surface",
+      "tree",
+      "water",
+      "building"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00009107_t1.jpg",
+      "t2": "images/RSF-S00009107_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00009107.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "tree",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "tree",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_trees"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "tree",
+        "name": "aggregate_area",
+        "value": 2823,
+        "refs": {
+          "node_ids": [
+            "n_t2_trees"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "tree"
+          },
+          "outputs": {
+            "exists:tree:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "tree"
+          },
+          "outputs": {
+            "exists:tree:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_trees"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "tree",
+            "name": "aggregate_area",
+            "value": 2823
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_trees"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "non_vegetated_surface",
+          "tree",
+          "water",
+          "building"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00011617",
+    "scene_id": "RSF-S00009962",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category appears only after the earlier image?",
+    "answer": "playground",
+    "answer_type": "text",
+    "choices": [
+      "tree",
+      "water",
+      "playground",
+      "non vegetated surface"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00009962_t1.jpg",
+      "t2": "images/RSF-S00009962_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00009962.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "playground",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "playground",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_playgrounds"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "playground",
+        "name": "aggregate_area",
+        "value": 26695,
+        "refs": {
+          "node_ids": [
+            "n_t2_playgrounds"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "playground"
+          },
+          "outputs": {
+            "exists:playground:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "playground"
+          },
+          "outputs": {
+            "exists:playground:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_playgrounds"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "playground",
+            "name": "aggregate_area",
+            "value": 26695
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_playgrounds"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "tree",
+          "water",
+          "playground",
+          "non_vegetated_surface"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00010778",
+    "scene_id": "RSF-S00009508",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category is present only in the earlier image?",
+    "answer": "low vegetation",
+    "answer_type": "text",
+    "choices": [
+      "low vegetation",
+      "non vegetated surface",
+      "building",
+      "tree"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00009508_t1.jpg",
+      "t2": "images/RSF-S00009508_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00009508.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "low_vegetation",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_low_vegetation"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "low_vegetation",
+        "name": "aggregate_area",
+        "value": 31606,
+        "refs": {
+          "node_ids": [
+            "n_t1_low_vegetation"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "low_vegetation",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "low_vegetation"
+          },
+          "outputs": {
+            "exists:low_vegetation:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_low_vegetation"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "low_vegetation",
+            "name": "aggregate_area",
+            "value": 31606
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_low_vegetation"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "low_vegetation"
+          },
+          "outputs": {
+            "exists:low_vegetation:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "low_vegetation",
+          "non_vegetated_surface",
+          "building",
+          "tree"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00010106",
+    "scene_id": "RSF-S00009075",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category is absent from the later image?",
+    "answer": "building",
+    "answer_type": "text",
+    "choices": [
+      "non vegetated surface",
+      "water",
+      "building",
+      "tree"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00009075_t1.jpg",
+      "t2": "images/RSF-S00009075_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00009075.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "building",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_buildings"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "building",
+        "name": "aggregate_area",
+        "value": 14488,
+        "refs": {
+          "node_ids": [
+            "n_t1_buildings"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "building",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "building"
+          },
+          "outputs": {
+            "exists:building:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_buildings"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "building",
+            "name": "aggregate_area",
+            "value": 14488
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_buildings"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "building"
+          },
+          "outputs": {
+            "exists:building:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "non_vegetated_surface",
+          "water",
+          "building",
+          "tree"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00010774",
+    "scene_id": "RSF-S00009505",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category appears in the earlier image but not in the later image?",
+    "answer": "water",
+    "answer_type": "text",
+    "choices": [
+      "tree",
+      "low vegetation",
+      "water",
+      "non vegetated surface"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00009505_t1.jpg",
+      "t2": "images/RSF-S00009505_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00009505.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "water",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_water"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "water",
+        "name": "aggregate_area",
+        "value": 43149,
+        "refs": {
+          "node_ids": [
+            "n_t1_water"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "water",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "water"
+          },
+          "outputs": {
+            "exists:water:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_water"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "water",
+            "name": "aggregate_area",
+            "value": 43149
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_water"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "water"
+          },
+          "outputs": {
+            "exists:water:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "tree",
+          "low_vegetation",
+          "water",
+          "non_vegetated_surface"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00012615",
+    "scene_id": "RSF-S00010598",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category is newly present in the later image?",
+    "answer": "non vegetated surface",
+    "answer_type": "text",
+    "choices": [
+      "tree",
+      "non vegetated surface",
+      "building",
+      "water"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00010598_t1.jpg",
+      "t2": "images/RSF-S00010598_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00010598.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "non_vegetated_surface",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "non_vegetated_surface",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_NVG_surface"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "non_vegetated_surface",
+        "name": "aggregate_area",
+        "value": 7444,
+        "refs": {
+          "node_ids": [
+            "n_t2_NVG_surface"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface"
+          },
+          "outputs": {
+            "exists:non_vegetated_surface:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface"
+          },
+          "outputs": {
+            "exists:non_vegetated_surface:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_NVG_surface"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface",
+            "name": "aggregate_area",
+            "value": 7444
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_NVG_surface"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "tree",
+          "non_vegetated_surface",
+          "building",
+          "water"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00010303",
+    "scene_id": "RSF-S00009200",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category can be seen in the later image but not in the earlier image?",
+    "answer": "water",
+    "answer_type": "text",
+    "choices": [
+      "non vegetated surface",
+      "building",
+      "water",
+      "playground"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00009200_t1.jpg",
+      "t2": "images/RSF-S00009200_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00009200.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "water",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "water",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_water"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "water",
+        "name": "aggregate_area",
+        "value": 3410,
+        "refs": {
+          "node_ids": [
+            "n_t2_water"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "water"
+          },
+          "outputs": {
+            "exists:water:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "water"
+          },
+          "outputs": {
+            "exists:water:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_water"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "water",
+            "name": "aggregate_area",
+            "value": 3410
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_water"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "non_vegetated_surface",
+          "building",
+          "water",
+          "playground"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00011962",
+    "scene_id": "RSF-S00010183",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category is no longer present in the later image?",
+    "answer": "non vegetated surface",
+    "answer_type": "text",
+    "choices": [
+      "non vegetated surface",
+      "building",
+      "low vegetation",
+      "tree"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00010183_t1.jpg",
+      "t2": "images/RSF-S00010183_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00010183.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "non_vegetated_surface",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_NVG_surface"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "non_vegetated_surface",
+        "name": "aggregate_area",
+        "value": 61467,
+        "refs": {
+          "node_ids": [
+            "n_t1_NVG_surface"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "non_vegetated_surface",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface"
+          },
+          "outputs": {
+            "exists:non_vegetated_surface:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_NVG_surface"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface",
+            "name": "aggregate_area",
+            "value": 61467
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_NVG_surface"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "non_vegetated_surface"
+          },
+          "outputs": {
+            "exists:non_vegetated_surface:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "non_vegetated_surface",
+          "building",
+          "low_vegetation",
+          "tree"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00010279",
+    "scene_id": "RSF-S00009184",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "What category appears in the later image but not in the earlier image?",
+    "answer": "playground",
+    "answer_type": "text",
+    "choices": [
+      "building",
+      "non vegetated surface",
+      "water",
+      "playground"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00009184_t1.jpg",
+      "t2": "images/RSF-S00009184_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00009184.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "playground",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "playground",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_playgrounds"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "playground",
+        "name": "aggregate_area",
+        "value": 62172,
+        "refs": {
+          "node_ids": [
+            "n_t2_playgrounds"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "playground"
+          },
+          "outputs": {
+            "exists:playground:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "playground"
+          },
+          "outputs": {
+            "exists:playground:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_playgrounds"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "playground",
+            "name": "aggregate_area",
+            "value": 62172
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_playgrounds"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "building",
+          "non_vegetated_surface",
+          "water",
+          "playground"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00012834",
+    "scene_id": "RSF-S00010745",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "What category can be seen in the earlier image but not in the later image?",
+    "answer": "water",
+    "answer_type": "text",
+    "choices": [
+      "low vegetation",
+      "building",
+      "water",
+      "non vegetated surface"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00010745_t1.jpg",
+      "t2": "images/RSF-S00010745_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00010745.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "water",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_water"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "water",
+        "name": "aggregate_area",
+        "value": 4021,
+        "refs": {
+          "node_ids": [
+            "n_t1_water"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "water",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "water"
+          },
+          "outputs": {
+            "exists:water:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_water"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "water",
+            "name": "aggregate_area",
+            "value": 4021
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_water"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "water"
+          },
+          "outputs": {
+            "exists:water:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "low_vegetation",
+          "building",
+          "water",
+          "non_vegetated_surface"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00011809",
+    "scene_id": "RSF-S00010087",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "What category disappears from the earlier image to the later image?",
+    "answer": "playground",
+    "answer_type": "text",
+    "choices": [
+      "building",
+      "playground",
+      "non vegetated surface",
+      "low vegetation"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00010087_t1.jpg",
+      "t2": "images/RSF-S00010087_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00010087.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "playground",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t1_playgrounds"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t1",
+        "subject": "playground",
+        "name": "aggregate_area",
+        "value": 14223,
+        "refs": {
+          "node_ids": [
+            "n_t1_playgrounds"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "playground",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_disappearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "playground"
+          },
+          "outputs": {
+            "exists:playground:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_playgrounds"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "playground",
+            "name": "aggregate_area",
+            "value": 14223
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t1_playgrounds"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "playground"
+          },
+          "outputs": {
+            "exists:playground:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "disappearance",
+        "candidates": [
+          "building",
+          "playground",
+          "non_vegetated_surface",
+          "low_vegetation"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00009938",
+    "scene_id": "RSF-S00008980",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "What new category is present in the later image?",
+    "answer": "low vegetation",
+    "answer_type": "text",
+    "choices": [
+      "non vegetated surface",
+      "building",
+      "tree",
+      "low vegetation"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00008980_t1.jpg",
+      "t2": "images/RSF-S00008980_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00008980.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "low_vegetation",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "low_vegetation",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_low_vegetation"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "low_vegetation",
+        "name": "aggregate_area",
+        "value": 5314,
+        "refs": {
+          "node_ids": [
+            "n_t2_low_vegetation"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "low_vegetation"
+          },
+          "outputs": {
+            "exists:low_vegetation:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "low_vegetation"
+          },
+          "outputs": {
+            "exists:low_vegetation:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_low_vegetation"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "low_vegetation",
+            "name": "aggregate_area",
+            "value": 5314
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_low_vegetation"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "non_vegetated_surface",
+          "building",
+          "tree",
+          "low_vegetation"
+        ]
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00009765",
+    "scene_id": "RSF-S00008878",
+    "level": "Temporal reasoning",
+    "subcategory": "category_turnover",
+    "question": "Which category appears only after the earlier image?",
+    "answer": "tree",
+    "answer_type": "text",
+    "choices": [
+      "water",
+      "non vegetated surface",
+      "building",
+      "tree"
+    ],
+    "images": {
+      "mode": "pair",
+      "t1": "images/RSF-S00008878_t1.jpg",
+      "t2": "images/RSF-S00008878_t2.jpg"
+    },
+    "scene_graph": "scene_graphs/RSF-S00008878.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "tree",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Existence",
+        "time": "t2",
+        "subject": "tree",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_t2_trees"
+          ],
+          "edge_ids": []
+        }
+      },
+      {
+        "claim_type": "Attribute",
+        "time": "t2",
+        "subject": "tree",
+        "name": "aggregate_area",
+        "value": 8133,
+        "refs": {
+          "node_ids": [
+            "n_t2_trees"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "temporal.category_appearance",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "tree"
+          },
+          "outputs": {
+            "exists:tree:t1": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_002",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "tree"
+          },
+          "outputs": {
+            "exists:tree:t2": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_trees"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        },
+        {
+          "slot_id": "s_003",
+          "claim_type": "Attribute",
+          "scope": {
+            "time": "t2"
+          },
+          "constraints": {
+            "subject": "tree",
+            "name": "aggregate_area",
+            "value": 8133
+          },
+          "outputs": {},
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_t2_trees"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": false
+        }
+      ],
+      "answer_fn": {
+        "op": "temporal_turnover",
+        "mode": "appearance",
+        "candidates": [
+          "water",
+          "non_vegetated_surface",
+          "building",
+          "tree"
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "scene_id": "RSF-S00000637",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      800,
+      799
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "stadium",
+      "canonical_root": "stadium",
+      "geometry": {
+        "bbox": [
+          121.0,
+          153.0,
+          371.0,
+          345.0
+        ],
+        "center": [
+          246.0,
+          249.0
+        ],
+        "area": 48000.0,
+        "region_bin_3x3": "top-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00002",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "vehicle",
+      "canonical_root": "vehicle",
+      "geometry": {
+        "bbox": [
+          25.0,
+          48.0,
+          41.0,
+          57.0
+        ],
+        "center": [
+          33.0,
+          52.5
+        ],
+        "area": 144.0,
+        "region_bin_3x3": "top-left"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [],
+  "global_inventory": {}
+}

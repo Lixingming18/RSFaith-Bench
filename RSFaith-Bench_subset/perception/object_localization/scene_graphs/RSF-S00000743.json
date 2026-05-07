@@ -1,0 +1,109 @@
+{
+  "scene_id": "RSF-S00000743",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      800,
+      800
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "vehicle",
+      "canonical_root": "vehicle",
+      "geometry": {
+        "bbox": [
+          306.0,
+          275.0,
+          358.0,
+          298.0
+        ],
+        "center": [
+          332.0,
+          286.5
+        ],
+        "area": 1196.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00002",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "service_area",
+      "canonical_root": "service_area",
+      "geometry": {
+        "bbox": [
+          140.0,
+          71.0,
+          506.0,
+          596.0
+        ],
+        "center": [
+          323.0,
+          333.5
+        ],
+        "area": 192150.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00003",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "service_area",
+      "canonical_root": "service_area",
+      "geometry": {
+        "bbox": [
+          359.0,
+          149.0,
+          718.0,
+          690.0
+        ],
+        "center": [
+          538.5,
+          419.5
+        ],
+        "area": 194219.0,
+        "region_bin_3x3": "center-right"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "e_sp_00001",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_obj_00001",
+      "target": "n_obj_00002"
+    },
+    {
+      "edge_id": "e_sp_00002",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_00001",
+      "target": "n_obj_00003"
+    },
+    {
+      "edge_id": "e_sp_00003",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_obj_00002",
+      "target": "n_obj_00001"
+    },
+    {
+      "edge_id": "e_sp_00004",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_00003",
+      "target": "n_obj_00001"
+    }
+  ],
+  "global_inventory": {}
+}

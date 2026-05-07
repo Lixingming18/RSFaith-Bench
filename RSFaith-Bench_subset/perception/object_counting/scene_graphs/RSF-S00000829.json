@@ -1,0 +1,190 @@
+{
+  "scene_id": "RSF-S00000829",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      800,
+      800
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "vehicle",
+      "canonical_root": "vehicle",
+      "geometry": {
+        "bbox": [
+          293.0,
+          114.0,
+          372.0,
+          144.0
+        ],
+        "center": [
+          332.5,
+          129.0
+        ],
+        "area": 2370.0,
+        "region_bin_3x3": "top-center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00002",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "vehicle",
+      "canonical_root": "vehicle",
+      "geometry": {
+        "bbox": [
+          518.0,
+          120.0,
+          589.0,
+          148.0
+        ],
+        "center": [
+          553.5,
+          134.0
+        ],
+        "area": 1988.0,
+        "region_bin_3x3": "top-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00003",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "vehicle",
+      "canonical_root": "vehicle",
+      "geometry": {
+        "bbox": [
+          614.0,
+          118.0,
+          698.0,
+          150.0
+        ],
+        "center": [
+          656.0,
+          134.0
+        ],
+        "area": 2688.0,
+        "region_bin_3x3": "top-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00004",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "vehicle",
+      "canonical_root": "vehicle",
+      "geometry": {
+        "bbox": [
+          479.0,
+          282.0,
+          555.0,
+          313.0
+        ],
+        "center": [
+          517.0,
+          297.5
+        ],
+        "area": 2356.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00005",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "vehicle",
+      "canonical_root": "vehicle",
+      "geometry": {
+        "bbox": [
+          367.0,
+          284.0,
+          434.0,
+          314.0
+        ],
+        "center": [
+          400.5,
+          299.0
+        ],
+        "area": 2010.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00006",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "vehicle",
+      "canonical_root": "vehicle",
+      "geometry": {
+        "bbox": [
+          622.0,
+          483.0,
+          692.0,
+          512.0
+        ],
+        "center": [
+          657.0,
+          497.5
+        ],
+        "area": 2030.0,
+        "region_bin_3x3": "center-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00007",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "vehicle",
+      "canonical_root": "vehicle",
+      "geometry": {
+        "bbox": [
+          609.0,
+          676.0,
+          694.0,
+          708.0
+        ],
+        "center": [
+          651.5,
+          692.0
+        ],
+        "area": 2720.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00008",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "vehicle",
+      "canonical_root": "vehicle",
+      "geometry": {
+        "bbox": [
+          37.0,
+          693.0,
+          71.0,
+          767.0
+        ],
+        "center": [
+          54.0,
+          730.0
+        ],
+        "area": 2516.0,
+        "region_bin_3x3": "bottom-left"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [],
+  "global_inventory": {}
+}

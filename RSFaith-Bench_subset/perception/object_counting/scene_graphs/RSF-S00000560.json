@@ -1,0 +1,146 @@
+{
+  "scene_id": "RSF-S00000560",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      800,
+      800
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "windmill",
+      "canonical_root": "windmill",
+      "geometry": {
+        "bbox": [
+          494.0,
+          76.0,
+          515.0,
+          94.0
+        ],
+        "center": [
+          504.5,
+          85.0
+        ],
+        "area": 378.0,
+        "region_bin_3x3": "top-center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00002",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "windmill",
+      "canonical_root": "windmill",
+      "geometry": {
+        "bbox": [
+          187.0,
+          118.0,
+          220.0,
+          154.0
+        ],
+        "center": [
+          203.5,
+          136.0
+        ],
+        "area": 1188.0,
+        "region_bin_3x3": "top-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00003",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "windmill",
+      "canonical_root": "windmill",
+      "geometry": {
+        "bbox": [
+          282.0,
+          324.0,
+          318.0,
+          347.0
+        ],
+        "center": [
+          300.0,
+          335.5
+        ],
+        "area": 828.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00004",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "windmill",
+      "canonical_root": "windmill",
+      "geometry": {
+        "bbox": [
+          321.0,
+          481.0,
+          354.0,
+          508.0
+        ],
+        "center": [
+          337.5,
+          494.5
+        ],
+        "area": 891.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00005",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "windmill",
+      "canonical_root": "windmill",
+      "geometry": {
+        "bbox": [
+          38.0,
+          665.0,
+          70.0,
+          688.0
+        ],
+        "center": [
+          54.0,
+          676.5
+        ],
+        "area": 736.0,
+        "region_bin_3x3": "bottom-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_00006",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "windmill",
+      "canonical_root": "windmill",
+      "geometry": {
+        "bbox": [
+          743.0,
+          638.0,
+          776.0,
+          665.0
+        ],
+        "center": [
+          759.5,
+          651.5
+        ],
+        "area": 891.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [],
+  "global_inventory": {}
+}

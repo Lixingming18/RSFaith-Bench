@@ -1,0 +1,54 @@
+{
+  "scene_id": "RSF-S00001966",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      600,
+      800
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "boeing747",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          446.0,
+          451.0,
+          563.0,
+          570.0
+        ],
+        "polygon": [
+          [
+            563.0,
+            523.0
+          ],
+          [
+            497.0,
+            570.0
+          ],
+          [
+            446.0,
+            498.0
+          ],
+          [
+            512.0,
+            451.0
+          ]
+        ],
+        "center": [
+          504.5,
+          510.5
+        ],
+        "area": 13923.0,
+        "region_bin_3x3": "center-right"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [],
+  "global_inventory": {}
+}

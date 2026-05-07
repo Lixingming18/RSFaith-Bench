@@ -1,0 +1,36 @@
+{
+  "scene_id": "RSF-S00000150",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      800,
+      800
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "windmill",
+      "canonical_root": "windmill",
+      "geometry": {
+        "bbox": [
+          326.0,
+          344.0,
+          549.0,
+          463.0
+        ],
+        "center": [
+          437.5,
+          403.5
+        ],
+        "area": 26537.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [],
+  "global_inventory": {}
+}

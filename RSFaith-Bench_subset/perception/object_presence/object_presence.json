@@ -1,0 +1,3548 @@
+[
+  {
+    "question_id": "RSF-Q00000859",
+    "scene_id": "RSF-S00000859",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any vehicle?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "Can't judge",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000859_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000859.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "vehicle",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00011"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "vehicle"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00011"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002871",
+    "scene_id": "RSF-S00002871",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Is any warehouse visible in the image?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "Yes",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002871_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002871.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "warehouse",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "warehouse"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00004142",
+    "scene_id": "RSF-S00004142",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Is any stadium present in this scene?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "No",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00004142_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00004142.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "stadium",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "stadium"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001460",
+    "scene_id": "RSF-S00001460",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any excavator?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "No",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001460_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001460.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "excavator",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00022"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "excavator"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00022"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002782",
+    "scene_id": "RSF-S00002782",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Is a warehouse present in the image?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "Can't judge",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002782_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002782.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "warehouse",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "warehouse"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002988",
+    "scene_id": "RSF-S00002988",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any roundabout?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Yes",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002988_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002988.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "roundabout",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "roundabout"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00004127",
+    "scene_id": "RSF-S00004127",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Is any helipad present in this scene?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Yes",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00004127_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00004127.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "helipad",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "helipad"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002818",
+    "scene_id": "RSF-S00002818",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Is any helipad visible in the image?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "No",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002818_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002818.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "helipad",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "helipad"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00003920",
+    "scene_id": "RSF-S00003920",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any motorboat?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "No",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00003920_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00003920.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "motorboat",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_1"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "motorboat"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_1"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002758",
+    "scene_id": "RSF-S00002758",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Is a helipad present in the image?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Yes",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002758_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002758.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "helipad",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "helipad"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002950",
+    "scene_id": "RSF-S00002950",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Is any bridge present in this scene?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Yes",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002950_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002950.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "bridge",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "bridge"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001807",
+    "scene_id": "RSF-S00001807",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any a350?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "No",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001807_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001807.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "a350",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00012"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "a350"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00012"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00003121",
+    "scene_id": "RSF-S00003121",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Is any stadium visible in the image?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "Can't judge",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00003121_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00003121.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "stadium",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "stadium"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000963",
+    "scene_id": "RSF-S00000963",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any aircraft?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "Yes",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000963_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000963.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "aircraft",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00002",
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006",
+            "n_obj_00007",
+            "n_obj_00008",
+            "n_obj_00009",
+            "n_obj_00010",
+            "n_obj_00011",
+            "n_obj_00012",
+            "n_obj_00013",
+            "n_obj_00014",
+            "n_obj_00015",
+            "n_obj_00016",
+            "n_obj_00017",
+            "n_obj_00018",
+            "n_obj_00019",
+            "n_obj_00020",
+            "n_obj_00021",
+            "n_obj_00023",
+            "n_obj_00024",
+            "n_obj_00025",
+            "n_obj_00026",
+            "n_obj_00027",
+            "n_obj_00028",
+            "n_obj_00029",
+            "n_obj_00030",
+            "n_obj_00031",
+            "n_obj_00032",
+            "n_obj_00033",
+            "n_obj_00034",
+            "n_obj_00035",
+            "n_obj_00036",
+            "n_obj_00037",
+            "n_obj_00038",
+            "n_obj_00039",
+            "n_obj_00040",
+            "n_obj_00041",
+            "n_obj_00043",
+            "n_obj_00044",
+            "n_obj_00063",
+            "n_obj_00065",
+            "n_obj_00066",
+            "n_obj_00067",
+            "n_obj_00068",
+            "n_obj_00070",
+            "n_obj_00072",
+            "n_obj_00073",
+            "n_obj_00075",
+            "n_obj_00076",
+            "n_obj_00077",
+            "n_obj_00078",
+            "n_obj_00082"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "aircraft"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002",
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006",
+              "n_obj_00007",
+              "n_obj_00008",
+              "n_obj_00009",
+              "n_obj_00010",
+              "n_obj_00011",
+              "n_obj_00012",
+              "n_obj_00013",
+              "n_obj_00014",
+              "n_obj_00015",
+              "n_obj_00016",
+              "n_obj_00017",
+              "n_obj_00018",
+              "n_obj_00019",
+              "n_obj_00020",
+              "n_obj_00021",
+              "n_obj_00023",
+              "n_obj_00024",
+              "n_obj_00025",
+              "n_obj_00026",
+              "n_obj_00027",
+              "n_obj_00028",
+              "n_obj_00029",
+              "n_obj_00030",
+              "n_obj_00031",
+              "n_obj_00032",
+              "n_obj_00033",
+              "n_obj_00034",
+              "n_obj_00035",
+              "n_obj_00036",
+              "n_obj_00037",
+              "n_obj_00038",
+              "n_obj_00039",
+              "n_obj_00040",
+              "n_obj_00041",
+              "n_obj_00043",
+              "n_obj_00044",
+              "n_obj_00063",
+              "n_obj_00065",
+              "n_obj_00066",
+              "n_obj_00067",
+              "n_obj_00068",
+              "n_obj_00070",
+              "n_obj_00072",
+              "n_obj_00073",
+              "n_obj_00075",
+              "n_obj_00076",
+              "n_obj_00077",
+              "n_obj_00078",
+              "n_obj_00082"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001611",
+    "scene_id": "RSF-S00001611",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any bus?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "Can't judge",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001611_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001611.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "bus",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00007",
+            "n_obj_00021"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "bus"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00007",
+              "n_obj_00021"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00003737",
+    "scene_id": "RSF-S00003737",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any van?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Can't judge",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00003737_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00003737.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "van",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_1",
+            "n_obj_4",
+            "n_obj_6",
+            "n_obj_8",
+            "n_obj_11",
+            "n_obj_13"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "van"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_1",
+              "n_obj_4",
+              "n_obj_6",
+              "n_obj_8",
+              "n_obj_11",
+              "n_obj_13"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00004384",
+    "scene_id": "RSF-S00004384",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any swimming pool?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "Can't judge",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00004384_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00004384.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "swimming_pool",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "swimming_pool"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00003643",
+    "scene_id": "RSF-S00003643",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any greenbelt?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Yes",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00003643_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00003643.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "greenbelt",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_8"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "greenbelt"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_8"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002888",
+    "scene_id": "RSF-S00002888",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any solar panel?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Can't judge",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002888_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002888.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "solar_panel",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "solar_panel"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002943",
+    "scene_id": "RSF-S00002943",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any cargo?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "No",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002943_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002943.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "cargo",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_49",
+            "n_obj_50",
+            "n_obj_51",
+            "n_obj_52",
+            "n_obj_53",
+            "n_obj_54"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "cargo"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_49",
+              "n_obj_50",
+              "n_obj_51",
+              "n_obj_52",
+              "n_obj_53",
+              "n_obj_54"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000990",
+    "scene_id": "RSF-S00000990",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any helicopter?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "Yes",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000990_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000990.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "helicopter",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00009",
+            "n_obj_00010",
+            "n_obj_00011"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "helicopter"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00009",
+              "n_obj_00010",
+              "n_obj_00011"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00004499",
+    "scene_id": "RSF-S00004499",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any wind turbine?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "No",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00004499_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00004499.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "wind_turbine",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "wind_turbine"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00003974",
+    "scene_id": "RSF-S00003974",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any crane?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "No",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00003974_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00003974.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "crane",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_45"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "crane"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_45"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000985",
+    "scene_id": "RSF-S00000985",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any stadium?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "No",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000985_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000985.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "stadium",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "stadium"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00003953",
+    "scene_id": "RSF-S00003953",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any factory?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "No",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00003953_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00003953.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "factory",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_17"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "factory"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_17"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000959",
+    "scene_id": "RSF-S00000959",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any bridge?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "Yes",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000959_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000959.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "bridge",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "bridge"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000856",
+    "scene_id": "RSF-S00000856",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any dam?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "No",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000856_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000856.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "dam",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "dam"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001990",
+    "scene_id": "RSF-S00001990",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any warehouse?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "Can't judge",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001990_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001990.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "warehouse",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "warehouse"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001920",
+    "scene_id": "RSF-S00001920",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any a220?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Yes",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001920_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001920.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "a220",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00003"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "a220"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00003"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00004342",
+    "scene_id": "RSF-S00004342",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any parking lot?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Yes",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00004342_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00004342.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "parking_lot",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "parking_lot"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002949",
+    "scene_id": "RSF-S00002949",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any block?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Yes",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002949_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002949.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "block",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_12",
+            "n_obj_13",
+            "n_obj_14",
+            "n_obj_15",
+            "n_obj_18",
+            "n_obj_19",
+            "n_obj_20",
+            "n_obj_21"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "block"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_12",
+              "n_obj_13",
+              "n_obj_14",
+              "n_obj_15",
+              "n_obj_18",
+              "n_obj_19",
+              "n_obj_20",
+              "n_obj_21"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000958",
+    "scene_id": "RSF-S00000958",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any ship?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Yes",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000958_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000958.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "ship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00035",
+            "n_obj_00058",
+            "n_obj_00059",
+            "n_obj_00060",
+            "n_obj_00151",
+            "n_obj_00152",
+            "n_obj_00153",
+            "n_obj_00162",
+            "n_obj_00163",
+            "n_obj_00164",
+            "n_obj_00165",
+            "n_obj_00175",
+            "n_obj_00176",
+            "n_obj_00177",
+            "n_obj_00178",
+            "n_obj_00179",
+            "n_obj_00180",
+            "n_obj_00181",
+            "n_obj_00238",
+            "n_obj_00239",
+            "n_obj_00240",
+            "n_obj_00241"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "ship"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00035",
+              "n_obj_00058",
+              "n_obj_00059",
+              "n_obj_00060",
+              "n_obj_00151",
+              "n_obj_00152",
+              "n_obj_00153",
+              "n_obj_00162",
+              "n_obj_00163",
+              "n_obj_00164",
+              "n_obj_00165",
+              "n_obj_00175",
+              "n_obj_00176",
+              "n_obj_00177",
+              "n_obj_00178",
+              "n_obj_00179",
+              "n_obj_00180",
+              "n_obj_00181",
+              "n_obj_00238",
+              "n_obj_00239",
+              "n_obj_00240",
+              "n_obj_00241"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002973",
+    "scene_id": "RSF-S00002973",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any airport?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "No",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002973_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002973.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "airport",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_24"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "airport"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_24"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000993",
+    "scene_id": "RSF-S00000993",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any helipad?",
+    "answer": "No",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "Yes",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000993_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000993.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "helipad",
+        "value": false,
+        "refs": {
+          "node_ids": [],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "helipad"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000541",
+    "scene_id": "RSF-S00000541",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any chimney?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "Can't judge",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000541_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000541.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "chimney",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001",
+            "n_obj_00002"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "chimney"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001",
+              "n_obj_00002"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002977",
+    "scene_id": "RSF-S00002977",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any container?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Can't judge",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002977_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002977.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "container",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_26",
+            "n_obj_27",
+            "n_obj_28",
+            "n_obj_29",
+            "n_obj_30",
+            "n_obj_31",
+            "n_obj_32"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "container"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_26",
+              "n_obj_27",
+              "n_obj_28",
+              "n_obj_29",
+              "n_obj_30",
+              "n_obj_31",
+              "n_obj_32"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001362",
+    "scene_id": "RSF-S00001362",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any tugboat?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Yes",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001362_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001362.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "tugboat",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00003",
+            "n_obj_00004",
+            "n_obj_00005",
+            "n_obj_00006"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "tugboat"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00003",
+              "n_obj_00004",
+              "n_obj_00005",
+              "n_obj_00006"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002969",
+    "scene_id": "RSF-S00002969",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any building?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Can't judge",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002969_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002969.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "building",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_19",
+            "n_obj_20",
+            "n_obj_21",
+            "n_obj_22",
+            "n_obj_23",
+            "n_obj_24",
+            "n_obj_25",
+            "n_obj_26",
+            "n_obj_27",
+            "n_obj_28",
+            "n_obj_29",
+            "n_obj_30",
+            "n_obj_31",
+            "n_obj_32",
+            "n_obj_33",
+            "n_obj_34",
+            "n_obj_35",
+            "n_obj_36",
+            "n_obj_37",
+            "n_obj_38",
+            "n_obj_41",
+            "n_obj_42",
+            "n_obj_43",
+            "n_obj_44",
+            "n_obj_45",
+            "n_obj_46",
+            "n_obj_47",
+            "n_obj_48",
+            "n_obj_49",
+            "n_obj_50",
+            "n_obj_51",
+            "n_obj_52",
+            "n_obj_53",
+            "n_obj_54",
+            "n_obj_55",
+            "n_obj_56",
+            "n_obj_57",
+            "n_obj_58",
+            "n_obj_61",
+            "n_obj_65",
+            "n_obj_66"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "building"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_19",
+              "n_obj_20",
+              "n_obj_21",
+              "n_obj_22",
+              "n_obj_23",
+              "n_obj_24",
+              "n_obj_25",
+              "n_obj_26",
+              "n_obj_27",
+              "n_obj_28",
+              "n_obj_29",
+              "n_obj_30",
+              "n_obj_31",
+              "n_obj_32",
+              "n_obj_33",
+              "n_obj_34",
+              "n_obj_35",
+              "n_obj_36",
+              "n_obj_37",
+              "n_obj_38",
+              "n_obj_41",
+              "n_obj_42",
+              "n_obj_43",
+              "n_obj_44",
+              "n_obj_45",
+              "n_obj_46",
+              "n_obj_47",
+              "n_obj_48",
+              "n_obj_49",
+              "n_obj_50",
+              "n_obj_51",
+              "n_obj_52",
+              "n_obj_53",
+              "n_obj_54",
+              "n_obj_55",
+              "n_obj_56",
+              "n_obj_57",
+              "n_obj_58",
+              "n_obj_61",
+              "n_obj_65",
+              "n_obj_66"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00000858",
+    "scene_id": "RSF-S00000858",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any overpass?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Yes",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00000858_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00000858.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "overpass",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "overpass"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002625",
+    "scene_id": "RSF-S00002625",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any water?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "No",
+      "Can't judge"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002625_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002625.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "water",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_22"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "water"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_22"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001687",
+    "scene_id": "RSF-S00001687",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any a330?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "No",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001687_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001687.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "a330",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "a330"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001496",
+    "scene_id": "RSF-S00001496",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any arj21?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "Can't judge",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001496_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001496.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "arj21",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "arj21"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001745",
+    "scene_id": "RSF-S00001745",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any a321?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "No",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001745_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001745.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "a321",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "a321"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002923",
+    "scene_id": "RSF-S00002923",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any runway?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "No",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002923_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002923.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "runway",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_1",
+            "n_obj_2",
+            "n_obj_3",
+            "n_obj_4"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "runway"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_1",
+              "n_obj_2",
+              "n_obj_3",
+              "n_obj_4"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002989",
+    "scene_id": "RSF-S00002989",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any intersection?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Can't judge",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002989_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002989.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "intersection",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_0"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "intersection"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_0"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001938",
+    "scene_id": "RSF-S00001938",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any boeing747?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "Can't judge",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001938_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001938.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "boeing747",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00003"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "boeing747"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00003"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00003913",
+    "scene_id": "RSF-S00003913",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any road?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "Can't judge",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00003913_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00003913.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "road",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_2",
+            "n_obj_3"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "road"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_2",
+              "n_obj_3"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00002158",
+    "scene_id": "RSF-S00002158",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any boeing777?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Can't judge",
+      "Yes",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00002158_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00002158.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "boeing777",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00002"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "boeing777"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00002"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001872",
+    "scene_id": "RSF-S00001872",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any boeing737?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "No",
+      "Can't judge",
+      "Yes"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001872_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001872.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "boeing737",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00001"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "boeing737"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00001"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  },
+  {
+    "question_id": "RSF-Q00001805",
+    "scene_id": "RSF-S00001805",
+    "level": "Perception",
+    "subcategory": "object_presence",
+    "question": "Does the image contain any warship?",
+    "answer": "Yes",
+    "answer_type": "text",
+    "choices": [
+      "Yes",
+      "Can't judge",
+      "No"
+    ],
+    "images": {
+      "mode": "single",
+      "t1": "images/RSF-S00001805_t1.jpg",
+      "t2": null
+    },
+    "scene_graph": "scene_graphs/RSF-S00001805.json",
+    "support": [
+      {
+        "claim_type": "Existence",
+        "time": "t1",
+        "subject": "warship",
+        "value": true,
+        "refs": {
+          "node_ids": [
+            "n_obj_00005",
+            "n_obj_00006",
+            "n_obj_00009",
+            "n_obj_00010",
+            "n_obj_00011",
+            "n_obj_00012",
+            "n_obj_00013",
+            "n_obj_00015"
+          ],
+          "edge_ids": []
+        }
+      }
+    ],
+    "program": {
+      "program_id": "perception.object_presence",
+      "slots": [
+        {
+          "slot_id": "s_001",
+          "claim_type": "Existence",
+          "scope": {
+            "time": "t1"
+          },
+          "constraints": {
+            "subject": "warship"
+          },
+          "outputs": {
+            "answer": "value"
+          },
+          "complete_scope": true,
+          "refs": {
+            "node_ids": [
+              "n_obj_00005",
+              "n_obj_00006",
+              "n_obj_00009",
+              "n_obj_00010",
+              "n_obj_00011",
+              "n_obj_00012",
+              "n_obj_00013",
+              "n_obj_00015"
+            ],
+            "edge_ids": []
+          },
+          "sr_required": true
+        }
+      ],
+      "answer_fn": {
+        "op": "bool_label",
+        "claim_type": "Existence",
+        "field": "value",
+        "var": "answer"
+      }
+    }
+  }
+]

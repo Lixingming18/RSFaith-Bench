@@ -1,0 +1,54 @@
+{
+  "scene_id": "RSF-S00001745",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      800,
+      600
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "a321",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          606.0,
+          20.0,
+          651.0,
+          79.0
+        ],
+        "polygon": [
+          [
+            651.0,
+            75.0
+          ],
+          [
+            611.0,
+            79.0
+          ],
+          [
+            606.0,
+            24.0
+          ],
+          [
+            646.0,
+            20.0
+          ]
+        ],
+        "center": [
+          628.5,
+          49.5
+        ],
+        "area": 2655.0,
+        "region_bin_3x3": "top-right"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [],
+  "global_inventory": {}
+}

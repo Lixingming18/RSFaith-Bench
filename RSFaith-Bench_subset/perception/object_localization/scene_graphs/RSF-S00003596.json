@@ -1,0 +1,2203 @@
+{
+  "scene_id": "RSF-S00003596",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      600,
+      800
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_0",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "tractor",
+      "canonical_root": "large_vehicle",
+      "geometry": {
+        "bbox": [
+          362.0,
+          461.0,
+          395.0,
+          481.0
+        ],
+        "polygon": [
+          [
+            395.0,
+            472.0
+          ],
+          [
+            366.0,
+            481.0
+          ],
+          [
+            362.0,
+            471.0
+          ],
+          [
+            391.0,
+            461.0
+          ]
+        ],
+        "center": [
+          378.5,
+          471.0
+        ],
+        "area": 660.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_1",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "van",
+      "canonical_root": "small_vehicle",
+      "geometry": {
+        "bbox": [
+          154.0,
+          541.0,
+          179.0,
+          555.0
+        ],
+        "polygon": [
+          [
+            179.0,
+            549.0
+          ],
+          [
+            156.0,
+            555.0
+          ],
+          [
+            154.0,
+            548.0
+          ],
+          [
+            177.0,
+            541.0
+          ]
+        ],
+        "center": [
+          166.5,
+          548.0
+        ],
+        "area": 350.0,
+        "region_bin_3x3": "bottom-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_2",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "van",
+      "canonical_root": "small_vehicle",
+      "geometry": {
+        "bbox": [
+          95.0,
+          564.0,
+          119.0,
+          571.0
+        ],
+        "polygon": [
+          [
+            119.0,
+            570.0
+          ],
+          [
+            95.0,
+            571.0
+          ],
+          [
+            95.0,
+            566.0
+          ],
+          [
+            118.0,
+            564.0
+          ]
+        ],
+        "center": [
+          107.0,
+          567.5
+        ],
+        "area": 168.0,
+        "region_bin_3x3": "bottom-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_3",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          499.0,
+          746.0,
+          533.0,
+          789.0
+        ],
+        "polygon": [
+          [
+            499.0,
+            746.0
+          ],
+          [
+            533.0,
+            746.0
+          ],
+          [
+            533.0,
+            789.0
+          ],
+          [
+            499.0,
+            789.0
+          ]
+        ],
+        "center": [
+          516.0,
+          767.5
+        ],
+        "area": 1462.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_4",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          345.0,
+          579.0,
+          362.0,
+          593.0
+        ],
+        "polygon": [
+          [
+            345.0,
+            579.0
+          ],
+          [
+            362.0,
+            579.0
+          ],
+          [
+            362.0,
+            593.0
+          ],
+          [
+            345.0,
+            593.0
+          ]
+        ],
+        "center": [
+          353.5,
+          586.0
+        ],
+        "area": 238.0,
+        "region_bin_3x3": "bottom-center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_5",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          404.0,
+          673.0,
+          483.0,
+          699.0
+        ],
+        "polygon": [
+          [
+            404.0,
+            673.0
+          ],
+          [
+            483.0,
+            673.0
+          ],
+          [
+            483.0,
+            699.0
+          ],
+          [
+            404.0,
+            699.0
+          ]
+        ],
+        "center": [
+          443.5,
+          686.0
+        ],
+        "area": 2054.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_6",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          404.0,
+          720.0,
+          481.0,
+          746.0
+        ],
+        "polygon": [
+          [
+            404.0,
+            720.0
+          ],
+          [
+            481.0,
+            720.0
+          ],
+          [
+            481.0,
+            746.0
+          ],
+          [
+            404.0,
+            746.0
+          ]
+        ],
+        "center": [
+          442.5,
+          733.0
+        ],
+        "area": 2002.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_7",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          369.0,
+          578.0,
+          388.0,
+          592.0
+        ],
+        "polygon": [
+          [
+            369.0,
+            578.0
+          ],
+          [
+            388.0,
+            578.0
+          ],
+          [
+            388.0,
+            592.0
+          ],
+          [
+            369.0,
+            592.0
+          ]
+        ],
+        "center": [
+          378.5,
+          585.0
+        ],
+        "area": 266.0,
+        "region_bin_3x3": "bottom-center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_8",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          396.0,
+          579.0,
+          410.0,
+          591.0
+        ],
+        "polygon": [
+          [
+            396.0,
+            579.0
+          ],
+          [
+            410.0,
+            579.0
+          ],
+          [
+            410.0,
+            591.0
+          ],
+          [
+            396.0,
+            591.0
+          ]
+        ],
+        "center": [
+          403.0,
+          585.0
+        ],
+        "area": 168.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_9",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          415.0,
+          577.0,
+          430.0,
+          590.0
+        ],
+        "polygon": [
+          [
+            415.0,
+            577.0
+          ],
+          [
+            430.0,
+            577.0
+          ],
+          [
+            430.0,
+            590.0
+          ],
+          [
+            415.0,
+            590.0
+          ]
+        ],
+        "center": [
+          422.5,
+          583.5
+        ],
+        "area": 195.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_10",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          437.0,
+          577.0,
+          452.0,
+          589.0
+        ],
+        "polygon": [
+          [
+            437.0,
+            577.0
+          ],
+          [
+            452.0,
+            577.0
+          ],
+          [
+            452.0,
+            589.0
+          ],
+          [
+            437.0,
+            589.0
+          ]
+        ],
+        "center": [
+          444.5,
+          583.0
+        ],
+        "area": 180.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_11",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          460.0,
+          575.0,
+          475.0,
+          590.0
+        ],
+        "polygon": [
+          [
+            460.0,
+            575.0
+          ],
+          [
+            475.0,
+            575.0
+          ],
+          [
+            475.0,
+            590.0
+          ],
+          [
+            460.0,
+            590.0
+          ]
+        ],
+        "center": [
+          467.5,
+          582.5
+        ],
+        "area": 225.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_12",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          482.0,
+          576.0,
+          499.0,
+          589.0
+        ],
+        "polygon": [
+          [
+            482.0,
+            576.0
+          ],
+          [
+            499.0,
+            576.0
+          ],
+          [
+            499.0,
+            589.0
+          ],
+          [
+            482.0,
+            589.0
+          ]
+        ],
+        "center": [
+          490.5,
+          582.5
+        ],
+        "area": 221.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_13",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          505.0,
+          570.0,
+          530.0,
+          589.0
+        ],
+        "polygon": [
+          [
+            505.0,
+            570.0
+          ],
+          [
+            530.0,
+            570.0
+          ],
+          [
+            530.0,
+            589.0
+          ],
+          [
+            505.0,
+            589.0
+          ]
+        ],
+        "center": [
+          517.5,
+          579.5
+        ],
+        "area": 475.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_14",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          349.0,
+          619.0,
+          363.0,
+          634.0
+        ],
+        "polygon": [
+          [
+            349.0,
+            619.0
+          ],
+          [
+            363.0,
+            619.0
+          ],
+          [
+            363.0,
+            634.0
+          ],
+          [
+            349.0,
+            634.0
+          ]
+        ],
+        "center": [
+          356.0,
+          626.5
+        ],
+        "area": 210.0,
+        "region_bin_3x3": "bottom-center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_15",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          371.0,
+          619.0,
+          386.0,
+          631.0
+        ],
+        "polygon": [
+          [
+            371.0,
+            619.0
+          ],
+          [
+            386.0,
+            619.0
+          ],
+          [
+            386.0,
+            631.0
+          ],
+          [
+            371.0,
+            631.0
+          ]
+        ],
+        "center": [
+          378.5,
+          625.0
+        ],
+        "area": 180.0,
+        "region_bin_3x3": "bottom-center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_16",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          392.0,
+          618.0,
+          408.0,
+          632.0
+        ],
+        "polygon": [
+          [
+            392.0,
+            618.0
+          ],
+          [
+            408.0,
+            618.0
+          ],
+          [
+            408.0,
+            632.0
+          ],
+          [
+            392.0,
+            632.0
+          ]
+        ],
+        "center": [
+          400.0,
+          625.0
+        ],
+        "area": 224.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_17",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          416.0,
+          619.0,
+          430.0,
+          632.0
+        ],
+        "polygon": [
+          [
+            416.0,
+            619.0
+          ],
+          [
+            430.0,
+            619.0
+          ],
+          [
+            430.0,
+            632.0
+          ],
+          [
+            416.0,
+            632.0
+          ]
+        ],
+        "center": [
+          423.0,
+          625.5
+        ],
+        "area": 182.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_18",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          436.0,
+          615.0,
+          454.0,
+          633.0
+        ],
+        "polygon": [
+          [
+            436.0,
+            615.0
+          ],
+          [
+            454.0,
+            615.0
+          ],
+          [
+            454.0,
+            633.0
+          ],
+          [
+            436.0,
+            633.0
+          ]
+        ],
+        "center": [
+          445.0,
+          624.0
+        ],
+        "area": 324.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_19",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          461.0,
+          616.0,
+          476.0,
+          630.0
+        ],
+        "polygon": [
+          [
+            461.0,
+            616.0
+          ],
+          [
+            476.0,
+            616.0
+          ],
+          [
+            476.0,
+            630.0
+          ],
+          [
+            461.0,
+            630.0
+          ]
+        ],
+        "center": [
+          468.5,
+          623.0
+        ],
+        "area": 210.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_20",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          485.0,
+          619.0,
+          502.0,
+          630.0
+        ],
+        "polygon": [
+          [
+            485.0,
+            619.0
+          ],
+          [
+            502.0,
+            619.0
+          ],
+          [
+            502.0,
+            630.0
+          ],
+          [
+            485.0,
+            630.0
+          ]
+        ],
+        "center": [
+          493.5,
+          624.5
+        ],
+        "area": 187.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_21",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          393.0,
+          775.0,
+          407.0,
+          791.0
+        ],
+        "polygon": [
+          [
+            393.0,
+            775.0
+          ],
+          [
+            407.0,
+            775.0
+          ],
+          [
+            407.0,
+            791.0
+          ],
+          [
+            393.0,
+            791.0
+          ]
+        ],
+        "center": [
+          400.0,
+          783.0
+        ],
+        "area": 224.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_22",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          415.0,
+          776.0,
+          430.0,
+          792.0
+        ],
+        "polygon": [
+          [
+            415.0,
+            776.0
+          ],
+          [
+            430.0,
+            776.0
+          ],
+          [
+            430.0,
+            792.0
+          ],
+          [
+            415.0,
+            792.0
+          ]
+        ],
+        "center": [
+          422.5,
+          784.0
+        ],
+        "area": 240.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_23",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          438.0,
+          778.0,
+          453.0,
+          792.0
+        ],
+        "polygon": [
+          [
+            438.0,
+            778.0
+          ],
+          [
+            453.0,
+            778.0
+          ],
+          [
+            453.0,
+            792.0
+          ],
+          [
+            438.0,
+            792.0
+          ]
+        ],
+        "center": [
+          445.5,
+          785.0
+        ],
+        "area": 210.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_24",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          459.0,
+          775.0,
+          477.0,
+          794.0
+        ],
+        "polygon": [
+          [
+            459.0,
+            775.0
+          ],
+          [
+            477.0,
+            775.0
+          ],
+          [
+            477.0,
+            794.0
+          ],
+          [
+            459.0,
+            794.0
+          ]
+        ],
+        "center": [
+          468.0,
+          784.5
+        ],
+        "area": 342.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_25",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "road",
+      "canonical_root": "road",
+      "geometry": {
+        "bbox": [
+          0.0,
+          0.0,
+          139.0,
+          143.0
+        ],
+        "polygon": [
+          [
+            0.0,
+            102.0
+          ],
+          [
+            97.0,
+            0.0
+          ],
+          [
+            139.0,
+            40.0
+          ],
+          [
+            42.0,
+            143.0
+          ]
+        ],
+        "center": [
+          69.5,
+          71.5
+        ],
+        "area": 19877.0,
+        "region_bin_3x3": "top-left"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "e_sp_00001",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_0",
+      "target": "n_obj_7"
+    },
+    {
+      "edge_id": "e_sp_00002",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_0",
+      "target": "n_obj_4"
+    },
+    {
+      "edge_id": "e_sp_00003",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_0",
+      "target": "n_obj_15"
+    },
+    {
+      "edge_id": "e_sp_00004",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_0",
+      "target": "n_obj_14"
+    },
+    {
+      "edge_id": "e_sp_00005",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_0",
+      "target": "n_obj_11"
+    },
+    {
+      "edge_id": "e_sp_00006",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_0",
+      "target": "n_obj_12"
+    },
+    {
+      "edge_id": "e_sp_00007",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_0",
+      "target": "n_obj_10"
+    },
+    {
+      "edge_id": "e_sp_00008",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_0",
+      "target": "n_obj_9"
+    },
+    {
+      "edge_id": "e_sp_00009",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_0",
+      "target": "n_obj_8"
+    },
+    {
+      "edge_id": "e_sp_00010",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_0",
+      "target": "n_obj_3"
+    },
+    {
+      "edge_id": "e_sp_00011",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_0",
+      "target": "n_obj_19"
+    },
+    {
+      "edge_id": "e_sp_00012",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_0",
+      "target": "n_obj_18"
+    },
+    {
+      "edge_id": "e_sp_00013",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_0",
+      "target": "n_obj_20"
+    },
+    {
+      "edge_id": "e_sp_00014",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_0",
+      "target": "n_obj_16"
+    },
+    {
+      "edge_id": "e_sp_00015",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_0",
+      "target": "n_obj_17"
+    },
+    {
+      "edge_id": "e_sp_00016",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_0",
+      "target": "n_obj_5"
+    },
+    {
+      "edge_id": "e_sp_00017",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_0",
+      "target": "n_obj_6"
+    },
+    {
+      "edge_id": "e_sp_00018",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_0",
+      "target": "n_obj_21"
+    },
+    {
+      "edge_id": "e_sp_00019",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_0",
+      "target": "n_obj_22"
+    },
+    {
+      "edge_id": "e_sp_00020",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_0",
+      "target": "n_obj_24"
+    },
+    {
+      "edge_id": "e_sp_00021",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_0",
+      "target": "n_obj_23"
+    },
+    {
+      "edge_id": "e_sp_00022",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_0",
+      "target": "n_obj_1"
+    },
+    {
+      "edge_id": "e_sp_00023",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_0",
+      "target": "n_obj_2"
+    },
+    {
+      "edge_id": "e_sp_00024",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_1",
+      "target": "n_obj_5"
+    },
+    {
+      "edge_id": "e_sp_00025",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_1",
+      "target": "n_obj_6"
+    },
+    {
+      "edge_id": "e_sp_00026",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_1",
+      "target": "n_obj_21"
+    },
+    {
+      "edge_id": "e_sp_00027",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_1",
+      "target": "n_obj_23"
+    },
+    {
+      "edge_id": "e_sp_00028",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_1",
+      "target": "n_obj_25"
+    },
+    {
+      "edge_id": "e_sp_00029",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_1",
+      "target": "n_obj_4"
+    },
+    {
+      "edge_id": "e_sp_00030",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_1",
+      "target": "n_obj_15"
+    },
+    {
+      "edge_id": "e_sp_00031",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_1",
+      "target": "n_obj_7"
+    },
+    {
+      "edge_id": "e_sp_00032",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_1",
+      "target": "n_obj_16"
+    },
+    {
+      "edge_id": "e_sp_00033",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_1",
+      "target": "n_obj_8"
+    },
+    {
+      "edge_id": "e_sp_00034",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_1",
+      "target": "n_obj_9"
+    },
+    {
+      "edge_id": "e_sp_00035",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_1",
+      "target": "n_obj_17"
+    },
+    {
+      "edge_id": "e_sp_00036",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_1",
+      "target": "n_obj_3"
+    },
+    {
+      "edge_id": "e_sp_00037",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_1",
+      "target": "n_obj_10"
+    },
+    {
+      "edge_id": "e_sp_00038",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_1",
+      "target": "n_obj_18"
+    },
+    {
+      "edge_id": "e_sp_00039",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_1",
+      "target": "n_obj_11"
+    },
+    {
+      "edge_id": "e_sp_00040",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_1",
+      "target": "n_obj_19"
+    },
+    {
+      "edge_id": "e_sp_00041",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_1",
+      "target": "n_obj_12"
+    },
+    {
+      "edge_id": "e_sp_00042",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_1",
+      "target": "n_obj_20"
+    },
+    {
+      "edge_id": "e_sp_00043",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_1",
+      "target": "n_obj_13"
+    },
+    {
+      "edge_id": "e_sp_00044",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_1",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00045",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_2",
+      "target": "n_obj_25"
+    },
+    {
+      "edge_id": "e_sp_00046",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_2",
+      "target": "n_obj_4"
+    },
+    {
+      "edge_id": "e_sp_00047",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_2",
+      "target": "n_obj_14"
+    },
+    {
+      "edge_id": "e_sp_00048",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_2",
+      "target": "n_obj_15"
+    },
+    {
+      "edge_id": "e_sp_00049",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_2",
+      "target": "n_obj_7"
+    },
+    {
+      "edge_id": "e_sp_00050",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_2",
+      "target": "n_obj_3"
+    },
+    {
+      "edge_id": "e_sp_00051",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_2",
+      "target": "n_obj_16"
+    },
+    {
+      "edge_id": "e_sp_00052",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_2",
+      "target": "n_obj_8"
+    },
+    {
+      "edge_id": "e_sp_00053",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_2",
+      "target": "n_obj_9"
+    },
+    {
+      "edge_id": "e_sp_00054",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_2",
+      "target": "n_obj_17"
+    },
+    {
+      "edge_id": "e_sp_00055",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_2",
+      "target": "n_obj_10"
+    },
+    {
+      "edge_id": "e_sp_00056",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_2",
+      "target": "n_obj_18"
+    },
+    {
+      "edge_id": "e_sp_00057",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_2",
+      "target": "n_obj_11"
+    },
+    {
+      "edge_id": "e_sp_00058",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_2",
+      "target": "n_obj_19"
+    },
+    {
+      "edge_id": "e_sp_00059",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_2",
+      "target": "n_obj_12"
+    },
+    {
+      "edge_id": "e_sp_00060",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_2",
+      "target": "n_obj_20"
+    },
+    {
+      "edge_id": "e_sp_00061",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_2",
+      "target": "n_obj_13"
+    },
+    {
+      "edge_id": "e_sp_00062",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_2",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00063",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_3",
+      "target": "n_obj_25"
+    },
+    {
+      "edge_id": "e_sp_00064",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_3",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00065",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_3",
+      "target": "n_obj_1"
+    },
+    {
+      "edge_id": "e_sp_00066",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_3",
+      "target": "n_obj_2"
+    },
+    {
+      "edge_id": "e_sp_00067",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_4",
+      "target": "n_obj_25"
+    },
+    {
+      "edge_id": "e_sp_00068",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_4",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00069",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_4",
+      "target": "n_obj_1"
+    },
+    {
+      "edge_id": "e_sp_00070",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_4",
+      "target": "n_obj_2"
+    },
+    {
+      "edge_id": "e_sp_00071",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_5",
+      "target": "n_obj_25"
+    },
+    {
+      "edge_id": "e_sp_00072",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_5",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00073",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_5",
+      "target": "n_obj_1"
+    },
+    {
+      "edge_id": "e_sp_00074",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_6",
+      "target": "n_obj_25"
+    },
+    {
+      "edge_id": "e_sp_00075",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_6",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00076",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_6",
+      "target": "n_obj_1"
+    },
+    {
+      "edge_id": "e_sp_00077",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_7",
+      "target": "n_obj_25"
+    },
+    {
+      "edge_id": "e_sp_00078",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_7",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00079",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_7",
+      "target": "n_obj_1"
+    },
+    {
+      "edge_id": "e_sp_00080",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_7",
+      "target": "n_obj_2"
+    },
+    {
+      "edge_id": "e_sp_00081",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_8",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00082",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_8",
+      "target": "n_obj_1"
+    },
+    {
+      "edge_id": "e_sp_00083",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_8",
+      "target": "n_obj_2"
+    },
+    {
+      "edge_id": "e_sp_00084",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_9",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00085",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_9",
+      "target": "n_obj_1"
+    },
+    {
+      "edge_id": "e_sp_00086",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_9",
+      "target": "n_obj_2"
+    },
+    {
+      "edge_id": "e_sp_00087",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_10",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00088",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_10",
+      "target": "n_obj_1"
+    },
+    {
+      "edge_id": "e_sp_00089",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_10",
+      "target": "n_obj_2"
+    },
+    {
+      "edge_id": "e_sp_00090",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_11",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00091",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_11",
+      "target": "n_obj_1"
+    },
+    {
+      "edge_id": "e_sp_00092",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_11",
+      "target": "n_obj_2"
+    },
+    {
+      "edge_id": "e_sp_00093",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_12",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00094",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_12",
+      "target": "n_obj_1"
+    },
+    {
+      "edge_id": "e_sp_00095",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_12",
+      "target": "n_obj_2"
+    },
+    {
+      "edge_id": "e_sp_00096",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_13",
+      "target": "n_obj_1"
+    },
+    {
+      "edge_id": "e_sp_00097",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_13",
+      "target": "n_obj_2"
+    },
+    {
+      "edge_id": "e_sp_00098",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_14",
+      "target": "n_obj_25"
+    },
+    {
+      "edge_id": "e_sp_00099",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_14",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00100",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_14",
+      "target": "n_obj_2"
+    },
+    {
+      "edge_id": "e_sp_00101",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_15",
+      "target": "n_obj_25"
+    },
+    {
+      "edge_id": "e_sp_00102",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_15",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00103",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_15",
+      "target": "n_obj_1"
+    },
+    {
+      "edge_id": "e_sp_00104",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_15",
+      "target": "n_obj_2"
+    },
+    {
+      "edge_id": "e_sp_00105",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_16",
+      "target": "n_obj_25"
+    },
+    {
+      "edge_id": "e_sp_00106",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_16",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00107",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_16",
+      "target": "n_obj_1"
+    },
+    {
+      "edge_id": "e_sp_00108",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_16",
+      "target": "n_obj_2"
+    },
+    {
+      "edge_id": "e_sp_00109",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_17",
+      "target": "n_obj_25"
+    },
+    {
+      "edge_id": "e_sp_00110",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_17",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00111",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_17",
+      "target": "n_obj_1"
+    },
+    {
+      "edge_id": "e_sp_00112",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_17",
+      "target": "n_obj_2"
+    },
+    {
+      "edge_id": "e_sp_00113",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_18",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00114",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_18",
+      "target": "n_obj_1"
+    },
+    {
+      "edge_id": "e_sp_00115",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_18",
+      "target": "n_obj_2"
+    },
+    {
+      "edge_id": "e_sp_00116",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_19",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00117",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_19",
+      "target": "n_obj_1"
+    },
+    {
+      "edge_id": "e_sp_00118",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_19",
+      "target": "n_obj_2"
+    },
+    {
+      "edge_id": "e_sp_00119",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_20",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00120",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_20",
+      "target": "n_obj_1"
+    },
+    {
+      "edge_id": "e_sp_00121",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_20",
+      "target": "n_obj_2"
+    },
+    {
+      "edge_id": "e_sp_00122",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_21",
+      "target": "n_obj_25"
+    },
+    {
+      "edge_id": "e_sp_00123",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_21",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00124",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_21",
+      "target": "n_obj_1"
+    },
+    {
+      "edge_id": "e_sp_00125",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_22",
+      "target": "n_obj_25"
+    },
+    {
+      "edge_id": "e_sp_00126",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_22",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00127",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_23",
+      "target": "n_obj_25"
+    },
+    {
+      "edge_id": "e_sp_00128",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_23",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00129",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_23",
+      "target": "n_obj_1"
+    },
+    {
+      "edge_id": "e_sp_00130",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_24",
+      "target": "n_obj_25"
+    },
+    {
+      "edge_id": "e_sp_00131",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_24",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00132",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_25",
+      "target": "n_obj_7"
+    },
+    {
+      "edge_id": "e_sp_00133",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_25",
+      "target": "n_obj_4"
+    },
+    {
+      "edge_id": "e_sp_00134",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_25",
+      "target": "n_obj_15"
+    },
+    {
+      "edge_id": "e_sp_00135",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_25",
+      "target": "n_obj_14"
+    },
+    {
+      "edge_id": "e_sp_00136",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_25",
+      "target": "n_obj_16"
+    },
+    {
+      "edge_id": "e_sp_00137",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_25",
+      "target": "n_obj_17"
+    },
+    {
+      "edge_id": "e_sp_00138",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_25",
+      "target": "n_obj_5"
+    },
+    {
+      "edge_id": "e_sp_00139",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_25",
+      "target": "n_obj_6"
+    },
+    {
+      "edge_id": "e_sp_00140",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_25",
+      "target": "n_obj_3"
+    },
+    {
+      "edge_id": "e_sp_00141",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_25",
+      "target": "n_obj_21"
+    },
+    {
+      "edge_id": "e_sp_00142",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_25",
+      "target": "n_obj_22"
+    },
+    {
+      "edge_id": "e_sp_00143",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_25",
+      "target": "n_obj_24"
+    },
+    {
+      "edge_id": "e_sp_00144",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_25",
+      "target": "n_obj_23"
+    },
+    {
+      "edge_id": "e_sp_00145",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_25",
+      "target": "n_obj_1"
+    },
+    {
+      "edge_id": "e_sp_00146",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_25",
+      "target": "n_obj_2"
+    },
+    {
+      "edge_id": "e_sp_00147",
+      "edge_type": "spatial",
+      "relation_type": "close_to",
+      "source": "n_obj_10",
+      "target": "n_obj_11"
+    },
+    {
+      "edge_id": "e_sp_00148",
+      "edge_type": "spatial",
+      "relation_type": "close_to",
+      "source": "n_obj_10",
+      "target": "n_obj_9"
+    },
+    {
+      "edge_id": "e_sp_00149",
+      "edge_type": "spatial",
+      "relation_type": "close_to",
+      "source": "n_obj_12",
+      "target": "n_obj_11"
+    },
+    {
+      "edge_id": "e_sp_00150",
+      "edge_type": "spatial",
+      "relation_type": "close_to",
+      "source": "n_obj_12",
+      "target": "n_obj_13"
+    },
+    {
+      "edge_id": "e_sp_00151",
+      "edge_type": "spatial",
+      "relation_type": "close_to",
+      "source": "n_obj_15",
+      "target": "n_obj_14"
+    },
+    {
+      "edge_id": "e_sp_00152",
+      "edge_type": "spatial",
+      "relation_type": "close_to",
+      "source": "n_obj_15",
+      "target": "n_obj_16"
+    },
+    {
+      "edge_id": "e_sp_00153",
+      "edge_type": "spatial",
+      "relation_type": "close_to",
+      "source": "n_obj_17",
+      "target": "n_obj_16"
+    },
+    {
+      "edge_id": "e_sp_00154",
+      "edge_type": "spatial",
+      "relation_type": "close_to",
+      "source": "n_obj_17",
+      "target": "n_obj_18"
+    },
+    {
+      "edge_id": "e_sp_00155",
+      "edge_type": "spatial",
+      "relation_type": "close_to",
+      "source": "n_obj_19",
+      "target": "n_obj_18"
+    },
+    {
+      "edge_id": "e_sp_00156",
+      "edge_type": "spatial",
+      "relation_type": "close_to",
+      "source": "n_obj_20",
+      "target": "n_obj_19"
+    },
+    {
+      "edge_id": "e_sp_00157",
+      "edge_type": "spatial",
+      "relation_type": "close_to",
+      "source": "n_obj_21",
+      "target": "n_obj_22"
+    },
+    {
+      "edge_id": "e_sp_00158",
+      "edge_type": "spatial",
+      "relation_type": "close_to",
+      "source": "n_obj_23",
+      "target": "n_obj_22"
+    },
+    {
+      "edge_id": "e_sp_00159",
+      "edge_type": "spatial",
+      "relation_type": "close_to",
+      "source": "n_obj_23",
+      "target": "n_obj_24"
+    },
+    {
+      "edge_id": "e_sp_00160",
+      "edge_type": "spatial",
+      "relation_type": "close_to",
+      "source": "n_obj_24",
+      "target": "n_obj_3"
+    },
+    {
+      "edge_id": "e_sp_00161",
+      "edge_type": "spatial",
+      "relation_type": "close_to",
+      "source": "n_obj_4",
+      "target": "n_obj_7"
+    },
+    {
+      "edge_id": "e_sp_00162",
+      "edge_type": "spatial",
+      "relation_type": "close_to",
+      "source": "n_obj_6",
+      "target": "n_obj_5"
+    },
+    {
+      "edge_id": "e_sp_00163",
+      "edge_type": "spatial",
+      "relation_type": "close_to",
+      "source": "n_obj_8",
+      "target": "n_obj_7"
+    },
+    {
+      "edge_id": "e_sp_00164",
+      "edge_type": "spatial",
+      "relation_type": "close_to",
+      "source": "n_obj_8",
+      "target": "n_obj_9"
+    }
+  ],
+  "global_inventory": {}
+}

@@ -1,0 +1,54 @@
+{
+  "scene_id": "RSF-S00001933",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      600,
+      800
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "boeing737",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          4.0,
+          474.0,
+          70.0,
+          541.0
+        ],
+        "polygon": [
+          [
+            70.0,
+            503.0
+          ],
+          [
+            40.0,
+            541.0
+          ],
+          [
+            4.0,
+            511.0
+          ],
+          [
+            35.0,
+            474.0
+          ]
+        ],
+        "center": [
+          37.0,
+          507.5
+        ],
+        "area": 4422.0,
+        "region_bin_3x3": "center-left"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [],
+  "global_inventory": {}
+}

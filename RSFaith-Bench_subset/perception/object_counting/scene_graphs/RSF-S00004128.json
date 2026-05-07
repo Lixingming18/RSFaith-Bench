@@ -1,0 +1,372 @@
+{
+  "scene_id": "RSF-S00004128",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      800,
+      600
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_0",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "airplane",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          56.0,
+          372.0,
+          133.0,
+          447.0
+        ],
+        "polygon": [
+          [
+            133.0,
+            387.0
+          ],
+          [
+            119.0,
+            447.0
+          ],
+          [
+            56.0,
+            433.0
+          ],
+          [
+            70.0,
+            372.0
+          ]
+        ],
+        "center": [
+          94.5,
+          409.5
+        ],
+        "area": 5775.0,
+        "region_bin_3x3": "bottom-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_1",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "airport",
+      "canonical_root": "airport",
+      "geometry": {
+        "bbox": [
+          0.0,
+          0.0,
+          798.0,
+          599.0
+        ],
+        "polygon": [
+          [
+            0.0,
+            598.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            798.0,
+            1.0
+          ],
+          [
+            797.0,
+            599.0
+          ]
+        ],
+        "center": [
+          399.0,
+          299.5
+        ],
+        "area": 478002.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_2",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "airport",
+      "canonical_root": "airport",
+      "geometry": {
+        "bbox": [
+          9.0,
+          0.0,
+          245.0,
+          600.0
+        ],
+        "polygon": [
+          [
+            9.0,
+            581.0
+          ],
+          [
+            184.0,
+            0.0
+          ],
+          [
+            245.0,
+            18.0
+          ],
+          [
+            70.0,
+            600.0
+          ]
+        ],
+        "center": [
+          127.0,
+          300.0
+        ],
+        "area": 141600.0,
+        "region_bin_3x3": "center-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_3",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "airport",
+      "canonical_root": "airport",
+      "geometry": {
+        "bbox": [
+          357.0,
+          0.0,
+          640.0,
+          600.0
+        ],
+        "polygon": [
+          [
+            357.0,
+            564.0
+          ],
+          [
+            506.0,
+            0.0
+          ],
+          [
+            640.0,
+            35.0
+          ],
+          [
+            490.0,
+            600.0
+          ]
+        ],
+        "center": [
+          498.5,
+          300.0
+        ],
+        "area": 169800.0,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_4",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "airport",
+      "canonical_root": "airport",
+      "geometry": {
+        "bbox": [
+          238.0,
+          0.0,
+          800.0,
+          243.0
+        ],
+        "polygon": [
+          [
+            238.0,
+            129.0
+          ],
+          [
+            264.0,
+            0.0
+          ],
+          [
+            800.0,
+            110.0
+          ],
+          [
+            772.0,
+            243.0
+          ]
+        ],
+        "center": [
+          519.0,
+          121.5
+        ],
+        "area": 136566.0,
+        "region_bin_3x3": "top-center"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_5",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "airport",
+      "canonical_root": "airport",
+      "geometry": {
+        "bbox": [
+          99.0,
+          153.0,
+          344.0,
+          600.0
+        ],
+        "polygon": [
+          [
+            99.0,
+            189.0
+          ],
+          [
+            229.0,
+            153.0
+          ],
+          [
+            344.0,
+            563.0
+          ],
+          [
+            214.0,
+            600.0
+          ]
+        ],
+        "center": [
+          221.5,
+          376.5
+        ],
+        "area": 109515.0,
+        "region_bin_3x3": "center-left"
+      },
+      "attributes": {}
+    },
+    {
+      "node_id": "n_obj_6",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "airport",
+      "canonical_root": "airport",
+      "geometry": {
+        "bbox": [
+          505.0,
+          285.0,
+          799.0,
+          599.0
+        ],
+        "polygon": [
+          [
+            505.0,
+            285.0
+          ],
+          [
+            799.0,
+            285.0
+          ],
+          [
+            799.0,
+            599.0
+          ],
+          [
+            505.0,
+            599.0
+          ]
+        ],
+        "center": [
+          652.0,
+          442.0
+        ],
+        "area": 92316.0,
+        "region_bin_3x3": "bottom-right"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "e_sp_00001",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_obj_0",
+      "target": "n_obj_1"
+    },
+    {
+      "edge_id": "e_sp_00002",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_obj_0",
+      "target": "n_obj_2"
+    },
+    {
+      "edge_id": "e_sp_00003",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_obj_0",
+      "target": "n_obj_4"
+    },
+    {
+      "edge_id": "e_sp_00004",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_0",
+      "target": "n_obj_6"
+    },
+    {
+      "edge_id": "e_sp_00005",
+      "edge_type": "spatial",
+      "relation_type": "left_of",
+      "source": "n_obj_0",
+      "target": "n_obj_3"
+    },
+    {
+      "edge_id": "e_sp_00006",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_obj_1",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00007",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_obj_2",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00008",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_3",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00009",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_obj_4",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00010",
+      "edge_type": "spatial",
+      "relation_type": "right_of",
+      "source": "n_obj_6",
+      "target": "n_obj_0"
+    },
+    {
+      "edge_id": "e_sp_00011",
+      "edge_type": "spatial",
+      "relation_type": "parked_at",
+      "source": "n_obj_0",
+      "target": "n_obj_1"
+    }
+  ],
+  "global_inventory": {}
+}

@@ -1,0 +1,891 @@
+{
+  "scene_id": "RSF-S00010965",
+  "graph_meta": {
+    "temporal_mode": "pair",
+    "image_size": [
+      1024,
+      1024
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_t1_1313983d-5d73-4055-a01f-0ee447615807",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          989.5828,
+          81.9267,
+          1024.0,
+          119.6416
+        ],
+        "polygon": [
+          [
+            989.5828,
+            85.6011
+          ],
+          [
+            996.9316,
+            81.9267
+          ],
+          [
+            999.9935,
+            87.4382
+          ],
+          [
+            1012.0883,
+            83.917
+          ],
+          [
+            1024.0,
+            100.1341
+          ],
+          [
+            1024.0,
+            114.7653
+          ],
+          [
+            1015.6141,
+            119.6416
+          ],
+          [
+            995.0944,
+            95.3994
+          ],
+          [
+            990.3483,
+            91.5719
+          ],
+          [
+            989.5828,
+            85.6011
+          ]
+        ],
+        "center": [
+          1006.7914,
+          100.7841
+        ],
+        "area": 1298.0413,
+        "region_bin_3x3": "top-right"
+      },
+      "attributes": {
+        "uid": "1313983d_5d73_4055_a01f_0ee447615807"
+      }
+    },
+    {
+      "node_id": "n_t2_1313983d-5d73-4055-a01f-0ee447615807",
+      "node_type": "object",
+      "time": "t2",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          989.5828,
+          81.9267,
+          1022.4306,
+          119.6416
+        ],
+        "polygon": [
+          [
+            989.5828,
+            85.6011
+          ],
+          [
+            996.9315,
+            81.9267
+          ],
+          [
+            999.9935,
+            87.4383
+          ],
+          [
+            1012.0883,
+            83.917
+          ],
+          [
+            1022.4306,
+            97.9975
+          ],
+          [
+            1022.4306,
+            115.6779
+          ],
+          [
+            1015.6141,
+            119.6416
+          ],
+          [
+            995.0944,
+            95.3994
+          ],
+          [
+            990.3483,
+            91.5719
+          ],
+          [
+            989.5828,
+            85.6011
+          ]
+        ],
+        "center": [
+          1006.0067,
+          100.7841
+        ],
+        "area": 1238.8515,
+        "region_bin_3x3": "top-right"
+      },
+      "attributes": {
+        "uid": "1313983d_5d73_4055_a01f_0ee447615807",
+        "damage_level": "minor_damage"
+      }
+    },
+    {
+      "node_id": "n_t1_9626c66a-2fc6-4e5d-8ceb-32d17147fafd",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          509.942,
+          510.6222,
+          739.5467,
+          754.7839
+        ],
+        "polygon": [
+          [
+            509.942,
+            664.7948
+          ],
+          [
+            595.9611,
+            520.5474
+          ],
+          [
+            607.8714,
+            527.1643
+          ],
+          [
+            616.4733,
+            510.6222
+          ],
+          [
+            736.2383,
+            578.114
+          ],
+          [
+            739.5467,
+            599.9496
+          ],
+          [
+            644.2641,
+            754.7839
+          ],
+          [
+            513.9121,
+            681.3369
+          ],
+          [
+            509.942,
+            664.7948
+          ]
+        ],
+        "center": [
+          624.7443,
+          632.7031
+        ],
+        "area": 56060.6739,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {
+        "uid": "9626c66a_2fc6_4e5d_8ceb_32d17147fafd"
+      }
+    },
+    {
+      "node_id": "n_t2_9626c66a-2fc6-4e5d-8ceb-32d17147fafd",
+      "node_type": "object",
+      "time": "t2",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          509.942,
+          510.6222,
+          739.5467,
+          754.7839
+        ],
+        "polygon": [
+          [
+            509.942,
+            664.7948
+          ],
+          [
+            595.9611,
+            520.5475
+          ],
+          [
+            607.8714,
+            527.1643
+          ],
+          [
+            616.4733,
+            510.6222
+          ],
+          [
+            736.2383,
+            578.114
+          ],
+          [
+            739.5467,
+            599.9496
+          ],
+          [
+            644.2641,
+            754.7839
+          ],
+          [
+            513.9121,
+            681.3369
+          ],
+          [
+            509.942,
+            664.7948
+          ]
+        ],
+        "center": [
+          624.7443,
+          632.7031
+        ],
+        "area": 56060.6739,
+        "region_bin_3x3": "center"
+      },
+      "attributes": {
+        "uid": "9626c66a_2fc6_4e5d_8ceb_32d17147fafd",
+        "damage_level": "major_damage"
+      }
+    },
+    {
+      "node_id": "n_t1_a7e9ea42-1461-412f-bfb2-57581e48b1c3",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          939.4006,
+          40.7676,
+          1000.3085,
+          81.9129
+        ],
+        "polygon": [
+          [
+            939.4006,
+            61.0946
+          ],
+          [
+            975.5998,
+            40.7676
+          ],
+          [
+            1000.3085,
+            73.5462
+          ],
+          [
+            985.7962,
+            81.9129
+          ],
+          [
+            970.2018,
+            69.6773
+          ],
+          [
+            965.1636,
+            69.9172
+          ],
+          [
+            955.8069,
+            70.517
+          ],
+          [
+            946.0904,
+            74.8354
+          ],
+          [
+            939.4006,
+            61.0946
+          ]
+        ],
+        "center": [
+          969.8546,
+          61.3402
+        ],
+        "area": 2506.0738,
+        "region_bin_3x3": "top-right"
+      },
+      "attributes": {
+        "uid": "a7e9ea42_1461_412f_bfb2_57581e48b1c3"
+      }
+    },
+    {
+      "node_id": "n_t2_a7e9ea42-1461-412f-bfb2-57581e48b1c3",
+      "node_type": "object",
+      "time": "t2",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          939.4006,
+          40.7676,
+          1000.3085,
+          81.9129
+        ],
+        "polygon": [
+          [
+            939.4006,
+            61.0946
+          ],
+          [
+            975.5998,
+            40.7676
+          ],
+          [
+            1000.3085,
+            73.5462
+          ],
+          [
+            985.7962,
+            81.9129
+          ],
+          [
+            970.2018,
+            69.6773
+          ],
+          [
+            965.1636,
+            69.9172
+          ],
+          [
+            955.8069,
+            70.517
+          ],
+          [
+            946.0904,
+            74.8354
+          ],
+          [
+            939.4006,
+            61.0946
+          ]
+        ],
+        "center": [
+          969.8546,
+          61.3402
+        ],
+        "area": 2506.0738,
+        "region_bin_3x3": "top-right"
+      },
+      "attributes": {
+        "uid": "a7e9ea42_1461_412f_bfb2_57581e48b1c3",
+        "damage_level": "minor_damage"
+      }
+    },
+    {
+      "node_id": "n_t1_baff18a2-1161-4a4e-bd7f-150718c68fd8",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          934.9446,
+          4.0285,
+          973.8359,
+          42.5218
+        ],
+        "polygon": [
+          [
+            973.8359,
+            27.867
+          ],
+          [
+            973.8359,
+            31.3841
+          ],
+          [
+            959.3765,
+            42.5218
+          ],
+          [
+            946.4803,
+            25.913
+          ],
+          [
+            945.77,
+            26.04
+          ],
+          [
+            936.9406,
+            24.7335
+          ],
+          [
+            934.9446,
+            17.9587
+          ],
+          [
+            954.4916,
+            4.0285
+          ],
+          [
+            973.8359,
+            27.867
+          ]
+        ],
+        "center": [
+          954.3903,
+          23.2752
+        ],
+        "area": 1497.0545,
+        "region_bin_3x3": "top-right"
+      },
+      "attributes": {
+        "uid": "baff18a2_1161_4a4e_bd7f_150718c68fd8"
+      }
+    },
+    {
+      "node_id": "n_t2_baff18a2-1161-4a4e-bd7f-150718c68fd8",
+      "node_type": "object",
+      "time": "t2",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          934.9446,
+          4.0285,
+          973.8359,
+          42.5218
+        ],
+        "polygon": [
+          [
+            973.8359,
+            27.867
+          ],
+          [
+            973.8359,
+            31.3841
+          ],
+          [
+            959.3765,
+            42.5218
+          ],
+          [
+            946.4803,
+            25.913
+          ],
+          [
+            945.77,
+            26.04
+          ],
+          [
+            936.9406,
+            24.7335
+          ],
+          [
+            934.9446,
+            17.9587
+          ],
+          [
+            954.4916,
+            4.0285
+          ],
+          [
+            973.8359,
+            27.867
+          ]
+        ],
+        "center": [
+          954.3903,
+          23.2752
+        ],
+        "area": 1497.0545,
+        "region_bin_3x3": "top-right"
+      },
+      "attributes": {
+        "uid": "baff18a2_1161_4a4e_bd7f_150718c68fd8",
+        "damage_level": "major_damage"
+      }
+    },
+    {
+      "node_id": "n_t1_bb568b8a-4c34-47dd-9a3d-081ff89b0b13",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          726.9747,
+          562.2336,
+          893.7193,
+          764.0475
+        ],
+        "polygon": [
+          [
+            769.3225,
+            562.2336
+          ],
+          [
+            726.9747,
+            634.3573
+          ],
+          [
+            730.2831,
+            695.2323
+          ],
+          [
+            859.3117,
+            764.0475
+          ],
+          [
+            893.7193,
+            701.1874
+          ],
+          [
+            889.7492,
+            635.019
+          ],
+          [
+            769.3225,
+            562.2336
+          ]
+        ],
+        "center": [
+          810.347,
+          663.1406
+        ],
+        "area": 33651.378,
+        "region_bin_3x3": "center-right"
+      },
+      "attributes": {
+        "uid": "bb568b8a_4c34_47dd_9a3d_081ff89b0b13"
+      }
+    },
+    {
+      "node_id": "n_t2_bb568b8a-4c34-47dd-9a3d-081ff89b0b13",
+      "node_type": "object",
+      "time": "t2",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          726.9747,
+          562.2336,
+          893.7193,
+          764.0475
+        ],
+        "polygon": [
+          [
+            769.3225,
+            562.2336
+          ],
+          [
+            889.7492,
+            635.019
+          ],
+          [
+            893.7193,
+            701.1875
+          ],
+          [
+            859.3117,
+            764.0475
+          ],
+          [
+            730.2831,
+            695.2323
+          ],
+          [
+            726.9747,
+            634.3573
+          ],
+          [
+            769.3225,
+            562.2336
+          ]
+        ],
+        "center": [
+          810.347,
+          663.1406
+        ],
+        "area": 33651.378,
+        "region_bin_3x3": "center-right"
+      },
+      "attributes": {
+        "uid": "bb568b8a_4c34_47dd_9a3d_081ff89b0b13",
+        "damage_level": "major_damage"
+      }
+    },
+    {
+      "node_id": "n_t1_bd18573e-f7fb-4173-b7d4-192fc8e8c48d",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          910.1364,
+          13.2122,
+          929.9,
+          34.9013
+        ],
+        "polygon": [
+          [
+            927.1,
+            19.64
+          ],
+          [
+            929.9,
+            33.22
+          ],
+          [
+            928.6991,
+            34.9013
+          ],
+          [
+            920.6878,
+            32.7519
+          ],
+          [
+            910.1364,
+            21.2234
+          ],
+          [
+            916.3891,
+            13.2122
+          ],
+          [
+            927.1,
+            19.64
+          ]
+        ],
+        "center": [
+          920.0182,
+          24.0568
+        ],
+        "area": 428.6547,
+        "region_bin_3x3": "top-right"
+      },
+      "attributes": {
+        "uid": "bd18573e_f7fb_4173_b7d4_192fc8e8c48d"
+      }
+    },
+    {
+      "node_id": "n_t2_bd18573e-f7fb-4173-b7d4-192fc8e8c48d",
+      "node_type": "object",
+      "time": "t2",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          910.1364,
+          13.2122,
+          929.9,
+          34.9013
+        ],
+        "polygon": [
+          [
+            927.1,
+            19.64
+          ],
+          [
+            929.9,
+            33.22
+          ],
+          [
+            928.6991,
+            34.9013
+          ],
+          [
+            920.6878,
+            32.7519
+          ],
+          [
+            910.1364,
+            21.2235
+          ],
+          [
+            916.3891,
+            13.2122
+          ],
+          [
+            927.1,
+            19.64
+          ]
+        ],
+        "center": [
+          920.0182,
+          24.0568
+        ],
+        "area": 428.6547,
+        "region_bin_3x3": "top-right"
+      },
+      "attributes": {
+        "uid": "bd18573e_f7fb_4173_b7d4_192fc8e8c48d",
+        "damage_level": "major_damage"
+      }
+    },
+    {
+      "node_id": "n_t1_fabb9d8c-9039-4b99-ba0e-3dd1906b446d",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          1012.0371,
+          125.8516,
+          1024.0,
+          141.7407
+        ],
+        "polygon": [
+          [
+            1012.0371,
+            134.3187
+          ],
+          [
+            1017.7758,
+            126.2115
+          ],
+          [
+            1024.0,
+            125.8516
+          ],
+          [
+            1024.0,
+            137.3675
+          ],
+          [
+            1017.2326,
+            141.7407
+          ],
+          [
+            1012.0371,
+            134.3187
+          ]
+        ],
+        "center": [
+          1018.0186,
+          133.7962
+        ],
+        "area": 190.0797,
+        "region_bin_3x3": "top-right"
+      },
+      "attributes": {
+        "uid": "fabb9d8c_9039_4b99_ba0e_3dd1906b446d"
+      }
+    },
+    {
+      "node_id": "n_t2_fabb9d8c-9039-4b99-ba0e-3dd1906b446d",
+      "node_type": "object",
+      "time": "t2",
+      "canonical_leaf": "building",
+      "canonical_root": "building",
+      "geometry": {
+        "bbox": [
+          1012.0371,
+          125.9424,
+          1022.4306,
+          141.7407
+        ],
+        "polygon": [
+          [
+            1012.0371,
+            134.3187
+          ],
+          [
+            1017.7758,
+            126.2115
+          ],
+          [
+            1022.4306,
+            125.9424
+          ],
+          [
+            1022.4306,
+            138.3817
+          ],
+          [
+            1017.2326,
+            141.7407
+          ],
+          [
+            1012.0371,
+            134.3187
+          ]
+        ],
+        "center": [
+          1017.2339,
+          133.8416
+        ],
+        "area": 164.1996,
+        "region_bin_3x3": "top-right"
+      },
+      "attributes": {
+        "uid": "fabb9d8c_9039_4b99_ba0e_3dd1906b446d",
+        "damage_level": "minor_damage"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "e_tm_00001",
+      "edge_type": "temporal",
+      "relation_type": "same_instance",
+      "source": "n_t1_1313983d-5d73-4055-a01f-0ee447615807",
+      "target": "n_t2_1313983d-5d73-4055-a01f-0ee447615807"
+    },
+    {
+      "edge_id": "e_tm_00002",
+      "edge_type": "temporal",
+      "relation_type": "same_instance",
+      "source": "n_t1_9626c66a-2fc6-4e5d-8ceb-32d17147fafd",
+      "target": "n_t2_9626c66a-2fc6-4e5d-8ceb-32d17147fafd"
+    },
+    {
+      "edge_id": "e_tm_00003",
+      "edge_type": "temporal",
+      "relation_type": "same_instance",
+      "source": "n_t1_a7e9ea42-1461-412f-bfb2-57581e48b1c3",
+      "target": "n_t2_a7e9ea42-1461-412f-bfb2-57581e48b1c3"
+    },
+    {
+      "edge_id": "e_tm_00004",
+      "edge_type": "temporal",
+      "relation_type": "same_instance",
+      "source": "n_t1_baff18a2-1161-4a4e-bd7f-150718c68fd8",
+      "target": "n_t2_baff18a2-1161-4a4e-bd7f-150718c68fd8"
+    },
+    {
+      "edge_id": "e_tm_00005",
+      "edge_type": "temporal",
+      "relation_type": "same_instance",
+      "source": "n_t1_bb568b8a-4c34-47dd-9a3d-081ff89b0b13",
+      "target": "n_t2_bb568b8a-4c34-47dd-9a3d-081ff89b0b13"
+    },
+    {
+      "edge_id": "e_tm_00006",
+      "edge_type": "temporal",
+      "relation_type": "same_instance",
+      "source": "n_t1_bd18573e-f7fb-4173-b7d4-192fc8e8c48d",
+      "target": "n_t2_bd18573e-f7fb-4173-b7d4-192fc8e8c48d"
+    },
+    {
+      "edge_id": "e_tm_00007",
+      "edge_type": "temporal",
+      "relation_type": "same_instance",
+      "source": "n_t1_fabb9d8c-9039-4b99-ba0e-3dd1906b446d",
+      "target": "n_t2_fabb9d8c-9039-4b99-ba0e-3dd1906b446d"
+    }
+  ],
+  "global_inventory": {}
+}

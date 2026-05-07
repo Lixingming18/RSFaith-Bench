@@ -1,0 +1,337 @@
+{
+  "scene_id": "RSF-S00009962",
+  "graph_meta": {
+    "temporal_mode": "pair",
+    "image_size": [
+      512,
+      512
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_t1_NVG_surface",
+      "node_type": "region",
+      "time": "t1",
+      "canonical_leaf": "non_vegetated_surface",
+      "canonical_root": "non_vegetated_surface",
+      "geometry": {
+        "bbox": [
+          305.0,
+          23.0,
+          492.0,
+          478.0
+        ],
+        "center": [
+          398.5,
+          250.5
+        ],
+        "area": 85085.0,
+        "region_bin_3x3": "center-right",
+        "components": [
+          {
+            "component_id": "c002",
+            "bbox": [
+              305.0,
+              252.0,
+              492.0,
+              478.0
+            ],
+            "center": [
+              398.5,
+              365.0
+            ],
+            "area": 26695,
+            "region_bin_3x3": "bottom-right"
+          },
+          {
+            "component_id": "c001",
+            "bbox": [
+              378.0,
+              23.0,
+              404.0,
+              67.0
+            ],
+            "center": [
+              391.0,
+              45.0
+            ],
+            "area": 466,
+            "region_bin_3x3": "top-right"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 27161
+      }
+    },
+    {
+      "node_id": "n_t2_NVG_surface",
+      "node_type": "region",
+      "time": "t2",
+      "canonical_leaf": "non_vegetated_surface",
+      "canonical_root": "non_vegetated_surface",
+      "geometry": {
+        "bbox": [
+          367.0,
+          52.0,
+          391.0,
+          103.0
+        ],
+        "center": [
+          379.0,
+          77.5
+        ],
+        "area": 1224.0,
+        "region_bin_3x3": "top-right",
+        "components": [
+          {
+            "component_id": "c001",
+            "bbox": [
+              367.0,
+              52.0,
+              391.0,
+              103.0
+            ],
+            "center": [
+              379.0,
+              77.5
+            ],
+            "area": 726,
+            "region_bin_3x3": "top-right"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 726
+      }
+    },
+    {
+      "node_id": "n_t1_trees",
+      "node_type": "region",
+      "time": "t1",
+      "canonical_leaf": "tree",
+      "canonical_root": "tree",
+      "geometry": {
+        "bbox": [
+          367.0,
+          52.0,
+          391.0,
+          103.0
+        ],
+        "center": [
+          379.0,
+          77.5
+        ],
+        "area": 1224.0,
+        "region_bin_3x3": "top-right",
+        "components": [
+          {
+            "component_id": "c001",
+            "bbox": [
+              367.0,
+              52.0,
+              391.0,
+              103.0
+            ],
+            "center": [
+              379.0,
+              77.5
+            ],
+            "area": 726,
+            "region_bin_3x3": "top-right"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 726
+      }
+    },
+    {
+      "node_id": "n_t2_trees",
+      "node_type": "region",
+      "time": "t2",
+      "canonical_leaf": "tree",
+      "canonical_root": "tree",
+      "geometry": {
+        "bbox": [
+          378.0,
+          23.0,
+          404.0,
+          67.0
+        ],
+        "center": [
+          391.0,
+          45.0
+        ],
+        "area": 1144.0,
+        "region_bin_3x3": "top-right",
+        "components": [
+          {
+            "component_id": "c001",
+            "bbox": [
+              378.0,
+              23.0,
+              404.0,
+              67.0
+            ],
+            "center": [
+              391.0,
+              45.0
+            ],
+            "area": 466,
+            "region_bin_3x3": "top-right"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 466
+      }
+    },
+    {
+      "node_id": "n_t2_playgrounds",
+      "node_type": "region",
+      "time": "t2",
+      "canonical_leaf": "playground",
+      "canonical_root": "playground",
+      "geometry": {
+        "bbox": [
+          305.0,
+          252.0,
+          492.0,
+          478.0
+        ],
+        "center": [
+          398.5,
+          365.0
+        ],
+        "area": 42262.0,
+        "region_bin_3x3": "bottom-right",
+        "components": [
+          {
+            "component_id": "c001",
+            "bbox": [
+              305.0,
+              252.0,
+              492.0,
+              478.0
+            ],
+            "center": [
+              398.5,
+              365.0
+            ],
+            "area": 26695,
+            "region_bin_3x3": "bottom-right"
+          }
+        ]
+      },
+      "attributes": {
+        "aggregate_area": 26695
+      }
+    },
+    {
+      "node_id": "n_change_00001",
+      "node_type": "change_unit",
+      "time": "pair",
+      "canonical_leaf": "change_region",
+      "canonical_root": "change_region",
+      "geometry": {
+        "bbox": [
+          305.0,
+          23.0,
+          492.0,
+          478.0
+        ],
+        "center": [
+          398.5,
+          250.5
+        ],
+        "area": 85085.0,
+        "region_bin_3x3": "center-right"
+      },
+      "attributes": {
+        "aggregate_area": 27887,
+        "change_state": "changed"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "e_sp_00001",
+      "edge_type": "spatial",
+      "relation_type": "contains",
+      "source": "n_t1_NVG_surface",
+      "target": "n_t1_trees"
+    },
+    {
+      "edge_id": "e_sp_00002",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_t2_NVG_surface",
+      "target": "n_t2_playgrounds"
+    },
+    {
+      "edge_id": "e_sp_00003",
+      "edge_type": "spatial",
+      "relation_type": "inside",
+      "source": "n_t1_trees",
+      "target": "n_t1_NVG_surface"
+    },
+    {
+      "edge_id": "e_sp_00004",
+      "edge_type": "spatial",
+      "relation_type": "above",
+      "source": "n_t2_trees",
+      "target": "n_t2_playgrounds"
+    },
+    {
+      "edge_id": "e_sp_00005",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_t2_playgrounds",
+      "target": "n_t2_NVG_surface"
+    },
+    {
+      "edge_id": "e_sp_00006",
+      "edge_type": "spatial",
+      "relation_type": "below",
+      "source": "n_t2_playgrounds",
+      "target": "n_t2_trees"
+    }
+  ],
+  "global_inventory": {
+    "inventory_type": "temporal_semantic",
+    "semantic_inventory": {
+      "semantic_areas": {
+        "t1": {
+          "non_vegetated_surface": {
+            "aggregate_area": 27161
+          },
+          "tree": {
+            "aggregate_area": 726
+          }
+        },
+        "t2": {
+          "non_vegetated_surface": {
+            "aggregate_area": 726
+          },
+          "tree": {
+            "aggregate_area": 466
+          },
+          "playground": {
+            "aggregate_area": 26695
+          }
+        }
+      },
+      "transfers": {
+        "non_vegetated_surface": {
+          "tree": 466,
+          "playground": 26695
+        },
+        "tree": {
+          "non_vegetated_surface": 726
+        }
+      },
+      "change_pixels": 27887
+    }
+  }
+}

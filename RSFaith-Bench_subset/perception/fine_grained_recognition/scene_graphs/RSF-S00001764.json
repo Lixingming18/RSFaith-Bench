@@ -1,0 +1,54 @@
+{
+  "scene_id": "RSF-S00001764",
+  "graph_meta": {
+    "temporal_mode": "single",
+    "image_size": [
+      800,
+      600
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "n_obj_00001",
+      "node_type": "object",
+      "time": "t1",
+      "canonical_leaf": "a330",
+      "canonical_root": "aircraft",
+      "geometry": {
+        "bbox": [
+          141.0,
+          150.0,
+          250.0,
+          258.0
+        ],
+        "polygon": [
+          [
+            250.0,
+            222.0
+          ],
+          [
+            176.0,
+            258.0
+          ],
+          [
+            141.0,
+            187.0
+          ],
+          [
+            215.0,
+            150.0
+          ]
+        ],
+        "center": [
+          195.5,
+          204.0
+        ],
+        "area": 11772.0,
+        "region_bin_3x3": "center-left"
+      },
+      "attributes": {}
+    }
+  ],
+  "edges": [],
+  "global_inventory": {}
+}
